@@ -1,0 +1,40 @@
+#test the locales setting expect not affacted each other
+#test: pg_session_locale
+# ----------
+# These four each depend on the previous one(duplicate)
+# duplicated create_function_1 create_type create_table copy
+# ----------
+test: create_function_1
+#test: create_type
+#test: create_table
+#test: temp__4 copy
+
+# ----------
+# More groups of parallel tests
+# duplicated create_misc
+# ----------
+#test: hw_hashagg_start
+#test: create_misc hw_hashagg_writefile hw_hashagg_expand
+#test: create_misc
+#test: create_view1 create_view2 create_view3 create_view4 create_view5 int8
+test: create_view2 create_view3 create_view5 int8
+
+#dupliacated select int8
+#test: select
+#test: misc
+# rules cannot run concurrently with any test that creates a view
+#test: rules
+
+# run stats by itself because its delay may be insufficient under heavy load
+#test: stats
+#test: hw_compatibility
+#test: hw_compatibility_source
+#test: hw_groupingsets hw_row_grouping_set
+#test: hw_setop_writefile
+#test: analyze_dropdb
+
+#test string automatically truncation
+#test: char_truncation_common
+#test: char_truncation_cast
+#test: char_truncation_foreign_table
+#test: char_truncation_gds_end

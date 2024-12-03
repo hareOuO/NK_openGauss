@@ -1,0 +1,1974 @@
+-- add test case for exchange_parameters function
+drop schema if exists test_anonymous_block cascade;
+NOTICE:  schema "test_anonymous_block" does not exist, skipping
+CREATE SCHEMA test_anonymous_block;
+create table tmp_tb1_llt_coverage_atc( a int);
+insert into tmp_tb1_llt_coverage_atc values(1);
+create table test_anonymous_block.test_table_1(
+    ID       INTEGER,
+    NAME     varchar2(20),
+    AGE      INTEGER,
+    ADDRESS  varchar2(20),
+    TELE     varchar2(20)
+);
+insert into test_anonymous_block.test_table_1 values(1,'leon',10,'adsf');
+insert into test_anonymous_block.test_table_1 values(2,'mary',20,'zcv','234');
+insert into test_anonymous_block.test_table_1 values(3,'mike',30,'zcv','567');
+DO $$
+DECLARE
+  url varchar:='hello';
+  i integer;
+  D_SQL varchar(200);
+  arr integer[]:='{43,6,8,10}';
+  MYINTEGER INTEGER;
+  MYCHAR   VARCHAR2(20);
+BEGIN
+  FOR i IN 1..3
+  LOOP
+    RAISE NOTICE 'hi';
+  END LOOP;
+  RAISE NOTICE '%',url;
+  IF exists (select * from information_schema.tables where table_name='_x') then drop table if exists _x;
+  end if;
+  unnest(arr);
+  create table _x(q integer);
+  insert into _x select * from generate_subscripts(arr,1);
+  D_SQL := 'begin 
+    perform * from _x;
+  end;';
+  EXECUTE IMMEDIATE D_SQL;
+  MYINTEGER := 1;
+  D_SQL := 'begin select name into :b from test_anonymous_block.test_table_1 where id = :a ; end;';
+  EXECUTE IMMEDIATE D_SQL USING   out MYCHAR,IN MYINTEGER;
+  raise info 'NAME is %', MYCHAR;
+END
+$$;
+NOTICE:  hi
+NOTICE:  hi
+NOTICE:  hi
+NOTICE:  hello
+CONTEXT:  SQL statement "create table _x(q integer)"
+PL/pgSQL function inline_code_block line 18 at SQL statement
+INFO:  NAME is leon
+--error condition
+DO $$
+DECLARE
+  D_SQL varchar(200);
+  MYINTEGER INTEGER;
+  MYCHAR   VARCHAR2(20);
+BEGIN
+  MYINTEGER := 1;
+  D_SQL := 'declare tmp integer; begin select name from test_anonymous_block.test_table_1 where id = :a into :b; end;';
+  EXECUTE IMMEDIATE D_SQL USING IN MYINTEGER, out MYCHAR;
+  raise info 'NAME is %', MYCHAR;
+END
+$$;
+ERROR:  syntax error at or near "into"
+CONTEXT:  PL/pgSQL function inline_code_block line 9 at EXECUTE statement
+DO $$
+DECLARE
+  D_SQL varchar(200);
+  MYINTEGER INTEGER;
+  MYCHAR   VARCHAR2(20);
+BEGIN
+  MYINTEGER := 1;
+  D_SQL := 'begin select name from test_anonymous_block.test_table_1 where id = :a into :b; end;';
+  EXECUTE IMMEDIATE D_SQL USING IN MYINTEGER, MYCHAR;
+  raise info 'NAME is %', MYCHAR;
+END
+$$;
+ERROR:  query has no destination for result data in EXECUTE statement
+CONTEXT:  PL/pgSQL function inline_code_block line 9 at EXECUTE statement
+DO $$
+DECLARE
+  D_SQL varchar(200);
+  MYINTEGER INTEGER;
+  MYCHAR   VARCHAR2(20);
+BEGIN
+  MYINTEGER := 1;
+  D_SQL := 'begin select name from test_anonymous_block.test_table_1 where id = :b into :a; end;';
+  EXECUTE IMMEDIATE D_SQL into MYCHAR USING IN MYINTEGER;
+  raise info 'NAME is %', MYCHAR;
+END
+$$;
+ERROR:  the number of place holders doesn't match the number of parameters.
+CONTEXT:  PL/pgSQL function inline_code_block line 9 at EXECUTE statement
+drop table test_anonymous_block.test_table_1;
+--add testcase for mark_windowagg_stream function
+create table test_mark_windowagg_stream_into (
+  q1 int,
+  q2 int
+);
+create table test_mark_windowagg_stream (
+  q1 int,
+  q2 int
+);
+insert into test_mark_windowagg_stream values(1,2);
+insert into test_mark_windowagg_stream values(3,4);
+insert into test_mark_windowagg_stream values(2,4);
+insert into test_mark_windowagg_stream values(1,3);
+insert into test_mark_windowagg_stream values(1,2);
+insert into test_mark_windowagg_stream values(3,4);
+insert into test_mark_windowagg_stream values(2,4);
+insert into test_mark_windowagg_stream values(1,3);
+insert into test_mark_windowagg_stream_into (select q1,q2/sum(q2) over (partition by q2::int8) from test_mark_windowagg_stream);
+drop table test_mark_windowagg_stream_into;
+drop table test_mark_windowagg_stream;
+-- add test case for locate_distributekey_from_tlist function
+SET CHECK_FUNCTION_BODIES TO ON;
+create or replace function llt_func_01
+(
+  param1 in integer,
+  param2 in integer
+)
+returns integer as $$
+declare
+  ret integer;
+begin
+  ret := param1 + param2;
+  return ret;
+END;
+$$ LANGUAGE plpgsql;
+drop table if exists llt_locate_distributekey_from_tlist1;
+NOTICE:  table "llt_locate_distributekey_from_tlist1" does not exist, skipping
+drop table if exists llt_locate_distributekey_from_tlist2;
+NOTICE:  table "llt_locate_distributekey_from_tlist2" does not exist, skipping
+create table llt_locate_distributekey_from_tlist1 
+(
+  q1 integer,
+  q2 integer
+);
+create table llt_locate_distributekey_from_tlist2
+(
+  q1 integer,
+  q2 integer
+);
+insert into llt_locate_distributekey_from_tlist1 values(1,2);
+insert into llt_locate_distributekey_from_tlist2 values(3,1);
+insert into llt_locate_distributekey_from_tlist2 values(3,0);
+analyze llt_locate_distributekey_from_tlist1;
+analyze llt_locate_distributekey_from_tlist2;
+select * from llt_locate_distributekey_from_tlist1 where q1 in (select llt_func_01(q1,q2) from llt_locate_distributekey_from_tlist2 group by llt_func_01(q1,q2) order by 1);
+ q1 | q2 
+----+----
+(0 rows)
+
+-- add test case for explain node
+\o xml_explain_temp.txt
+explain performance select * from llt_locate_distributekey_from_tlist1 where q1 in (select llt_func_01(q1,q2) from llt_locate_distributekey_from_tlist2 group by llt_func_01(q1,q2) order by 1);
+explain performance update llt_locate_distributekey_from_tlist1 set q2 = 3 where q1 = 3;
+\o
+drop function llt_func_01();
+drop table llt_locate_distributekey_from_tlist1;
+drop table llt_locate_distributekey_from_tlist2;
+-- add test case for functions: show_datanode_buffers, show_detail_cpu, show_hash_info
+drop table if exists llt_show_datanode_buffers;
+NOTICE:  table "llt_show_datanode_buffers" does not exist, skipping
+drop table if exists llt_show_datanode_buffers_1;
+NOTICE:  table "llt_show_datanode_buffers_1" does not exist, skipping
+create table llt_show_datanode_buffers(q1 int, q2 int);
+create table llt_show_datanode_buffers_1(q1 int, q2 int);
+create table llt_show_datanode_buffers_2(q1 int, q2 int);
+create table llt_show_datanode_buffers_3(q1 int, q2 int) distribute by replication;
+insert into llt_show_datanode_buffers select generate_series(1,1000,9), generate_series(50,500,9) from tmp_tb1_llt_coverage_atc;
+insert into llt_show_datanode_buffers select generate_series(100,700,6), generate_series(500,1000,6) from tmp_tb1_llt_coverage_atc;
+insert into llt_show_datanode_buffers_1 select generate_series(1,1000,6), generate_series(50,500,6) from tmp_tb1_llt_coverage_atc;
+insert into llt_show_datanode_buffers_1 select generate_series(100,700,9), generate_series(500,1000,9) from tmp_tb1_llt_coverage_atc;
+set enable_hashjoin=on;
+set enable_nestloop=off;
+set enable_mergejoin=off;
+explain (ANALYZE on, BUFFERS on, TIMING on, detail off, format text) select * from llt_show_datanode_buffers, llt_show_datanode_buffers_1 where llt_show_datanode_buffers.q2=llt_show_datanode_buffers_1.q1;
+--?.*
+--?.*
+--? Streaming \(type: GATHER\)  .*
+--?   Node/s: .*
+--?   ->  Hash Join  .*
+         Hash Cond: (llt_show_datanode_buffers.q2 = llt_show_datanode_buffers_1.q1)
+--?         Buffers: .*
+--?         ->  Streaming\(type: REDISTRIBUTE\)  .*
+--?               Spawn on: .*
+--?               ->  Seq Scan on llt_show_datanode_buffers  .*
+--?                     Buffers: .*
+--?         ->  Hash  .*
+--?               Max Buckets: .*
+--?               Min Buckets: .*
+--?               Buffers: .*
+--?               ->  Seq Scan on llt_show_datanode_buffers_1  .*
+--?                     Buffers: .*
+--? Total runtime: .*
+(16 rows)
+
+explain (ANALYZE on, BUFFERS on, TIMING off, detail off, format JSON ) select * from llt_show_datanode_buffers, llt_show_datanode_buffers_1 where llt_show_datanode_buffers.q2=llt_show_datanode_buffers_1.q1;
+--?.*
+--?.*
+ [                                                                                        +
+   {                                                                                      +
+     "Plan": {                                                                            +
+       "Node Type": "Streaming (type: GATHER)",                                           +
+--?       "Startup Cost":.*
+--?       "Total Cost":.*
+--?       "Plan Rows":.*
+--?       "Plan Width":.*
+--?       "Actual Rows":.*
+--?       "Actual Loops":.*
+--?       "Nodes":.*
+--?       "Shared Hit Blocks":.*
+--?       "Shared Read Blocks":.*
+--?       "Shared Dirtied Blocks":.*
+--?       "Shared Written Blocks":.*
+--?       "Local Hit Blocks":.*
+--?       "Local Read Blocks":.*
+--?       "Local Dirtied Blocks":.*
+--?       "Local Written Blocks":.*
+--?       "Temp Read Blocks":.*
+--?       "Temp Written Blocks":.*
+--?       "IO Read Time":.*
+--?       "IO Write Time":.*
+       "Plans": [                                                                         +
+         {                                                                                +
+           "Node Type": "Hash Join",                                                      +
+           "Parent Relationship": "Outer",                                                +
+           "Join Type": "Inner",                                                          +
+--?           "Startup Cost":.*
+--?           "Total Cost":.*
+--?           "Plan Rows":.*
+--?           "Plan Width":.*
+           "Actual Total Rows": 0,                                                        +
+           "Hash Cond": "(llt_show_datanode_buffers.q2 = llt_show_datanode_buffers_1.q1)",+
+--?           "Max Shared Hit Blocks":.*
+--?           "Min Shared Hit Blocks":.*
+--?           "Max Shared Read Blocks":.*
+--?           "Min Shared Read Blocks":.*
+--?           "Max Shared Dirtied Blocks":.*
+--?           "Min Shared Dirtied Blocks":.*
+--?           "Max Shared Written Blocks":.*
+--?           "Max Shared Written Blocks":.*
+           "Max Local Hit Blocks": 0,                                                     +
+           "Min Local Hit Blocks": 0,                                                     +
+           "Max Local Read Blocks": 0,                                                    +
+           "Min Local Read Blocks": 0,                                                    +
+           "Max Local Dirtied Blocks": 0,                                                 +
+           "Min Local Dirtied Blocks": 0,                                                 +
+           "Max Local Written Blocks": 0,                                                 +
+           "Min Local Written Blocks": 0,                                                 +
+           "Max Temp Read Blocks": 0,                                                     +
+           "Min Temp Read Blocks": 0,                                                     +
+           "Max Temp Written Blocks": 0,                                                  +
+           "Min Temp Written Blocks": 0,                                                  +
+           "Max IO Read Time": 0.000,                                                     +
+           "Min IO Read Time": 0.000,                                                     +
+           "Max IO Write Time": 0.000,                                                    +
+           "Min IO Write Time": 0.000,                                                    +
+           "Plans": [                                                                     +
+             {                                                                            +
+               "Node Type": "Streaming(type: REDISTRIBUTE)",                              +
+               "Parent Relationship": "Outer",                                            +
+--?               "Startup Cost":.*
+--?               "Total Cost":.*
+--?               "Plan Rows":.*
+--?               "Plan Width":.*
+               "Actual Total Rows": 14196,                                                +
+--?               "Spawn on":.*
+               "Max Shared Hit Blocks": 0,                                                +
+               "Min Shared Hit Blocks": 0,                                                +
+               "Max Shared Read Blocks": 0,                                               +
+               "Min Shared Read Blocks": 0,                                               +
+               "Max Shared Dirtied Blocks": 0,                                            +
+               "Min Shared Dirtied Blocks": 0,                                            +
+               "Max Shared Written Blocks": 0,                                            +
+               "Max Shared Written Blocks": 0,                                            +
+               "Max Local Hit Blocks": 0,                                                 +
+               "Min Local Hit Blocks": 0,                                                 +
+               "Max Local Read Blocks": 0,                                                +
+               "Min Local Read Blocks": 0,                                                +
+               "Max Local Dirtied Blocks": 0,                                             +
+               "Min Local Dirtied Blocks": 0,                                             +
+               "Max Local Written Blocks": 0,                                             +
+               "Min Local Written Blocks": 0,                                             +
+               "Max Temp Read Blocks": 0,                                                 +
+               "Min Temp Read Blocks": 0,                                                 +
+               "Max Temp Written Blocks": 0,                                              +
+               "Min Temp Written Blocks": 0,                                              +
+               "Max IO Read Time": 0.000,                                                 +
+               "Min IO Read Time": 0.000,                                                 +
+               "Max IO Write Time": 0.000,                                                +
+               "Min IO Write Time": 0.000,                                                +
+               "Plans": [                                                                 +
+                 {                                                                        +
+                   "Node Type": "Seq Scan",                                               +
+                   "Parent Relationship": "Outer",                                        +
+                   "Relation Name": "llt_show_datanode_buffers",                          +
+                   "Alias": "llt_show_datanode_buffers",                                  +
+--?                   "Startup Cost":.*
+--?                   "Total Cost":.*
+--?                   "Plan Rows":.*
+--?                   "Plan Width":.*
+                   "Actual Total Rows": 14196,                                            +
+--?                   "Max Shared Hit Blocks":.*
+--?                   "Min Shared Hit Blocks":.*
+--?                   "Max Shared Read Blocks":.*
+--?                   "Min Shared Read Blocks":.*
+--?                   "Max Shared Dirtied Blocks":.*
+--?                   "Min Shared Dirtied Blocks":.*
+--?                   "Max Shared Written Blocks":.*
+--?                   "Max Shared Written Blocks":.*
+                   "Max Local Hit Blocks": 0,                                             +
+                   "Min Local Hit Blocks": 0,                                             +
+                   "Max Local Read Blocks": 0,                                            +
+                   "Min Local Read Blocks": 0,                                            +
+                   "Max Local Dirtied Blocks": 0,                                         +
+                   "Min Local Dirtied Blocks": 0,                                         +
+                   "Max Local Written Blocks": 0,                                         +
+                   "Min Local Written Blocks": 0,                                         +
+                   "Max Temp Read Blocks": 0,                                             +
+                   "Min Temp Read Blocks": 0,                                             +
+                   "Max Temp Written Blocks": 0,                                          +
+                   "Min Temp Written Blocks": 0,                                          +
+                   "Max IO Read Time": 0.000,                                             +
+                   "Min IO Read Time": 0.000,                                             +
+                   "Max IO Write Time": 0.000,                                            +
+                   "Min IO Write Time": 0.000                                             +
+                 }                                                                        +
+               ]                                                                          +
+             },                                                                           +
+             {                                                                            +
+               "Node Type": "Hash",                                                       +
+               "Parent Relationship": "Inner",                                            +
+--?               "Startup Cost":.*
+--?               "Total Cost":.*
+--?               "Plan Rows":.*
+--?               "Plan Width":.*
+               "Actual Total Rows": 16444,                                                +
+--?               "Max Hash Buckets":.*
+--?               "Min Hash Buckets":.*
+--?               "Max Hash Batches":.*
+--?               "Min Hash Batches":.*
+--?               "Max Original Hash Batches":.*
+--?               "Min Original Hash Batches":.*
+--?               "Max Peak Memory Usage":.*
+--?               "min Peak Memory Usage":.*
+--?               "Max Shared Hit Blocks":.*
+--?               "Min Shared Hit Blocks":.*
+--?               "Max Shared Read Blocks":.*
+--?               "Min Shared Read Blocks":.*
+--?               "Max Shared Dirtied Blocks":.*
+--?               "Min Shared Dirtied Blocks":.*
+--?               "Max Shared Written Blocks":.*
+--?               "Max Shared Written Blocks":.*
+               "Max Local Hit Blocks": 0,                                                 +
+               "Min Local Hit Blocks": 0,                                                 +
+               "Max Local Read Blocks": 0,                                                +
+               "Min Local Read Blocks": 0,                                                +
+               "Max Local Dirtied Blocks": 0,                                             +
+               "Min Local Dirtied Blocks": 0,                                             +
+               "Max Local Written Blocks": 0,                                             +
+               "Min Local Written Blocks": 0,                                             +
+               "Max Temp Read Blocks": 0,                                                 +
+               "Min Temp Read Blocks": 0,                                                 +
+               "Max Temp Written Blocks": 0,                                              +
+               "Min Temp Written Blocks": 0,                                              +
+               "Max IO Read Time": 0.000,                                                 +
+               "Min IO Read Time": 0.000,                                                 +
+               "Max IO Write Time": 0.000,                                                +
+               "Min IO Write Time": 0.000,                                                +
+               "Plans": [                                                                 +
+                 {                                                                        +
+                   "Node Type": "Seq Scan",                                               +
+                   "Parent Relationship": "Outer",                                        +
+                   "Relation Name": "llt_show_datanode_buffers_1",                        +
+                   "Alias": "llt_show_datanode_buffers_1",                                +
+--?                   "Startup Cost":.*
+--?                   "Total Cost":.*
+--?                   "Plan Rows":.*
+--?                   "Plan Width":.*
+                   "Actual Total Rows": 16444,                                            +
+--?                   "Max Shared Hit Blocks":.*
+--?                   "Min Shared Hit Blocks":.*
+--?                   "Max Shared Read Blocks":.*
+--?                   "Min Shared Read Blocks":.*
+--?                   "Max Shared Dirtied Blocks":.*
+--?                   "Min Shared Dirtied Blocks":.*
+--?                   "Max Shared Written Blocks":.*
+--?                   "Max Shared Written Blocks":.*
+                   "Max Local Hit Blocks": 0,                                             +
+                   "Min Local Hit Blocks": 0,                                             +
+                   "Max Local Read Blocks": 0,                                            +
+                   "Min Local Read Blocks": 0,                                            +
+                   "Max Local Dirtied Blocks": 0,                                         +
+                   "Min Local Dirtied Blocks": 0,                                         +
+                   "Max Local Written Blocks": 0,                                         +
+                   "Min Local Written Blocks": 0,                                         +
+                   "Max Temp Read Blocks": 0,                                             +
+                   "Min Temp Read Blocks": 0,                                             +
+                   "Max Temp Written Blocks": 0,                                          +
+                   "Min Temp Written Blocks": 0,                                          +
+                   "Max IO Read Time": 0.000,                                             +
+                   "Min IO Read Time": 0.000,                                             +
+                   "Max IO Write Time": 0.000,                                            +
+                   "Min IO Write Time": 0.000                                             +
+                 }                                                                        +
+               ]                                                                          +
+             }                                                                            +
+           ]                                                                              +
+         }                                                                                +
+       ]                                                                                  +
+     },                                                                                   +
+     "Triggers": [                                                                        +
+     ],                                                                                   +
+--?     "Total Runtime":.*
+   }                                                                                      +
+ ]
+(1 row)
+
+explain (ANALYZE on, BUFFERS on, TIMING off, detail off, format text, cpu on) select * from llt_show_datanode_buffers, llt_show_datanode_buffers_1 where llt_show_datanode_buffers.q2=llt_show_datanode_buffers_1.q1;
+--?.*
+--?.*
+--? Streaming \(type: GATHER\)  .*
+--?   Node/s: .*
+--?   .*
+--?   ->  Hash Join  .*
+         Hash Cond: (llt_show_datanode_buffers.q2 = llt_show_datanode_buffers_1.q1)
+--?         Buffers: .*
+--?         CPU: .*
+--?              min_ex .*
+--?         ->  Streaming\(type: REDISTRIBUTE\)  .*
+--?               Spawn on: .*
+--?               CPU: .*
+--?                    min_ex .*
+--?               ->  Seq Scan on llt_show_datanode_buffers  .*
+--?                     Buffers: .*
+--?                     CPU: .*
+--?                          min_ex .*
+--?         ->  Hash  .*
+--?               Max Buckets: .*
+--?               Min Buckets: .*
+--?               Buffers: .*
+--?               CPU: .*
+--?                    min_ex .*
+--?               ->  Seq Scan on llt_show_datanode_buffers_1  .*
+--?                     Buffers: .*
+--?                     CPU: .*
+--?                          min_ex .*
+--? Total runtime: .*
+(27 rows)
+
+explain (ANALYZE on, BUFFERS on, TIMING off, detail off, format JSON, cpu on) select * from llt_show_datanode_buffers, llt_show_datanode_buffers_1 where llt_show_datanode_buffers.q2=llt_show_datanode_buffers_1.q1;
+--?.*
+--?.*
+ [                                                                                        +
+   {                                                                                      +
+     "Plan": {                                                                            +
+       "Node Type": "Streaming (type: GATHER)",                                           +
+--?       "Startup Cost":.*
+--?       "Total Cost":.*
+--?       "Plan Rows":.*
+--?       "Plan Width":.*
+--?       "Actual Rows":.*
+--?       "Actual Loops":.*
+--?       "Nodes":.*
+--?       "Shared Hit Blocks":.*
+--?       "Shared Read Blocks":.*
+--?       "Shared Dirtied Blocks":.*
+--?       "Shared Written Blocks":.*
+--?       "Local Hit Blocks":.*
+--?       "Local Read Blocks":.*
+--?       "Local Dirtied Blocks":.*
+--?       "Local Written Blocks":.*
+--?       "Temp Read Blocks":.*
+--?       "Temp Written Blocks":.*
+--?       "IO Read Time":.*
+--?       "IO Write Time":.*
+--?       "Exclusive Cycles Per Row":.*
+--?       "Exclusive Cycles":.*
+--?       "Inclusive Cycles":.*
+       "Plans": [                                                                         +
+         {                                                                                +
+           "Node Type": "Hash Join",                                                      +
+           "Parent Relationship": "Outer",                                                +
+           "Join Type": "Inner",                                                          +
+--?           "Startup Cost":.*
+--?           "Total Cost":.*
+--?           "Plan Rows":.*
+--?           "Plan Width":.*
+           "Actual Total Rows": 0,                                                        +
+--?           "Hash Cond":.*
+--?           "Max Shared Hit Blocks":.*
+--?           "Min Shared Hit Blocks":.*
+--?           "Max Shared Read Blocks":.*
+--?           "Min Shared Read Blocks":.*
+--?           "Max Shared Dirtied Blocks":.*
+--?           "Min Shared Dirtied Blocks":.*
+--?           "Max Shared Written Blocks":.*
+--?           "Max Shared Written Blocks":.*
+           "Max Local Hit Blocks": 0,                                                     +
+           "Min Local Hit Blocks": 0,                                                     +
+           "Max Local Read Blocks": 0,                                                    +
+           "Min Local Read Blocks": 0,                                                    +
+           "Max Local Dirtied Blocks": 0,                                                 +
+           "Min Local Dirtied Blocks": 0,                                                 +
+           "Max Local Written Blocks": 0,                                                 +
+           "Min Local Written Blocks": 0,                                                 +
+           "Max Temp Read Blocks": 0,                                                     +
+           "Min Temp Read Blocks": 0,                                                     +
+           "Max Temp Written Blocks": 0,                                                  +
+           "Min Temp Written Blocks": 0,                                                  +
+           "Max IO Read Time": 0.000,                                                     +
+           "Min IO Read Time": 0.000,                                                     +
+           "Max IO Write Time": 0.000,                                                    +
+           "Min IO Write Time": 0.000,                                                    +
+--?           "Exclusive Max Cycles Per Row":.*
+--?           "Exclusive Max Cycles":.*
+--?           "Inclusive Max Cycles":.*
+--?           "Exclusive Min Cycles Per Row":.*
+--?           "Exclusive Min Cycles":.*
+--?           "Inclusive Min Cycles":.*
+           "Plans": [                                                                     +
+             {                                                                            +
+               "Node Type": "Streaming(type: REDISTRIBUTE)",                              +
+               "Parent Relationship": "Outer",                                            +
+--?               "Startup Cost":.*
+--?               "Total Cost":.*
+--?               "Plan Rows":.*
+--?               "Plan Width":.*
+               "Actual Total Rows": 14196,                                                +
+--?               "Spawn on":.*
+               "Max Shared Hit Blocks": 0,                                                +
+               "Min Shared Hit Blocks": 0,                                                +
+               "Max Shared Read Blocks": 0,                                               +
+               "Min Shared Read Blocks": 0,                                               +
+               "Max Shared Dirtied Blocks": 0,                                            +
+               "Min Shared Dirtied Blocks": 0,                                            +
+               "Max Shared Written Blocks": 0,                                            +
+               "Max Shared Written Blocks": 0,                                            +
+               "Max Local Hit Blocks": 0,                                                 +
+               "Min Local Hit Blocks": 0,                                                 +
+               "Max Local Read Blocks": 0,                                                +
+               "Min Local Read Blocks": 0,                                                +
+               "Max Local Dirtied Blocks": 0,                                             +
+               "Min Local Dirtied Blocks": 0,                                             +
+               "Max Local Written Blocks": 0,                                             +
+               "Min Local Written Blocks": 0,                                             +
+               "Max Temp Read Blocks": 0,                                                 +
+               "Min Temp Read Blocks": 0,                                                 +
+               "Max Temp Written Blocks": 0,                                              +
+               "Min Temp Written Blocks": 0,                                              +
+               "Max IO Read Time": 0.000,                                                 +
+               "Min IO Read Time": 0.000,                                                 +
+               "Max IO Write Time": 0.000,                                                +
+               "Min IO Write Time": 0.000,                                                +
+--?               "Exclusive Max Cycles Per Row":.*
+--?               "Exclusive Max Cycles":.*
+--?               "Inclusive Max Cycles":.*
+--?               "Exclusive Min Cycles Per Row":.*
+--?               "Exclusive Min Cycles":.*
+--?               "Inclusive Min Cycles":.*
+               "Plans": [                                                                 +
+                 {                                                                        +
+                   "Node Type": "Seq Scan",                                               +
+                   "Parent Relationship": "Outer",                                        +
+                   "Relation Name": "llt_show_datanode_buffers",                          +
+                   "Alias": "llt_show_datanode_buffers",                                  +
+--?                   "Startup Cost":.*
+--?                   "Total Cost":.*
+--?                   "Plan Rows":.*
+--?                   "Plan Width":.*
+                   "Actual Total Rows": 14196,                                            +
+--?                   "Max Shared Hit Blocks":.*
+--?                   "Min Shared Hit Blocks":.*
+--?                   "Max Shared Read Blocks":.*
+--?                   "Min Shared Read Blocks":.*
+--?                   "Max Shared Dirtied Blocks":.*
+--?                   "Min Shared Dirtied Blocks":.*
+--?                   "Max Shared Written Blocks":.*
+--?                   "Max Shared Written Blocks":.*
+                   "Max Local Hit Blocks": 0,                                             +
+                   "Min Local Hit Blocks": 0,                                             +
+                   "Max Local Read Blocks": 0,                                            +
+                   "Min Local Read Blocks": 0,                                            +
+                   "Max Local Dirtied Blocks": 0,                                         +
+                   "Min Local Dirtied Blocks": 0,                                         +
+                   "Max Local Written Blocks": 0,                                         +
+                   "Min Local Written Blocks": 0,                                         +
+                   "Max Temp Read Blocks": 0,                                             +
+                   "Min Temp Read Blocks": 0,                                             +
+                   "Max Temp Written Blocks": 0,                                          +
+                   "Min Temp Written Blocks": 0,                                          +
+                   "Max IO Read Time": 0.000,                                             +
+                   "Min IO Read Time": 0.000,                                             +
+                   "Max IO Write Time": 0.000,                                            +
+                   "Min IO Write Time": 0.000,                                            +
+--?                   "Exclusive Max Cycles Per Row":.*
+--?                   "Exclusive Max Cycles":.*
+--?                   "Inclusive Max Cycles":.*
+--?                   "Exclusive Min Cycles Per Row":.*
+--?                   "Exclusive Min Cycles":.*
+--?                   "Inclusive Min Cycles":.*
+                 }                                                                        +
+               ]                                                                          +
+             },                                                                           +
+             {                                                                            +
+               "Node Type": "Hash",                                                       +
+               "Parent Relationship": "Inner",                                            +
+--?               "Startup Cost":.*
+--?               "Total Cost":.*
+--?               "Plan Rows":.*
+--?               "Plan Width":.*
+               "Actual Total Rows": 16444,                                                +
+--?               "Max Hash Buckets":.*
+--?               "Min Hash Buckets":.*
+--?               "Max Hash Batches":.*
+--?               "Min Hash Batches":.*
+--?               "Max Original Hash Batches":.*
+--?               "Min Original Hash Batches":.*
+--?               "Max Peak Memory Usage":.*
+--?               "min Peak Memory Usage":.*
+--?               "Max Shared Hit Blocks":.*
+--?               "Min Shared Hit Blocks":.*
+--?               "Max Shared Read Blocks":.*
+--?               "Min Shared Read Blocks":.*
+--?               "Max Shared Dirtied Blocks":.*
+--?               "Min Shared Dirtied Blocks":.*
+--?               "Max Shared Written Blocks":.*
+--?               "Max Shared Written Blocks":.*
+               "Max Local Hit Blocks": 0,                                                 +
+               "Min Local Hit Blocks": 0,                                                 +
+               "Max Local Read Blocks": 0,                                                +
+               "Min Local Read Blocks": 0,                                                +
+               "Max Local Dirtied Blocks": 0,                                             +
+               "Min Local Dirtied Blocks": 0,                                             +
+               "Max Local Written Blocks": 0,                                             +
+               "Min Local Written Blocks": 0,                                             +
+               "Max Temp Read Blocks": 0,                                                 +
+               "Min Temp Read Blocks": 0,                                                 +
+               "Max Temp Written Blocks": 0,                                              +
+               "Min Temp Written Blocks": 0,                                              +
+               "Max IO Read Time": 0.000,                                                 +
+               "Min IO Read Time": 0.000,                                                 +
+               "Max IO Write Time": 0.000,                                                +
+               "Min IO Write Time": 0.000,                                                +
+--?               "Exclusive Max Cycles Per Row":.*
+--?               "Exclusive Max Cycles":.*
+--?               "Inclusive Max Cycles":.*
+--?               "Exclusive Min Cycles Per Row":.*
+--?               "Exclusive Min Cycles":.*
+--?               "Inclusive Min Cycles":.*
+               "Plans": [                                                                 +
+                 {                                                                        +
+                   "Node Type": "Seq Scan",                                               +
+                   "Parent Relationship": "Outer",                                        +
+                   "Relation Name": "llt_show_datanode_buffers_1",                        +
+                   "Alias": "llt_show_datanode_buffers_1",                                +
+--?                   "Startup Cost":.*
+--?                   "Total Cost":.*
+--?                   "Plan Rows":.*
+--?                   "Plan Width":.*
+                   "Actual Total Rows": 16444,                                            +
+--?                   "Max Shared Hit Blocks":.*
+--?                   "Min Shared Hit Blocks":.*
+--?                   "Max Shared Read Blocks":.*
+--?                   "Min Shared Read Blocks":.*
+--?                   "Max Shared Dirtied Blocks":.*
+--?                   "Min Shared Dirtied Blocks":.*
+--?                   "Max Shared Written Blocks":.*
+--?                   "Max Shared Written Blocks":.*
+                   "Max Local Hit Blocks": 0,                                             +
+                   "Min Local Hit Blocks": 0,                                             +
+                   "Max Local Read Blocks": 0,                                            +
+                   "Min Local Read Blocks": 0,                                            +
+                   "Max Local Dirtied Blocks": 0,                                         +
+                   "Min Local Dirtied Blocks": 0,                                         +
+                   "Max Local Written Blocks": 0,                                         +
+                   "Min Local Written Blocks": 0,                                         +
+                   "Max Temp Read Blocks": 0,                                             +
+                   "Min Temp Read Blocks": 0,                                             +
+                   "Max Temp Written Blocks": 0,                                          +
+                   "Min Temp Written Blocks": 0,                                          +
+                   "Max IO Read Time": 0.000,                                             +
+                   "Min IO Read Time": 0.000,                                             +
+                   "Max IO Write Time": 0.000,                                            +
+                   "Min IO Write Time": 0.000,                                            +
+--?                   "Exclusive Max Cycles Per Row":.*
+--?                   "Exclusive Max Cycles":.*
+--?                   "Inclusive Max Cycles":.*
+--?                   "Exclusive Min Cycles Per Row":.*
+--?                   "Exclusive Min Cycles":.*
+--?                   "Inclusive Min Cycles":.*
+                 }                                                                        +
+               ]                                                                          +
+             }                                                                            +
+           ]                                                                              +
+         }                                                                                +
+       ]                                                                                  +
+     },                                                                                   +
+     "Triggers": [                                                                        +
+     ],                                                                                   +
+--?     "Total Runtime":.*
+   }                                                                                      +
+ ]
+(1 row)
+
+explain (ANALYZE on, BUFFERS on, TIMING on, detail on, format text) select * from llt_show_datanode_buffers, llt_show_datanode_buffers_1 where llt_show_datanode_buffers.q2=llt_show_datanode_buffers_1.q1;
+--?.*
+--?.*
+--? Hash Join  .*
+   Hash Cond: (llt_show_datanode_buffers.q2 = llt_show_datanode_buffers_1.q1)
+--?   ->  Data Node Scan on llt_show_datanode_buffers "_REMOTE_TABLE_QUERY_".*
+         Node/s: All datanodes
+--?   ->  Hash.*
+--?          Buckets:.*
+--?         ->  Data Node Scan on llt_show_datanode_buffers_1 "_REMOTE_TABLE_QUERY_".*
+               Node/s: All datanodes
+--? Total runtime: 107.752 ms
+(9 rows)
+
+--add for llt
+explain (cpu on) select * from llt_show_datanode_buffers, llt_show_datanode_buffers_1 where llt_show_datanode_buffers.q2=llt_show_datanode_buffers_1.q1;
+ERROR:  EXPLAIN option CPU requires ANALYZE
+explain (detail on) select * from llt_show_datanode_buffers, llt_show_datanode_buffers_1 where llt_show_datanode_buffers.q2=llt_show_datanode_buffers_1.q1;
+ERROR:  EXPLAIN option DETAIL requires ANALYZE
+explain (analyze on, detail on,format xml,costs off) select * from llt_show_datanode_buffers, llt_show_datanode_buffers_1 where llt_show_datanode_buffers.q2=llt_show_datanode_buffers_1.q1;
+                                          QUERY PLAN                                          
+----------------------------------------------------------------------------------------------
+ <explain xmlns="http://www.postgresql.org/2009/explain">                                    +
+   <Query>                                                                                   +
+     <Plan>                                                                                  +
+       <Node-Type>Hash Join</Node-Type>                                                      +
+       <Join-Type>Inner</Join-Type>                                                          +
+--?       <Actual-Startup-Time>.*
+--?       <Actual-Total-Time>.*
+       <Actual-Rows>0</Actual-Rows>                                                          +
+       <Actual-Loops>1</Actual-Loops>                                                        +
+       <Hash-Cond>(llt_show_datanode_buffers.q2 = llt_show_datanode_buffers_1.q1)</Hash-Cond>+
+       <Plans>                                                                               +
+         <Plan>                                                                              +
+           <Node-Type>Data Node Scan</Node-Type>                                             +
+           <Parent-Relationship>Outer</Parent-Relationship>                                  +
+           <RemoteQuery-name>llt_show_datanode_buffers</RemoteQuery-name>                    +
+           <Alias>_REMOTE_TABLE_QUERY_</Alias>                                               +
+--?           <Actual-Startup-Time>.*
+--?           <Actual-Total-Time>.*
+           <Actual-Rows>14196</Actual-Rows>                                                  +
+           <Actual-Loops>1</Actual-Loops>                                                    +
+           <Nodes>All datanodes</Nodes>                                                      +
+         </Plan>                                                                             +
+         <Plan>                                                                              +
+           <Node-Type>Hash</Node-Type>                                                       +
+           <Parent-Relationship>Inner</Parent-Relationship>                                  +
+--?           <Actual-Startup-Time>.*
+--?           <Actual-Total-Time>.*
+           <Actual-Rows>16444</Actual-Rows>                                                  +
+           <Actual-Loops>1</Actual-Loops>                                                    +
+           <Hash-Buckets>32768</Hash-Buckets>                                                +
+           <Hash-Batches>1</Hash-Batches>                                                    +
+           <Original-Hash-Batches>1</Original-Hash-Batches>                                  +
+--?           <Peak-Memory-Usage>.*
+           <Plans>                                                                           +
+             <Plan>                                                                          +
+               <Node-Type>Data Node Scan</Node-Type>                                         +
+               <Parent-Relationship>Outer</Parent-Relationship>                              +
+               <RemoteQuery-name>llt_show_datanode_buffers_1</RemoteQuery-name>              +
+               <Alias>_REMOTE_TABLE_QUERY_</Alias>                                           +
+--?               <Actual-Startup-Time>.*
+--?               <Actual-Total-Time>.*
+               <Actual-Rows>16444</Actual-Rows>                                              +
+               <Actual-Loops>1</Actual-Loops>                                                +
+               <Nodes>All datanodes</Nodes>                                                  +
+             </Plan>                                                                         +
+           </Plans>                                                                          +
+         </Plan>                                                                             +
+       </Plans>                                                                              +
+     </Plan>                                                                                 +
+     <Triggers>                                                                              +
+     </Triggers>                                                                             +
+--?     <Total-Runtime>.*
+   </Query>                                                                                  +
+ </explain>
+(1 row)
+
+explain (analyze on, detail on,format xml,timing  on) select * from llt_show_datanode_buffers, llt_show_datanode_buffers_1 where llt_show_datanode_buffers.q2=llt_show_datanode_buffers_1.q1 and llt_show_datanode_buffers.q1 > 1000;
+                                          QUERY PLAN                                          
+----------------------------------------------------------------------------------------------
+ <explain xmlns="http://www.postgresql.org/2009/explain">                                    +
+   <Query>                                                                                   +
+     <Plan>                                                                                  +
+       <Node-Type>Hash Join</Node-Type>                                                      +
+       <Join-Type>Inner</Join-Type>                                                          +
+--?       <Startup-Cost>.*
+--?       <Total-Cost>.*
+--?       <Plan-Rows>.*
+--?       <Plan-Width>.*
+--?       <Actual-Startup-Time>.*
+--?       <Actual-Total-Time>.*
+       <Actual-Rows>0</Actual-Rows>                                                          +
+       <Actual-Loops>1</Actual-Loops>                                                        +
+       <Hash-Cond>(llt_show_datanode_buffers_1.q1 = llt_show_datanode_buffers.q2)</Hash-Cond>+
+       <Plans>                                                                               +
+         <Plan>                                                                              +
+           <Node-Type>Data Node Scan</Node-Type>                                             +
+           <Parent-Relationship>Outer</Parent-Relationship>                                  +
+           <RemoteQuery-name>llt_show_datanode_buffers_1</RemoteQuery-name>                  +
+           <Alias>_REMOTE_TABLE_QUERY_</Alias>                                               +
+--?           <Startup-Cost>.*
+--?           <Total-Cost>.*
+--?           <Plan-Rows>.*
+--?           <Plan-Width>.*
+--?           <Actual-Startup-Time>.*
+--?           <Actual-Total-Time>.*
+           <Nodes>All datanodes</Nodes>                                                      +
+         </Plan>                                                                             +
+         <Plan>                                                                              +
+           <Node-Type>Hash</Node-Type>                                                       +
+           <Parent-Relationship>Inner</Parent-Relationship>                                  +
+--?           <Startup-Cost>.*
+--?           <Total-Cost>.*
+--?           <Plan-Rows>.*
+--?           <Plan-Width>.*
+--?           <Actual-Startup-Time>.*
+--?           <Actual-Total-Time>.*
+           <Actual-Rows>0</Actual-Rows>                                                      +
+           <Actual-Loops>1</Actual-Loops>                                                    +
+           <Hash-Buckets>32768</Hash-Buckets>                                                +
+           <Hash-Batches>1</Hash-Batches>                                                    +
+           <Original-Hash-Batches>1</Original-Hash-Batches>                                  +
+           <Peak-Memory-Usage>0</Peak-Memory-Usage>                                          +
+           <Plans>                                                                           +
+             <Plan>                                                                          +
+               <Node-Type>Data Node Scan</Node-Type>                                         +
+               <Parent-Relationship>Outer</Parent-Relationship>                              +
+               <RemoteQuery-name>llt_show_datanode_buffers</RemoteQuery-name>                +
+               <Alias>_REMOTE_TABLE_QUERY_</Alias>                                           +
+--?               <Startup-Cost>.*
+--?               <Total-Cost>.*
+--?               <Plan-Rows>.*
+--?               <Plan-Width>.*
+--?               <Actual-Startup-Time>.*
+--?               <Actual-Total-Time>.*
+               <Actual-Rows>0</Actual-Rows>                                                  +
+               <Actual-Loops>1</Actual-Loops>                                                +
+               <Nodes>All datanodes</Nodes>                                                  +
+             </Plan>                                                                         +
+           </Plans>                                                                          +
+         </Plan>                                                                             +
+       </Plans>                                                                              +
+     </Plan>                                                                                 +
+     <Triggers>                                                                              +
+     </Triggers>                                                                             +
+--?     <Total-Runtime>.*
+   </Query>                                                                                  +
+ </explain>
+(1 row)
+
+explain (analyze on, detail on,format xml,timing  off) select * from llt_show_datanode_buffers, llt_show_datanode_buffers_1 where llt_show_datanode_buffers.q2=llt_show_datanode_buffers_1.q1 and llt_show_datanode_buffers.q1 > 1000;
+                                          QUERY PLAN                                          
+----------------------------------------------------------------------------------------------
+ <explain xmlns="http://www.postgresql.org/2009/explain">                                    +
+   <Query>                                                                                   +
+     <Plan>                                                                                  +
+       <Node-Type>Hash Join</Node-Type>                                                      +
+       <Join-Type>Inner</Join-Type>                                                          +
+--?       <Startup-Cost>.*
+--?       <Total-Cost>.*
+--?       <Plan-Rows>.*
+--?       <Plan-Width>.*
+       <Actual-Rows>0</Actual-Rows>                                                          +
+       <Actual-Loops>1</Actual-Loops>                                                        +
+       <Hash-Cond>(llt_show_datanode_buffers_1.q1 = llt_show_datanode_buffers.q2)</Hash-Cond>+
+       <Plans>                                                                               +
+         <Plan>                                                                              +
+           <Node-Type>Data Node Scan</Node-Type>                                             +
+           <Parent-Relationship>Outer</Parent-Relationship>                                  +
+           <RemoteQuery-name>llt_show_datanode_buffers_1</RemoteQuery-name>                  +
+           <Alias>_REMOTE_TABLE_QUERY_</Alias>                                               +
+--?           <Startup-Cost>.*
+--?           <Total-Cost>.*
+--?           <Plan-Rows>.*
+--?           <Plan-Width>.*
+           <Actual-Rows>0</Actual-Rows>                                                      +
+           <Actual-Loops>0</Actual-Loops>                                                    +
+           <Nodes>All datanodes</Nodes>                                                      +
+         </Plan>                                                                             +
+         <Plan>                                                                              +
+           <Node-Type>Hash</Node-Type>                                                       +
+           <Parent-Relationship>Inner</Parent-Relationship>                                  +
+--?           <Startup-Cost>.*
+--?           <Total-Cost>.*
+--?           <Plan-Rows>.*
+--?           <Plan-Width>.*
+           <Actual-Rows>0</Actual-Rows>                                                      +
+           <Actual-Loops>1</Actual-Loops>                                                    +
+           <Hash-Buckets>32768</Hash-Buckets>                                                +
+           <Hash-Batches>1</Hash-Batches>                                                    +
+           <Original-Hash-Batches>1</Original-Hash-Batches>                                  +
+           <Peak-Memory-Usage>0</Peak-Memory-Usage>                                          +
+           <Plans>                                                                           +
+             <Plan>                                                                          +
+               <Node-Type>Data Node Scan</Node-Type>                                         +
+               <Parent-Relationship>Outer</Parent-Relationship>                              +
+               <RemoteQuery-name>llt_show_datanode_buffers</RemoteQuery-name>                +
+               <Alias>_REMOTE_TABLE_QUERY_</Alias>                                           +
+--?               <Startup-Cost>.*
+--?               <Total-Cost>.*
+--?               <Plan-Rows>.*
+--?               <Plan-Width>.*
+               <Actual-Rows>0</Actual-Rows>                                                  +
+               <Actual-Loops>1</Actual-Loops>                                                +
+               <Nodes>All datanodes</Nodes>                                                  +
+             </Plan>                                                                         +
+           </Plans>                                                                          +
+         </Plan>                                                                             +
+       </Plans>                                                                              +
+     </Plan>                                                                                 +
+     <Triggers>                                                                              +
+     </Triggers>                                                                             +
+--?     <Total-Runtime>.*
+   </Query>                                                                                  +
+ </explain>
+(1 row)
+
+explain (analyze on, detail on,format xml,cpu  on) select * from llt_show_datanode_buffers, llt_show_datanode_buffers_2 where llt_show_datanode_buffers.q2=llt_show_datanode_buffers_2.q1 and llt_show_datanode_buffers.q1 > 1000;
+                                            QUERY PLAN                                            
+--?.*
+ <explain xmlns="http://www.postgresql.org/2009/explain">                                        +
+   <Query>                                                                                       +
+     <Plan>                                                                                      +
+       <Node-Type>Streaming (type: GATHER)</Node-Type>                                           +
+--?       <Startup-Cost>.*
+--?       <Total-Cost>.*
+--?       <Plan-Rows>.*
+--?       <Plan-Width>.*
+--?       <Actual-Startup-Time>.*
+--?       <Actual-Total-Time>.*
+       <Actual-Rows>0</Actual-Rows>                                                              +
+       <Actual-Loops>1</Actual-Loops>                                                            +
+       <Nodes>All datanodes</Nodes>                                                              +
+       <Exclusive-Cycles-Per-Row>0</Exclusive-Cycles-Per-Row>                                    +
+--?       <Exclusive-Cycles>.*
+--?       <Inclusive-Cycles>.*
+       <Plans>                                                                                   +
+         <Plan>                                                                                  +
+           <Node-Type>Hash Join</Node-Type>                                                      +
+           <Parent-Relationship>Outer</Parent-Relationship>                                      +
+           <Join-Type>Inner</Join-Type>                                                          +
+--?           <Startup-Cost>.*
+--?           <Total-Cost>.*
+--?           <Plan-Rows>.*
+--?           <Plan-Width>.*
+           <Actual-In-Detail>                                                                    +
+             <Plan>                                                                              +
+               <DN-Name>datanode1</DN-Name>                                                      +
+--?               <Actual-Startup-Time>.*
+--?               <Actual-Total-Time>.*
+               <Actual-Rows>0</Actual-Rows>                                                      +
+               <Actual-Loops>1</Actual-Loops>                                                    +
+             </Plan>                                                                             +
+             <Plan>                                                                              +
+               <DN-Name>datanode10</DN-Name>                                                     +
+--?               <Actual-Startup-Time>.*
+--?               <Actual-Total-Time>.*
+               <Actual-Rows>0</Actual-Rows>                                                      +
+               <Actual-Loops>1</Actual-Loops>                                                    +
+             </Plan>                                                                             +
+             <Plan>                                                                              +
+               <DN-Name>datanode11</DN-Name>                                                     +
+--?               <Actual-Startup-Time>.*
+--?               <Actual-Total-Time>.*
+               <Actual-Rows>0</Actual-Rows>                                                      +
+               <Actual-Loops>1</Actual-Loops>                                                    +
+             </Plan>                                                                             +
+             <Plan>                                                                              +
+               <DN-Name>datanode12</DN-Name>                                                     +
+--?               <Actual-Startup-Time>.*
+--?               <Actual-Total-Time>.*
+               <Actual-Rows>0</Actual-Rows>                                                      +
+               <Actual-Loops>1</Actual-Loops>                                                    +
+             </Plan>                                                                             +
+             <Plan>                                                                              +
+               <DN-Name>datanode2</DN-Name>                                                      +
+--?               <Actual-Startup-Time>.*
+--?               <Actual-Total-Time>.*
+               <Actual-Rows>0</Actual-Rows>                                                      +
+               <Actual-Loops>1</Actual-Loops>                                                    +
+             </Plan>                                                                             +
+             <Plan>                                                                              +
+               <DN-Name>datanode3</DN-Name>                                                      +
+--?               <Actual-Startup-Time>.*
+--?               <Actual-Total-Time>.*
+               <Actual-Rows>0</Actual-Rows>                                                      +
+               <Actual-Loops>1</Actual-Loops>                                                    +
+             </Plan>                                                                             +
+             <Plan>                                                                              +
+               <DN-Name>datanode4</DN-Name>                                                      +
+--?               <Actual-Startup-Time>.*
+--?               <Actual-Total-Time>.*
+               <Actual-Rows>0</Actual-Rows>                                                      +
+               <Actual-Loops>1</Actual-Loops>                                                    +
+             </Plan>                                                                             +
+             <Plan>                                                                              +
+               <DN-Name>datanode5</DN-Name>                                                      +
+--?               <Actual-Startup-Time>.*
+--?               <Actual-Total-Time>.*
+               <Actual-Rows>0</Actual-Rows>                                                      +
+               <Actual-Loops>1</Actual-Loops>                                                    +
+             </Plan>                                                                             +
+             <Plan>                                                                              +
+               <DN-Name>datanode6</DN-Name>                                                      +
+--?               <Actual-Startup-Time>.*
+--?               <Actual-Total-Time>.*
+               <Actual-Rows>0</Actual-Rows>                                                      +
+               <Actual-Loops>1</Actual-Loops>                                                    +
+             </Plan>                                                                             +
+             <Plan>                                                                              +
+               <DN-Name>datanode7</DN-Name>                                                      +
+--?               <Actual-Startup-Time>.*
+--?               <Actual-Total-Time>.*
+               <Actual-Rows>0</Actual-Rows>                                                      +
+               <Actual-Loops>1</Actual-Loops>                                                    +
+             </Plan>                                                                             +
+             <Plan>                                                                              +
+               <DN-Name>datanode8</DN-Name>                                                      +
+--?               <Actual-Startup-Time>.*
+--?               <Actual-Total-Time>.*
+               <Actual-Rows>0</Actual-Rows>                                                      +
+               <Actual-Loops>1</Actual-Loops>                                                    +
+             </Plan>                                                                             +
+             <Plan>                                                                              +
+               <DN-Name>datanode9</DN-Name>                                                      +
+--?               <Actual-Startup-Time>.*
+--?               <Actual-Total-Time>.*
+               <Actual-Rows>0</Actual-Rows>                                                      +
+               <Actual-Loops>1</Actual-Loops>                                                    +
+             </Plan>                                                                             +
+           </Actual-In-Detail>                                                                   +
+           <Hash-Cond>(llt_show_datanode_buffers.q2 = llt_show_datanode_buffers_2.q1)</Hash-Cond>+
+           <Cpus-In-Detail>                                                                      +
+             <Plan>                                                                              +
+               <DN-Name>datanode1</DN-Name>                                                      +
+--?               <Exclusive-Cycles-Per-Row>.*
+--?               <Exclusive-Cycles>.*
+--?               <Inclusive-Cycles>.*
+             </Plan>                                                                             +
+             <Plan>                                                                              +
+               <DN-Name>datanode10</DN-Name>                                                     +
+--?               <Exclusive-Cycles-Per-Row>.*
+--?               <Exclusive-Cycles>.*
+--?               <Inclusive-Cycles>.*
+             </Plan>                                                                             +
+             <Plan>                                                                              +
+               <DN-Name>datanode11</DN-Name>                                                     +
+--?               <Exclusive-Cycles-Per-Row>.*
+--?               <Exclusive-Cycles>.*
+--?               <Inclusive-Cycles>.*
+             </Plan>                                                                             +
+             <Plan>                                                                              +
+               <DN-Name>datanode12</DN-Name>                                                     +
+--?               <Exclusive-Cycles-Per-Row>.*
+--?               <Exclusive-Cycles>.*
+--?               <Inclusive-Cycles>.*
+             </Plan>                                                                             +
+             <Plan>                                                                              +
+               <DN-Name>datanode2</DN-Name>                                                      +
+--?               <Exclusive-Cycles-Per-Row>.*
+--?               <Exclusive-Cycles>.*
+--?               <Inclusive-Cycles>.*
+             </Plan>                                                                             +
+             <Plan>                                                                              +
+               <DN-Name>datanode3</DN-Name>                                                      +
+--?               <Exclusive-Cycles-Per-Row>.*
+--?               <Exclusive-Cycles>.*
+--?               <Inclusive-Cycles>.*
+             </Plan>                                                                             +
+             <Plan>                                                                              +
+               <DN-Name>datanode4</DN-Name>                                                      +
+--?               <Exclusive-Cycles-Per-Row>.*
+--?               <Exclusive-Cycles>.*
+--?               <Inclusive-Cycles>.*
+             </Plan>                                                                             +
+             <Plan>                                                                              +
+               <DN-Name>datanode5</DN-Name>                                                      +
+--?               <Exclusive-Cycles-Per-Row>.*
+--?               <Exclusive-Cycles>.*
+--?               <Inclusive-Cycles>.*
+             </Plan>                                                                             +
+             <Plan>                                                                              +
+               <DN-Name>datanode6</DN-Name>                                                      +
+--?               <Exclusive-Cycles-Per-Row>.*
+--?               <Exclusive-Cycles>.*
+--?               <Inclusive-Cycles>.*
+             </Plan>                                                                             +
+             <Plan>                                                                              +
+               <DN-Name>datanode7</DN-Name>                                                      +
+--?               <Exclusive-Cycles-Per-Row>.*
+--?               <Exclusive-Cycles>.*
+--?               <Inclusive-Cycles>.*
+             </Plan>                                                                             +
+             <Plan>                                                                              +
+               <DN-Name>datanode8</DN-Name>                                                      +
+--?               <Exclusive-Cycles-Per-Row>.*
+--?               <Exclusive-Cycles>.*
+--?               <Inclusive-Cycles>.*
+             </Plan>                                                                             +
+             <Plan>                                                                              +
+               <DN-Name>datanode9</DN-Name>                                                      +
+--?               <Exclusive-Cycles-Per-Row>.*
+--?               <Exclusive-Cycles>.*
+--?               <Inclusive-Cycles>.*
+             </Plan>                                                                             +
+           </Cpus-In-Detail>                                                                     +
+           <Plans>                                                                               +
+             <Plan>                                                                              +
+               <Node-Type>Streaming(type: REDISTRIBUTE)</Node-Type>                              +
+               <Parent-Relationship>Outer</Parent-Relationship>                                  +
+--?               <Startup-Cost>.*
+--?               <Total-Cost>.*
+--?               <Plan-Rows>.*
+--?               <Plan-Width>.*
+               <Actual-In-Detail>                                                                +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode1</DN-Name>                                                  +
+                   <Actual-Startup-Time>0.000</Actual-Startup-Time>                              +
+                   <Actual-Total-Time>0.000</Actual-Total-Time>                                  +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode10</DN-Name>                                                 +
+                   <Actual-Startup-Time>0.000</Actual-Startup-Time>                              +
+                   <Actual-Total-Time>0.000</Actual-Total-Time>                                  +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode11</DN-Name>                                                 +
+                   <Actual-Startup-Time>0.000</Actual-Startup-Time>                              +
+                   <Actual-Total-Time>0.000</Actual-Total-Time>                                  +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode12</DN-Name>                                                 +
+                   <Actual-Startup-Time>0.000</Actual-Startup-Time>                              +
+                   <Actual-Total-Time>0.000</Actual-Total-Time>                                  +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode2</DN-Name>                                                  +
+                   <Actual-Startup-Time>0.000</Actual-Startup-Time>                              +
+                   <Actual-Total-Time>0.000</Actual-Total-Time>                                  +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode3</DN-Name>                                                  +
+                   <Actual-Startup-Time>0.000</Actual-Startup-Time>                              +
+                   <Actual-Total-Time>0.000</Actual-Total-Time>                                  +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode4</DN-Name>                                                  +
+                   <Actual-Startup-Time>0.000</Actual-Startup-Time>                              +
+                   <Actual-Total-Time>0.000</Actual-Total-Time>                                  +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode5</DN-Name>                                                  +
+                   <Actual-Startup-Time>0.000</Actual-Startup-Time>                              +
+                   <Actual-Total-Time>0.000</Actual-Total-Time>                                  +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode6</DN-Name>                                                  +
+                   <Actual-Startup-Time>0.000</Actual-Startup-Time>                              +
+                   <Actual-Total-Time>0.000</Actual-Total-Time>                                  +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode7</DN-Name>                                                  +
+                   <Actual-Startup-Time>0.000</Actual-Startup-Time>                              +
+                   <Actual-Total-Time>0.000</Actual-Total-Time>                                  +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode8</DN-Name>                                                  +
+                   <Actual-Startup-Time>0.000</Actual-Startup-Time>                              +
+                   <Actual-Total-Time>0.000</Actual-Total-Time>                                  +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode9</DN-Name>                                                  +
+                   <Actual-Startup-Time>0.000</Actual-Startup-Time>                              +
+                   <Actual-Total-Time>0.000</Actual-Total-Time>                                  +
+                 </Plan>                                                                         +
+               </Actual-In-Detail>                                                               +
+               <Spawn-on>All datanodes</Spawn-on>                                                +
+               <Cpus-In-Detail>                                                                  +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode1</DN-Name>                                                  +
+                   <Actual-Exclusive-Cycles-Per-Row>0</Actual-Exclusive-Cycles-Per-Row>          +
+                   <Actual-Exclusive-Cycles>0</Actual-Exclusive-Cycles>                          +
+                   <Actual-Inclusive-Cycles>0</Actual-Inclusive-Cycles>                          +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode10</DN-Name>                                                 +
+                   <Actual-Exclusive-Cycles-Per-Row>0</Actual-Exclusive-Cycles-Per-Row>          +
+                   <Actual-Exclusive-Cycles>0</Actual-Exclusive-Cycles>                          +
+                   <Actual-Inclusive-Cycles>0</Actual-Inclusive-Cycles>                          +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode11</DN-Name>                                                 +
+                   <Actual-Exclusive-Cycles-Per-Row>0</Actual-Exclusive-Cycles-Per-Row>          +
+                   <Actual-Exclusive-Cycles>0</Actual-Exclusive-Cycles>                          +
+                   <Actual-Inclusive-Cycles>0</Actual-Inclusive-Cycles>                          +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode12</DN-Name>                                                 +
+                   <Actual-Exclusive-Cycles-Per-Row>0</Actual-Exclusive-Cycles-Per-Row>          +
+                   <Actual-Exclusive-Cycles>0</Actual-Exclusive-Cycles>                          +
+                   <Actual-Inclusive-Cycles>0</Actual-Inclusive-Cycles>                          +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode2</DN-Name>                                                  +
+                   <Actual-Exclusive-Cycles-Per-Row>0</Actual-Exclusive-Cycles-Per-Row>          +
+                   <Actual-Exclusive-Cycles>0</Actual-Exclusive-Cycles>                          +
+                   <Actual-Inclusive-Cycles>0</Actual-Inclusive-Cycles>                          +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode3</DN-Name>                                                  +
+                   <Actual-Exclusive-Cycles-Per-Row>0</Actual-Exclusive-Cycles-Per-Row>          +
+                   <Actual-Exclusive-Cycles>0</Actual-Exclusive-Cycles>                          +
+                   <Actual-Inclusive-Cycles>0</Actual-Inclusive-Cycles>                          +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode4</DN-Name>                                                  +
+                   <Actual-Exclusive-Cycles-Per-Row>0</Actual-Exclusive-Cycles-Per-Row>          +
+                   <Actual-Exclusive-Cycles>0</Actual-Exclusive-Cycles>                          +
+                   <Actual-Inclusive-Cycles>0</Actual-Inclusive-Cycles>                          +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode5</DN-Name>                                                  +
+                   <Actual-Exclusive-Cycles-Per-Row>0</Actual-Exclusive-Cycles-Per-Row>          +
+                   <Actual-Exclusive-Cycles>0</Actual-Exclusive-Cycles>                          +
+                   <Actual-Inclusive-Cycles>0</Actual-Inclusive-Cycles>                          +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode6</DN-Name>                                                  +
+                   <Actual-Exclusive-Cycles-Per-Row>0</Actual-Exclusive-Cycles-Per-Row>          +
+                   <Actual-Exclusive-Cycles>0</Actual-Exclusive-Cycles>                          +
+                   <Actual-Inclusive-Cycles>0</Actual-Inclusive-Cycles>                          +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode7</DN-Name>                                                  +
+                   <Actual-Exclusive-Cycles-Per-Row>0</Actual-Exclusive-Cycles-Per-Row>          +
+                   <Actual-Exclusive-Cycles>0</Actual-Exclusive-Cycles>                          +
+                   <Actual-Inclusive-Cycles>0</Actual-Inclusive-Cycles>                          +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode8</DN-Name>                                                  +
+                   <Actual-Exclusive-Cycles-Per-Row>0</Actual-Exclusive-Cycles-Per-Row>          +
+                   <Actual-Exclusive-Cycles>0</Actual-Exclusive-Cycles>                          +
+                   <Actual-Inclusive-Cycles>0</Actual-Inclusive-Cycles>                          +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode9</DN-Name>                                                  +
+                   <Actual-Exclusive-Cycles-Per-Row>0</Actual-Exclusive-Cycles-Per-Row>          +
+                   <Actual-Exclusive-Cycles>0</Actual-Exclusive-Cycles>                          +
+                   <Actual-Inclusive-Cycles>0</Actual-Inclusive-Cycles>                          +
+                 </Plan>                                                                         +
+               </Cpus-In-Detail>                                                                 +
+               <Plans>                                                                           +
+                 <Plan>                                                                          +
+                   <Node-Type>Seq Scan</Node-Type>                                               +
+                   <Parent-Relationship>Outer</Parent-Relationship>                              +
+                   <Relation-Name>llt_show_datanode_buffers</Relation-Name>                      +
+                   <Alias>llt_show_datanode_buffers</Alias>                                      +
+--?                   <Startup-Cost>.*
+--?                   <Total-Cost>.*
+--?                   <Plan-Rows>.*
+--?                   <Plan-Width>.*
+                   <Actual-In-Detail>                                                            +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode1</DN-Name>                                              +
+--?                       <Actual-Startup-Time>.*
+--?                       <Actual-Total-Time>.*
+                       <Actual-Rows>0</Actual-Rows>                                              +
+                       <Actual-Loops>1</Actual-Loops>                                            +
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode10</DN-Name>                                             +
+--?                       <Actual-Startup-Time>.*
+--?                       <Actual-Total-Time>.*
+                       <Actual-Rows>0</Actual-Rows>                                              +
+                       <Actual-Loops>1</Actual-Loops>                                            +
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode11</DN-Name>                                             +
+--?                       <Actual-Startup-Time>.*
+--?                       <Actual-Total-Time>.*
+                       <Actual-Rows>0</Actual-Rows>                                              +
+                       <Actual-Loops>1</Actual-Loops>                                            +
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode12</DN-Name>                                             +
+--?                       <Actual-Startup-Time>.*
+--?                       <Actual-Total-Time>.*
+                       <Actual-Rows>0</Actual-Rows>                                              +
+                       <Actual-Loops>1</Actual-Loops>                                            +
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode2</DN-Name>                                              +
+--?                       <Actual-Startup-Time>.*
+--?                       <Actual-Total-Time>.*
+                       <Actual-Rows>0</Actual-Rows>                                              +
+                       <Actual-Loops>1</Actual-Loops>                                            +
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode3</DN-Name>                                              +
+--?                       <Actual-Startup-Time>.*
+--?                       <Actual-Total-Time>.*
+                       <Actual-Rows>0</Actual-Rows>                                              +
+                       <Actual-Loops>1</Actual-Loops>                                            +
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode4</DN-Name>                                              +
+--?                       <Actual-Startup-Time>.*
+--?                       <Actual-Total-Time>.*
+                       <Actual-Rows>0</Actual-Rows>                                              +
+                       <Actual-Loops>1</Actual-Loops>                                            +
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode5</DN-Name>                                              +
+--?                       <Actual-Startup-Time>.*
+--?                       <Actual-Total-Time>.*
+                       <Actual-Rows>0</Actual-Rows>                                              +
+                       <Actual-Loops>1</Actual-Loops>                                            +
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode6</DN-Name>                                              +
+--?                       <Actual-Startup-Time>.*
+--?                       <Actual-Total-Time>.*
+                       <Actual-Rows>0</Actual-Rows>                                              +
+                       <Actual-Loops>1</Actual-Loops>                                            +
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode7</DN-Name>                                              +
+--?                       <Actual-Startup-Time>.*
+--?                       <Actual-Total-Time>.*
+                       <Actual-Rows>0</Actual-Rows>                                              +
+                       <Actual-Loops>1</Actual-Loops>                                            +
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode8</DN-Name>                                              +
+--?                       <Actual-Startup-Time>.*
+--?                       <Actual-Total-Time>.*
+                       <Actual-Rows>0</Actual-Rows>                                              +
+                       <Actual-Loops>1</Actual-Loops>                                            +
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode9</DN-Name>                                              +
+--?                       <Actual-Startup-Time>.*
+--?                       <Actual-Total-Time>.*
+                       <Actual-Rows>0</Actual-Rows>                                              +
+                       <Actual-Loops>1</Actual-Loops>                                            +
+                     </Plan>                                                                     +
+                   </Actual-In-Detail>                                                           +
+                   <Filter>(q1 &gt; 1000)</Filter>                                               +
+                   <Rows-Removed-by-Filter>14196</Rows-Removed-by-Filter>                        +
+                   <Cpus-In-Detail>                                                              +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode1</DN-Name>                                              +
+--?                       <Exclusive-Cycles-Per-Row>.*
+--?                       <Exclusive-Cycles>.*
+--?                       <Inclusive-Cycles>.*
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode10</DN-Name>                                             +
+--?                       <Exclusive-Cycles-Per-Row>.*
+--?                       <Exclusive-Cycles>.*
+--?                       <Inclusive-Cycles>.*
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode11</DN-Name>                                             +
+--?                       <Exclusive-Cycles-Per-Row>.*
+--?                       <Exclusive-Cycles>.*
+--?                       <Inclusive-Cycles>.*
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode12</DN-Name>                                             +
+--?                       <Exclusive-Cycles-Per-Row>.*
+--?                       <Exclusive-Cycles>.*
+--?                       <Inclusive-Cycles>.*
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode2</DN-Name>                                              +
+--?                       <Exclusive-Cycles-Per-Row>.*
+--?                       <Exclusive-Cycles>.*
+--?                       <Inclusive-Cycles>.*
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode3</DN-Name>                                              +
+--?                       <Exclusive-Cycles-Per-Row>.*
+--?                       <Exclusive-Cycles>.*
+--?                       <Inclusive-Cycles>.*
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode4</DN-Name>                                              +
+--?                       <Exclusive-Cycles-Per-Row>.*
+--?                       <Exclusive-Cycles>.*
+--?                       <Inclusive-Cycles>.*
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode5</DN-Name>                                              +
+--?                       <Exclusive-Cycles-Per-Row>.*
+--?                       <Exclusive-Cycles>.*
+--?                       <Inclusive-Cycles>.*
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode6</DN-Name>                                              +
+--?                       <Exclusive-Cycles-Per-Row>.*
+--?                       <Exclusive-Cycles>.*
+--?                       <Inclusive-Cycles>.*
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode7</DN-Name>                                              +
+--?                       <Exclusive-Cycles-Per-Row>.*
+--?                       <Exclusive-Cycles>.*
+--?                       <Inclusive-Cycles>.*
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode8</DN-Name>                                              +
+--?                       <Exclusive-Cycles-Per-Row>.*
+--?                       <Exclusive-Cycles>.*
+--?                       <Inclusive-Cycles>.*
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode9</DN-Name>                                              +
+--?                       <Exclusive-Cycles-Per-Row>.*
+--?                       <Exclusive-Cycles>.*
+--?                       <Inclusive-Cycles>.*
+                     </Plan>                                                                     +
+                   </Cpus-In-Detail>                                                             +
+                 </Plan>                                                                         +
+               </Plans>                                                                          +
+             </Plan>                                                                             +
+             <Plan>                                                                              +
+               <Node-Type>Hash</Node-Type>                                                       +
+               <Parent-Relationship>Inner</Parent-Relationship>                                  +
+--?               <Startup-Cost>.*
+--?               <Total-Cost>.*
+--?               <Plan-Rows>.*
+--?               <Plan-Width>.*
+               <Actual-In-Detail>                                                                +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode1</DN-Name>                                                  +
+--?                   <Actual-Startup-Time>.*
+--?                   <Actual-Total-Time>.*
+                   <Actual-Rows>0</Actual-Rows>                                                  +
+                   <Actual-Loops>1</Actual-Loops>                                                +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode10</DN-Name>                                                 +
+--?                   <Actual-Startup-Time>.*
+--?                   <Actual-Total-Time>.*
+                   <Actual-Rows>0</Actual-Rows>                                                  +
+                   <Actual-Loops>1</Actual-Loops>                                                +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode11</DN-Name>                                                 +
+--?                   <Actual-Startup-Time>.*
+--?                   <Actual-Total-Time>.*
+                   <Actual-Rows>0</Actual-Rows>                                                  +
+                   <Actual-Loops>1</Actual-Loops>                                                +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode12</DN-Name>                                                 +
+--?                   <Actual-Startup-Time>.*
+--?                   <Actual-Total-Time>.*
+                   <Actual-Rows>0</Actual-Rows>                                                  +
+                   <Actual-Loops>1</Actual-Loops>                                                +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode2</DN-Name>                                                  +
+--?                   <Actual-Startup-Time>.*
+--?                   <Actual-Total-Time>.*
+                   <Actual-Rows>0</Actual-Rows>                                                  +
+                   <Actual-Loops>1</Actual-Loops>                                                +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode3</DN-Name>                                                  +
+--?                   <Actual-Startup-Time>.*
+--?                   <Actual-Total-Time>.*
+                   <Actual-Rows>0</Actual-Rows>                                                  +
+                   <Actual-Loops>1</Actual-Loops>                                                +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode4</DN-Name>                                                  +
+--?                   <Actual-Startup-Time>.*
+--?                   <Actual-Total-Time>.*
+                   <Actual-Rows>0</Actual-Rows>                                                  +
+                   <Actual-Loops>1</Actual-Loops>                                                +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode5</DN-Name>                                                  +
+--?                   <Actual-Startup-Time>.*
+--?                   <Actual-Total-Time>.*
+                   <Actual-Rows>0</Actual-Rows>                                                  +
+                   <Actual-Loops>1</Actual-Loops>                                                +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode6</DN-Name>                                                  +
+--?                   <Actual-Startup-Time>.*
+--?                   <Actual-Total-Time>.*
+                   <Actual-Rows>0</Actual-Rows>                                                  +
+                   <Actual-Loops>1</Actual-Loops>                                                +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode7</DN-Name>                                                  +
+--?                   <Actual-Startup-Time>.*
+--?                   <Actual-Total-Time>.*
+                   <Actual-Rows>0</Actual-Rows>                                                  +
+                   <Actual-Loops>1</Actual-Loops>                                                +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode8</DN-Name>                                                  +
+--?                   <Actual-Startup-Time>.*
+--?                   <Actual-Total-Time>.*
+                   <Actual-Rows>0</Actual-Rows>                                                  +
+                   <Actual-Loops>1</Actual-Loops>                                                +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode9</DN-Name>                                                  +
+--?                   <Actual-Startup-Time>.*
+--?                   <Actual-Total-Time>.*
+                   <Actual-Rows>0</Actual-Rows>                                                  +
+                   <Actual-Loops>1</Actual-Loops>                                                +
+                 </Plan>                                                                         +
+               </Actual-In-Detail>                                                               +
+               <Hash-Detail>                                                                     +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode1</DN-Name>                                                  +
+                   <Hash-Buckets>32768</Hash-Buckets>                                            +
+                   <Hash-Batches>1</Hash-Batches>                                                +
+                   <Original-Hash-Batches>1</Original-Hash-Batches>                              +
+                   <Peak-Memory-Usage>0</Peak-Memory-Usage>                                      +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode10</DN-Name>                                                 +
+                   <Hash-Buckets>32768</Hash-Buckets>                                            +
+                   <Hash-Batches>1</Hash-Batches>                                                +
+                   <Original-Hash-Batches>1</Original-Hash-Batches>                              +
+                   <Peak-Memory-Usage>0</Peak-Memory-Usage>                                      +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode11</DN-Name>                                                 +
+                   <Hash-Buckets>32768</Hash-Buckets>                                            +
+                   <Hash-Batches>1</Hash-Batches>                                                +
+                   <Original-Hash-Batches>1</Original-Hash-Batches>                              +
+                   <Peak-Memory-Usage>0</Peak-Memory-Usage>                                      +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode12</DN-Name>                                                 +
+                   <Hash-Buckets>32768</Hash-Buckets>                                            +
+                   <Hash-Batches>1</Hash-Batches>                                                +
+                   <Original-Hash-Batches>1</Original-Hash-Batches>                              +
+                   <Peak-Memory-Usage>0</Peak-Memory-Usage>                                      +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode2</DN-Name>                                                  +
+                   <Hash-Buckets>32768</Hash-Buckets>                                            +
+                   <Hash-Batches>1</Hash-Batches>                                                +
+                   <Original-Hash-Batches>1</Original-Hash-Batches>                              +
+                   <Peak-Memory-Usage>0</Peak-Memory-Usage>                                      +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode3</DN-Name>                                                  +
+                   <Hash-Buckets>32768</Hash-Buckets>                                            +
+                   <Hash-Batches>1</Hash-Batches>                                                +
+                   <Original-Hash-Batches>1</Original-Hash-Batches>                              +
+                   <Peak-Memory-Usage>0</Peak-Memory-Usage>                                      +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode4</DN-Name>                                                  +
+                   <Hash-Buckets>32768</Hash-Buckets>                                            +
+                   <Hash-Batches>1</Hash-Batches>                                                +
+                   <Original-Hash-Batches>1</Original-Hash-Batches>                              +
+                   <Peak-Memory-Usage>0</Peak-Memory-Usage>                                      +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode5</DN-Name>                                                  +
+                   <Hash-Buckets>32768</Hash-Buckets>                                            +
+                   <Hash-Batches>1</Hash-Batches>                                                +
+                   <Original-Hash-Batches>1</Original-Hash-Batches>                              +
+                   <Peak-Memory-Usage>0</Peak-Memory-Usage>                                      +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode6</DN-Name>                                                  +
+                   <Hash-Buckets>32768</Hash-Buckets>                                            +
+                   <Hash-Batches>1</Hash-Batches>                                                +
+                   <Original-Hash-Batches>1</Original-Hash-Batches>                              +
+                   <Peak-Memory-Usage>0</Peak-Memory-Usage>                                      +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode7</DN-Name>                                                  +
+                   <Hash-Buckets>32768</Hash-Buckets>                                            +
+                   <Hash-Batches>1</Hash-Batches>                                                +
+                   <Original-Hash-Batches>1</Original-Hash-Batches>                              +
+                   <Peak-Memory-Usage>0</Peak-Memory-Usage>                                      +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode8</DN-Name>                                                  +
+                   <Hash-Buckets>32768</Hash-Buckets>                                            +
+                   <Hash-Batches>1</Hash-Batches>                                                +
+                   <Original-Hash-Batches>1</Original-Hash-Batches>                              +
+                   <Peak-Memory-Usage>0</Peak-Memory-Usage>                                      +
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode9</DN-Name>                                                  +
+                   <Hash-Buckets>32768</Hash-Buckets>                                            +
+                   <Hash-Batches>1</Hash-Batches>                                                +
+                   <Original-Hash-Batches>1</Original-Hash-Batches>                              +
+                   <Peak-Memory-Usage>0</Peak-Memory-Usage>                                      +
+                 </Plan>                                                                         +
+               </Hash-Detail>                                                                    +
+               <Cpus-In-Detail>                                                                  +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode1</DN-Name>                                                  +
+--?                   <Exclusive-Cycles-Per-Row>.*
+--?                   <Exclusive-Cycles>.*
+--?                   <Inclusive-Cycles>.*
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode10</DN-Name>                                                 +
+--?                   <Exclusive-Cycles-Per-Row>.*
+--?                   <Exclusive-Cycles>.*
+--?                   <Inclusive-Cycles>.*
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode11</DN-Name>                                                 +
+--?                   <Exclusive-Cycles-Per-Row>.*
+--?                   <Exclusive-Cycles>.*
+--?                   <Inclusive-Cycles>.*
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode12</DN-Name>                                                 +
+--?                   <Exclusive-Cycles-Per-Row>.*
+--?                   <Exclusive-Cycles>.*
+--?                   <Inclusive-Cycles>.*
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode2</DN-Name>                                                  +
+--?                   <Exclusive-Cycles-Per-Row>.*
+--?                   <Exclusive-Cycles>.*
+--?                   <Inclusive-Cycles>.*
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode3</DN-Name>                                                  +
+--?                   <Exclusive-Cycles-Per-Row>.*
+--?                   <Exclusive-Cycles>.*
+--?                   <Inclusive-Cycles>.*
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode4</DN-Name>                                                  +
+--?                   <Exclusive-Cycles-Per-Row>.*
+--?                   <Exclusive-Cycles>.*
+--?                   <Inclusive-Cycles>.*
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode5</DN-Name>                                                  +
+--?                   <Exclusive-Cycles-Per-Row>.*
+--?                   <Exclusive-Cycles>.*
+--?                   <Inclusive-Cycles>.*
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode6</DN-Name>                                                  +
+--?                   <Exclusive-Cycles-Per-Row>.*
+--?                   <Exclusive-Cycles>.*
+--?                   <Inclusive-Cycles>.*
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode7</DN-Name>                                                  +
+--?                   <Exclusive-Cycles-Per-Row>.*
+--?                   <Exclusive-Cycles>.*
+--?                   <Inclusive-Cycles>.*
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode8</DN-Name>                                                  +
+--?                   <Exclusive-Cycles-Per-Row>.*
+--?                   <Exclusive-Cycles>.*
+--?                   <Inclusive-Cycles>.*
+                 </Plan>                                                                         +
+                 <Plan>                                                                          +
+                   <DN-Name>datanode9</DN-Name>                                                  +
+--?                   <Exclusive-Cycles-Per-Row>.*
+--?                   <Exclusive-Cycles>.*
+--?                   <Inclusive-Cycles>.*
+                 </Plan>                                                                         +
+               </Cpus-In-Detail>                                                                 +
+               <Plans>                                                                           +
+                 <Plan>                                                                          +
+                   <Node-Type>Seq Scan</Node-Type>                                               +
+                   <Parent-Relationship>Outer</Parent-Relationship>                              +
+                   <Relation-Name>llt_show_datanode_buffers_2</Relation-Name>                    +
+                   <Alias>llt_show_datanode_buffers_2</Alias>                                    +
+--?                   <Startup-Cost>.*
+--?                   <Total-Cost>.*
+--?                   <Plan-Rows>.*
+--?                   <Plan-Width>.*
+                   <Actual-In-Detail>                                                            +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode1</DN-Name>                                              +
+--?                       <Actual-Startup-Time>.*
+--?                       <Actual-Total-Time>.*
+                       <Actual-Rows>0</Actual-Rows>                                              +
+                       <Actual-Loops>1</Actual-Loops>                                            +
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode10</DN-Name>                                             +
+--?                       <Actual-Startup-Time>.*
+--?                       <Actual-Total-Time>.*
+                       <Actual-Rows>0</Actual-Rows>                                              +
+                       <Actual-Loops>1</Actual-Loops>                                            +
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode11</DN-Name>                                             +
+--?                       <Actual-Startup-Time>.*
+--?                       <Actual-Total-Time>.*
+                       <Actual-Rows>0</Actual-Rows>                                              +
+                       <Actual-Loops>1</Actual-Loops>                                            +
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode12</DN-Name>                                             +
+--?                       <Actual-Startup-Time>.*
+--?                       <Actual-Total-Time>.*
+                       <Actual-Rows>0</Actual-Rows>                                              +
+                       <Actual-Loops>1</Actual-Loops>                                            +
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode2</DN-Name>                                              +
+--?                       <Actual-Startup-Time>.*
+--?                       <Actual-Total-Time>.*
+                       <Actual-Rows>0</Actual-Rows>                                              +
+                       <Actual-Loops>1</Actual-Loops>                                            +
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode3</DN-Name>                                              +
+--?                       <Actual-Startup-Time>.*
+--?                       <Actual-Total-Time>.*
+                       <Actual-Rows>0</Actual-Rows>                                              +
+                       <Actual-Loops>1</Actual-Loops>                                            +
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode4</DN-Name>                                              +
+--?                       <Actual-Startup-Time>.*
+--?                       <Actual-Total-Time>.*
+                       <Actual-Rows>0</Actual-Rows>                                              +
+                       <Actual-Loops>1</Actual-Loops>                                            +
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode5</DN-Name>                                              +
+--?                       <Actual-Startup-Time>.*
+--?                       <Actual-Total-Time>.*
+                       <Actual-Rows>0</Actual-Rows>                                              +
+                       <Actual-Loops>1</Actual-Loops>                                            +
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode6</DN-Name>                                              +
+--?                       <Actual-Startup-Time>.*
+--?                       <Actual-Total-Time>.*
+                       <Actual-Rows>0</Actual-Rows>                                              +
+                       <Actual-Loops>1</Actual-Loops>                                            +
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode7</DN-Name>                                              +
+--?                       <Actual-Startup-Time>.*
+--?                       <Actual-Total-Time>.*
+                       <Actual-Rows>0</Actual-Rows>                                              +
+                       <Actual-Loops>1</Actual-Loops>                                            +
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode8</DN-Name>                                              +
+--?                       <Actual-Startup-Time>.*
+--?                       <Actual-Total-Time>.*
+                       <Actual-Rows>0</Actual-Rows>                                              +
+                       <Actual-Loops>1</Actual-Loops>                                            +
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode9</DN-Name>                                              +
+--?                       <Actual-Startup-Time>.*
+--?                       <Actual-Total-Time>.*
+                       <Actual-Rows>0</Actual-Rows>                                              +
+                       <Actual-Loops>1</Actual-Loops>                                            +
+                     </Plan>                                                                     +
+                   </Actual-In-Detail>                                                           +
+                   <Cpus-In-Detail>                                                              +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode1</DN-Name>                                              +
+--?                       <Exclusive-Cycles-Per-Row>.*
+--?                       <Exclusive-Cycles>.*
+--?                       <Inclusive-Cycles>.*
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode10</DN-Name>                                             +
+--?                       <Exclusive-Cycles-Per-Row>.*
+--?                       <Exclusive-Cycles>.*
+--?                       <Inclusive-Cycles>.*
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode11</DN-Name>                                             +
+--?                       <Exclusive-Cycles-Per-Row>.*
+--?                       <Exclusive-Cycles>.*
+--?                       <Inclusive-Cycles>.*
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode12</DN-Name>                                             +
+--?                       <Exclusive-Cycles-Per-Row>.*
+--?                       <Exclusive-Cycles>.*
+--?                       <Inclusive-Cycles>.*
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode2</DN-Name>                                              +
+--?                       <Exclusive-Cycles-Per-Row>.*
+--?                       <Exclusive-Cycles>.*
+--?                       <Inclusive-Cycles>.*
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode3</DN-Name>                                              +
+--?                       <Exclusive-Cycles-Per-Row>.*
+--?                       <Exclusive-Cycles>.*
+--?                       <Inclusive-Cycles>.*
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode4</DN-Name>                                              +
+--?                       <Exclusive-Cycles-Per-Row>.*
+--?                       <Exclusive-Cycles>.*
+--?                       <Inclusive-Cycles>.*
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode5</DN-Name>                                              +
+--?                       <Exclusive-Cycles-Per-Row>.*
+--?                       <Exclusive-Cycles>.*
+--?                       <Inclusive-Cycles>.*
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode6</DN-Name>                                              +
+--?                       <Exclusive-Cycles-Per-Row>.*
+--?                       <Exclusive-Cycles>.*
+--?                       <Inclusive-Cycles>.*
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode7</DN-Name>                                              +
+--?                       <Exclusive-Cycles-Per-Row>.*
+--?                       <Exclusive-Cycles>.*
+--?                       <Inclusive-Cycles>.*
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode8</DN-Name>                                              +
+--?                       <Exclusive-Cycles-Per-Row>.*
+--?                       <Exclusive-Cycles>.*
+--?                       <Inclusive-Cycles>.*
+                     </Plan>                                                                     +
+                     <Plan>                                                                      +
+                       <DN-Name>datanode9</DN-Name>                                              +
+--?                       <Exclusive-Cycles-Per-Row>.*
+--?                       <Exclusive-Cycles>.*
+--?                       <Inclusive-Cycles>.*
+                     </Plan>                                                                     +
+                   </Cpus-In-Detail>                                                             +
+                 </Plan>                                                                         +
+               </Plans>                                                                          +
+             </Plan>                                                                             +
+           </Plans>                                                                              +
+         </Plan>                                                                                 +
+       </Plans>                                                                                  +
+     </Plan>                                                                                     +
+     <Triggers>                                                                                  +
+     </Triggers>                                                                                 +
+--?     <Total-Runtime>.*
+   </Query>                                                                                      +
+ </explain>
+(1 row)
+
+create table coalesce_test 
+(
+	a	int,
+	b	character varying(5)
+)distribute by hash(a);
+insert into coalesce_test select generate_series(1,50),'ABC' from tmp_tb1_llt_coverage_atc;
+insert into coalesce_test select generate_series(1,50),'EGT' from tmp_tb1_llt_coverage_atc;
+analyze coalesce_test;
+explain select * from coalesce_test where coalesce(btrim(b), '')='ABC';
+--?.*
+--?.*
+--? Streaming (type: GATHER)  (cost=.* rows=408 width=.*)
+   Node/s: All datanodes
+--?   ->  Seq Scan on coalesce_test  (cost=.* rows=34 width=.*)
+         Filter: (COALESCE(btrim((b)::text)) = 'ABC'::text)
+(4 rows)
+
+explain select * from coalesce_test where coalesce(ltrim(b), '')='ABC';
+--?.*
+--?.*
+--? Streaming (type: GATHER)  (cost=.* rows=408 width=.*)
+   Node/s: All datanodes
+--?   ->  Seq Scan on coalesce_test  (cost=.* rows=34 width=.*)
+         Filter: (COALESCE(ltrim((b)::text)) = 'ABC'::text)
+(4 rows)
+
+explain select * from coalesce_test where coalesce(rtrim(b), '')='EGT';
+--?.*
+--?.*
+--? Streaming (type: GATHER)  (cost=.* rows=408 width=.*)
+   Node/s: All datanodes
+--?   ->  Seq Scan on coalesce_test  (cost=.* rows=34 width=.*)
+         Filter: (COALESCE(rtrim((b)::text)) = 'EGT'::text)
+(4 rows)
+
+explain select * from coalesce_test where rtrim(coalesce(b, ''))='EGT';
+--?.*
+--?.*
+--? Streaming (type: GATHER)  (cost=.* rows=408 width=.*)
+   Node/s: All datanodes
+--?   ->  Seq Scan on coalesce_test  (cost=.* rows=34 width=.*)
+         Filter: (rtrim((COALESCE(b))::text) = 'EGT'::text)
+(4 rows)
+
+explain select * from coalesce_test where coalesce(b, a||'1')='ABC'; 
+--?.*
+--?.*
+--? Streaming (type: GATHER)  (cost=0.00..26.28 rows=12 width=8)
+   Node/s: All datanodes
+--?   ->  Seq Scan on coalesce_test  (cost=.* rows=1 width=8)
+         Filter: ((COALESCE(b, (((a)::text || '1'::text))::character varying))::text = 'ABC'::text)
+(4 rows)
+
+explain select * from coalesce_test where ltrim(coalesce(b, ''))='ABC';
+--?.*
+--?.*
+--? Streaming (type: GATHER)  (cost=.* rows=408 width=.*)
+   Node/s: All datanodes
+--?   ->  Seq Scan on coalesce_test  (cost=.* rows=34 width=.*)
+         Filter: (ltrim((COALESCE(b))::text) = 'ABC'::text)
+(4 rows)
+
+explain select * from coalesce_test where coalesce(cast('12.3' as text),b)='ABC';
+--?.*
+--?.*
+ Result  (cost=0.00..0.01 rows=1 width=0)
+   One-Time Filter: false
+(2 rows)
+
+explain select * from coalesce_test where coalesce(cast(b as varchar(10)),'1')='ABC';
+--?.*
+--?.*
+--? Streaming (type: GATHER)  (cost=.* rows=408 width=.*)
+   Node/s: All datanodes
+--?   ->  Seq Scan on coalesce_test  (cost=.* rows=34 width=.*)
+         Filter: ((COALESCE((b)::character varying(10), '1'::character varying))::text = 'ABC'::text)
+(4 rows)
+
+explain select * from coalesce_test where coalesce(b::text,'1')='ABC';
+--?.*
+--?.*
+--? Streaming (type: GATHER)  (cost=.* rows=408 width=.*)
+   Node/s: All datanodes
+--?   ->  Seq Scan on coalesce_test  (cost=.* rows=34 width=.*)
+         Filter: (COALESCE((b)::text, '1'::text) = 'ABC'::text)
+(4 rows)
+
+drop table  coalesce_test;
+set enable_hashjoin=on;
+set enable_nestloop=on;
+set enable_mergejoin=on;
+drop table llt_show_datanode_buffers;
+drop table llt_show_datanode_buffers_1;
+-- test explain analyze
+--create table foo_analyze(c int ,d text,e bool,f numeric);
+--PREPARE fooplan (int, text, bool, numeric) AS
+--INSERT INTO foo_analyze VALUES($1, $2, $3, $4);
+--explain analyze EXECUTE fooplan(1, 'Hunter Valley', 't', 200.00);
+--select * from foo_analyze;
+--drop table foo_analyze;
+drop table tmp_tb1_llt_coverage_atc;

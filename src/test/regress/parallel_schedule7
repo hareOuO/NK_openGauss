@@ -1,0 +1,26 @@
+# ---------------------------
+# test cases for CStore
+# ---------------------------
+#hw_cstore_alter1 cstore_alter_table cstore_alter_table1 
+test: hw_cstore_alter cstore_alter_table2 cstore_alter_table5 cstore_alter_table6 cstore_alter_table7 cstore_alter_table9 cstore_alter_table10 hw_cstore_copy
+
+#cstore_alter_table3 cstore_alter_table4 cstore_alter_table8 hw_alter_table_instant hw_cstore_copy1
+#test: cstore_alter_table_1
+#test: temp__1
+#test: hw_cstore_copy hw_cstore_copy1
+#test: hw_cstore_load hw_cstore_load1 hw_cstore_load2
+#test: hw_cstore_index hw_cstore_index1 hw_cstore_index2
+#test: hw_cstore_vacuum
+#test: hw_cstore_insert
+#test: hw_cstore_delete
+#test: hw_cstore_unsupport
+test: hw_cstore_tablespace
+#test: hw_cstore_truncate
+#test: hw_cstore_roughcheck
+#test: hw_cstore_update
+#test: hw_cstore_partition_update hw_cstore_partition_update1 hw_cstore_partition_update2
+
+#------------------------------
+# CStore compression test cases
+#-----------------------------
+#test: cstore_cmpr_delta cstore_cmpr_date cstore_cmpr_timestamp_with_timezone cstore_cmpr_time_with_timezone cstore_cmpr_delta_nbits cstore_cmpr_delta_int cstore_cmpr_str cstore_cmpr_dict_00 cstore_cmpr_rle_2byte_runs 

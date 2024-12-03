@@ -1,0 +1,50 @@
+test: resolve_unknown
+#test: hll_mpp hll_xc hll_misc hll_func hll_hash hll_para
+#test: hll_mpp_compress hll_xc_compress hll_misc_compress hll_func_compress hll_hash_compress hll_para_compress
+test: query_rewrite 
+#create_schema view_dump
+#test: hw_function_p_1 hw_function_p_2 hw_function_p_3 hw_function_p_4
+#test: auto_analyze_test
+#test: ts_gbk
+#test: tablespace_limit
+#test: create_c_function
+#test: reindex_internal
+#test: query_self_tuning_pre
+#test: query_self_tuning
+#test: query_self_tuning_1_2
+#test: query_self_tuning_1_3
+#test: query_self_tuning_clean
+#test: cstore_replication_table_delete
+
+#test: javaudf_prep
+#test: javaudf_basic_001 javaudf_basic_002 javaudf_basic_003
+#test: javaudf_list_001 javaudf_list_002 javaudf_list_003 javaudf_list_004 javaudf_list_005
+#test: javaudf_list_006 javaudf_list_007 javaudf_list_008 javaudf_list_009 javaudf_list_010
+#test: javaudf_clean
+
+#test: hw_cursor_part1 hw_cursor_part2 hw_cursor_part3 hw_cursor_part4 hw_cursor_part5 hw_cursor_part6 hw_cursor_part7 hw_cursor_part8
+#test: vec_append_part1 vec_append_part2 vec_append_part3
+#test: vec_cursor_part1 vec_cursor_part2
+#test: vec_delete_part1 vec_delete_part2
+
+#test: alter_schema_db_rename_seq
+
+#test: cbm_CN
+#test: cbm_DN
+
+#test: oracle_outerjoin_conversion
+
+# test on plan_table
+#test: plan_table01
+#test: plan_table02
+#test: plan_table03
+test: plan_table04
+
+test: setrefs
+test: agg
+
+# test sql by pass
+test: bypass_simplequery_support
+test: bypass_preparedexecute_support
+
+test: string_digit_to_numeric

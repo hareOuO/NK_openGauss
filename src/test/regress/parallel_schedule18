@@ -1,0 +1,48 @@
+# Global Partition Index feature testcase
+# gpi create
+test: gpi_build_index
+
+# gpi check 
+test: gpi_create_constraint
+test: gpi_unique_check
+
+# gpi index scan
+test: gpi_index
+
+# gpi index only scan
+test: gpi_index_only
+
+# gpi bitmap
+test: gpi_bitmapscan
+
+# gpi pwj
+test: gpi_pwj
+
+# gpi set unusable
+test: gpi_set_index_unusable
+
+# gpi rebuild
+test: gpi_rebuild_index
+
+# gpi cluster
+test: gpi_cluster_01 gpi_cluster_02 gpi_cluster_03
+
+# gpi interval
+test: gpi_interval
+
+# gpi range
+test: gpi_range
+
+# gpi invliad part
+test: gpi_invalid_part
+test: gpi_clean_wait
+
+# gpi vacuum  
+test: gpi_vacuum_lazy
+test: gpi_hw_partition_vacuum_full 
+test: gpi_hw_partition_vacuum_full_01
+
+# gpi alter
+test: gpi_alter_partition
+test: gpi_alter_partition_with_update
+test: gpi_merge_partitions

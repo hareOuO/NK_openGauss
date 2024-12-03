@@ -1,0 +1,7 @@
+State #74 is non-accepting -
+ associated rule line numbers:
+	817
+ out-transitions: [ ) ]
+ jam-transitions: EOF [ \000-(  *-\377 ]
+
+1 backing up (non-accepting) states.

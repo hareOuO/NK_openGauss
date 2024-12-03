@@ -1,0 +1,44 @@
+/*
+ * Portions Copyright (c) 2020 Huawei Technologies Co.,Ltd.
+ *
+ * -------------------------------------------------------------------------
+ */
+
+-------------------------------------------------------------------------------------------------------------------------------
+-- Build facebook Prophet models in-database - -
+-------------------------------------------------------------------------------------------------------------------------------
+--
+-----------
+-- Note: --
+-----------
+-- 1) Porphet uses facebook-API. However we're limited by the maximum
+--    field-size in Greenplum/Postgres which is currently 1 GB.
+-- 2) If your dataset is much larger (> 1 GB), it is strongly recommended that you use MADlib's models so that
+--    training & scoring will happen in-parallel on all nodes.
+-------------------------------------------------------------------------------------------------------------------------------
+
+m4_include(`SQLCommon.m4')
+
+
+------------------------------------------------
+-- Type for internal train results
+------------------------------------------------
+DROP TYPE IF EXISTS MADLIB_SCHEMA.prophet_fit_results_type cascade;
+CREATE TYPE MADLIB_SCHEMA.prophet_fit_results_type AS(
+    y_type           TEXT,                  -- save X
+    model            bytea,                -- dump model
+    params           TEXT                  -- parameters used
+);
+
+
+
+CREATE OR REPLACE FUNCTION MADLIB_SCHEMA.__get_fbmodel_as_bytea__(
+    input_table  TEXT,                 -- dataset table
+    column_map   TEXT,                 -- map relation of column {'ds' 'y' 'floor' 'cap'}
+    params_str   TEXT,                 -- xgboost parameters
+    verbose      BOOLEAN
+)
+RETURNS MADLIB_SCHEMA.prophet_fit_results_type AS $$
+PythonFunction(facebook_prophet, prophet_utilities, get_fbmodel)
+$$ LANGUAGE plpythonu;
+

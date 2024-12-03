@@ -1,0 +1,1 @@
+../../../src/gausskernel/cbb/workload/gsconfig.cpp

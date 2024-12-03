@@ -1,0 +1,1629 @@
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2023-05-18 15:13:01.011 [unknown] [unknown] localhost 140009899023680 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+gaussdb.state does not exist, and skipt setting since it is optional.2023-05-18 15:13:01.012 [unknown] [unknown] localhost 140009899023680 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2023-05-18 15:13:01.012 [unknown] [unknown] localhost 140009899023680 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2023-05-18 15:13:01.012 [unknown] [unknown] localhost 140009899023680 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2023-05-18 15:13:01.012 [unknown] [unknown] localhost 140009899023680 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2023-05-18 15:13:01.012 [unknown] [unknown] localhost 140009899023680 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2023-05-18 15:13:01.012 [unknown] [unknown] localhost 140009899023680 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2023-05-18 15:13:01.023 [unknown] [unknown] localhost 140009899023680 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2023-05-18 15:13:01.027 [unknown] [unknown] localhost 140009899023680 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2023-05-18 15:13:01.034 [unknown] [unknown] localhost 140009899023680 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2023-05-18 15:13:01.034 [unknown] [unknown] localhost 140009899023680 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2023-05-18 15:13:01.034 [unknown] [unknown] localhost 140009899023680 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2023-05-18 15:13:01.034 [unknown] [unknown] localhost 140009899023680 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2023-05-18 15:13:01.034 [unknown] [unknown] localhost 140009899023680 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2023-05-18 15:13:01.034 [unknown] [unknown] localhost 140009899023680 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2023-05-18 15:13:01.067 [unknown] [unknown] localhost 140009899023680 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2023-05-18 15:13:01.088 [unknown] [unknown] localhost 140009899023680 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2023-05-18 15:13:01.153 [unknown] [unknown] localhost 140009899023680 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2023-05-18 15:13:01.155 [unknown] [unknown] localhost 140009899023680 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2023-05-18 15:13:01.186 [unknown] [unknown] localhost 140009899023680 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2023-05-18 15:13:01.193 [unknown] [unknown] localhost 140009899023680 0  0 [BACKEND] LOG:  user configure file is not found, it will be created.
+2023-05-18 15:13:01.199 [unknown] [unknown] localhost 140009899023680 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2023-05-18 15:13:01.199 [unknown] [unknown] localhost 140009899023680 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2023-05-18 15:32:54.302 [unknown] [unknown] localhost 140154608495936 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2023-05-18 15:32:54.303 [unknown] [unknown] localhost 140154608495936 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2023-05-18 15:32:54.303 [unknown] [unknown] localhost 140154608495936 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2023-05-18 15:32:54.303 [unknown] [unknown] localhost 140154608495936 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2023-05-18 15:32:54.303 [unknown] [unknown] localhost 140154608495936 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2023-05-18 15:32:54.303 [unknown] [unknown] localhost 140154608495936 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2023-05-18 15:32:54.303 [unknown] [unknown] localhost 140154608495936 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2023-05-18 15:32:54.308 [unknown] [unknown] localhost 140154608495936 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2023-05-18 15:32:54.309 [unknown] [unknown] localhost 140154608495936 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2023-05-18 15:32:54.311 [unknown] [unknown] localhost 140154608495936 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2023-05-18 15:32:54.311 [unknown] [unknown] localhost 140154608495936 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2023-05-18 15:32:54.311 [unknown] [unknown] localhost 140154608495936 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2023-05-18 15:32:54.311 [unknown] [unknown] localhost 140154608495936 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2023-05-18 15:32:54.311 [unknown] [unknown] localhost 140154608495936 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2023-05-18 15:32:54.311 [unknown] [unknown] localhost 140154608495936 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2023-05-18 15:32:54.346 [unknown] [unknown] localhost 140154608495936 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2023-05-18 15:32:54.370 [unknown] [unknown] localhost 140154608495936 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2023-05-18 15:32:54.441 [unknown] [unknown] localhost 140154608495936 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2023-05-18 15:32:54.441 [unknown] [unknown] localhost 140154608495936 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2023-05-18 15:32:54.474 [unknown] [unknown] localhost 140154608495936 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2023-05-18 15:32:54.480 [unknown] [unknown] localhost 140154608495936 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2023-05-18 15:32:54.480 [unknown] [unknown] localhost 140154608495936 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2023-06-09 19:11:09.752 [unknown] [unknown] localhost 140714670665024 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2023-06-09 19:11:09.756 [unknown] [unknown] localhost 140714670665024 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2023-06-09 19:11:09.756 [unknown] [unknown] localhost 140714670665024 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2023-06-09 19:11:09.756 [unknown] [unknown] localhost 140714670665024 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2023-06-09 19:11:09.756 [unknown] [unknown] localhost 140714670665024 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2023-06-09 19:11:09.756 [unknown] [unknown] localhost 140714670665024 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2023-06-09 19:11:09.756 [unknown] [unknown] localhost 140714670665024 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2023-06-09 19:11:09.767 [unknown] [unknown] localhost 140714670665024 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2023-06-09 19:11:09.769 [unknown] [unknown] localhost 140714670665024 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2023-06-09 19:11:09.776 [unknown] [unknown] localhost 140714670665024 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2023-06-09 19:11:09.777 [unknown] [unknown] localhost 140714670665024 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2023-06-09 19:11:09.777 [unknown] [unknown] localhost 140714670665024 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2023-06-09 19:11:09.777 [unknown] [unknown] localhost 140714670665024 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2023-06-09 19:11:09.777 [unknown] [unknown] localhost 140714670665024 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2023-06-09 19:11:09.777 [unknown] [unknown] localhost 140714670665024 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2023-06-09 19:11:09.839 [unknown] [unknown] localhost 140714670665024 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2023-06-09 19:11:09.861 [unknown] [unknown] localhost 140714670665024 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2023-06-09 19:11:09.938 [unknown] [unknown] localhost 140714670665024 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2023-06-09 19:11:09.938 [unknown] [unknown] localhost 140714670665024 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2023-06-09 19:11:09.964 [unknown] [unknown] localhost 140714670665024 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2023-06-09 19:11:09.976 [unknown] [unknown] localhost 140714670665024 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2023-06-09 19:11:09.976 [unknown] [unknown] localhost 140714670665024 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2023-06-09 19:39:28.249 [unknown] [unknown] localhost 140596826651968 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2023-06-09 19:39:28.255 [unknown] [unknown] localhost 140596826651968 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2023-06-09 19:39:28.255 [unknown] [unknown] localhost 140596826651968 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2023-06-09 19:39:28.255 [unknown] [unknown] localhost 140596826651968 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2023-06-09 19:39:28.255 [unknown] [unknown] localhost 140596826651968 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2023-06-09 19:39:28.256 [unknown] [unknown] localhost 140596826651968 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2023-06-09 19:39:28.256 [unknown] [unknown] localhost 140596826651968 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2023-06-09 19:39:28.277 [unknown] [unknown] localhost 140596826651968 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2023-06-09 19:39:28.278 [unknown] [unknown] localhost 140596826651968 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2023-06-09 19:39:28.286 [unknown] [unknown] localhost 140596826651968 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2023-06-09 19:39:28.286 [unknown] [unknown] localhost 140596826651968 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2023-06-09 19:39:28.286 [unknown] [unknown] localhost 140596826651968 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2023-06-09 19:39:28.286 [unknown] [unknown] localhost 140596826651968 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2023-06-09 19:39:28.286 [unknown] [unknown] localhost 140596826651968 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2023-06-09 19:39:28.286 [unknown] [unknown] localhost 140596826651968 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2023-06-09 19:39:28.350 [unknown] [unknown] localhost 140596826651968 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2023-06-09 19:39:28.371 [unknown] [unknown] localhost 140596826651968 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2023-06-09 19:39:28.443 [unknown] [unknown] localhost 140596826651968 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2023-06-09 19:39:28.443 [unknown] [unknown] localhost 140596826651968 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2023-06-09 19:39:28.469 [unknown] [unknown] localhost 140596826651968 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2023-06-09 19:39:28.475 [unknown] [unknown] localhost 140596826651968 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2023-06-09 19:39:28.475 [unknown] [unknown] localhost 140596826651968 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-09-23 10:31:51.433 [unknown] [unknown] localhost 140236349984064 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-09-23 10:31:51.436 [unknown] [unknown] localhost 140236349984064 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-09-23 10:31:51.436 [unknown] [unknown] localhost 140236349984064 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-09-23 10:31:51.436 [unknown] [unknown] localhost 140236349984064 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-09-23 10:31:51.437 [unknown] [unknown] localhost 140236349984064 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-09-23 10:31:51.437 [unknown] [unknown] localhost 140236349984064 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-09-23 10:31:51.437 [unknown] [unknown] localhost 140236349984064 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-09-23 10:31:51.461 [unknown] [unknown] localhost 140236349984064 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-09-23 10:31:51.464 [unknown] [unknown] localhost 140236349984064 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-09-23 10:31:51.475 [unknown] [unknown] localhost 140236349984064 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-09-23 10:31:51.475 [unknown] [unknown] localhost 140236349984064 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-09-23 10:31:51.475 [unknown] [unknown] localhost 140236349984064 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-09-23 10:31:51.475 [unknown] [unknown] localhost 140236349984064 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-09-23 10:31:51.475 [unknown] [unknown] localhost 140236349984064 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-09-23 10:31:51.475 [unknown] [unknown] localhost 140236349984064 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-09-23 10:31:51.942 [unknown] [unknown] localhost 140236349984064 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-09-23 10:31:52.193 [unknown] [unknown] localhost 140236349984064 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-09-23 10:31:53.046 [unknown] [unknown] localhost 140236349984064 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-09-23 10:31:53.047 [unknown] [unknown] localhost 140236349984064 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-09-23 10:31:53.071 [unknown] [unknown] localhost 140236349984064 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-09-23 10:31:53.117 [unknown] [unknown] localhost 140236349984064 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-09-23 10:31:53.117 [unknown] [unknown] localhost 140236349984064 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-09-24 21:48:03.052 [unknown] [unknown] localhost 140101348003136 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-09-24 21:48:03.055 [unknown] [unknown] localhost 140101348003136 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-09-24 21:48:03.055 [unknown] [unknown] localhost 140101348003136 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-09-24 21:48:03.056 [unknown] [unknown] localhost 140101348003136 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-09-24 21:48:03.056 [unknown] [unknown] localhost 140101348003136 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-09-24 21:48:03.056 [unknown] [unknown] localhost 140101348003136 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-09-24 21:48:03.056 [unknown] [unknown] localhost 140101348003136 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-09-24 21:48:03.073 [unknown] [unknown] localhost 140101348003136 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-09-24 21:48:03.076 [unknown] [unknown] localhost 140101348003136 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-09-24 21:48:03.090 [unknown] [unknown] localhost 140101348003136 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-09-24 21:48:03.090 [unknown] [unknown] localhost 140101348003136 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-09-24 21:48:03.090 [unknown] [unknown] localhost 140101348003136 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-09-24 21:48:03.090 [unknown] [unknown] localhost 140101348003136 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-09-24 21:48:03.090 [unknown] [unknown] localhost 140101348003136 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-09-24 21:48:03.090 [unknown] [unknown] localhost 140101348003136 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-09-24 21:48:03.161 [unknown] [unknown] localhost 140101348003136 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-09-24 21:48:03.203 [unknown] [unknown] localhost 140101348003136 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-09-24 21:48:03.516 [unknown] [unknown] localhost 140101348003136 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-09-24 21:48:03.517 [unknown] [unknown] localhost 140101348003136 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-09-24 21:48:03.544 [unknown] [unknown] localhost 140101348003136 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-09-24 21:48:03.554 [unknown] [unknown] localhost 140101348003136 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-09-24 21:48:03.554 [unknown] [unknown] localhost 140101348003136 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-09-25 14:53:57.812 [unknown] [unknown] localhost 140027304381760 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-09-25 14:53:57.820 [unknown] [unknown] localhost 140027304381760 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-09-25 14:53:57.820 [unknown] [unknown] localhost 140027304381760 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-09-25 14:53:57.820 [unknown] [unknown] localhost 140027304381760 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-09-25 14:53:57.820 [unknown] [unknown] localhost 140027304381760 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-09-25 14:53:57.820 [unknown] [unknown] localhost 140027304381760 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-09-25 14:53:57.820 [unknown] [unknown] localhost 140027304381760 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-09-25 14:53:57.831 [unknown] [unknown] localhost 140027304381760 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-09-25 14:53:57.834 [unknown] [unknown] localhost 140027304381760 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-09-25 14:53:57.842 [unknown] [unknown] localhost 140027304381760 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-09-25 14:53:57.842 [unknown] [unknown] localhost 140027304381760 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-09-25 14:53:57.842 [unknown] [unknown] localhost 140027304381760 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-09-25 14:53:57.842 [unknown] [unknown] localhost 140027304381760 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-09-25 14:53:57.842 [unknown] [unknown] localhost 140027304381760 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-09-25 14:53:57.842 [unknown] [unknown] localhost 140027304381760 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-09-25 14:53:57.989 [unknown] [unknown] localhost 140027304381760 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-09-25 14:53:58.147 [unknown] [unknown] localhost 140027304381760 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-09-25 14:53:58.431 [unknown] [unknown] localhost 140027304381760 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-09-25 14:53:58.431 [unknown] [unknown] localhost 140027304381760 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-09-25 14:53:58.454 [unknown] [unknown] localhost 140027304381760 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-09-25 14:53:58.476 [unknown] [unknown] localhost 140027304381760 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-09-25 14:53:58.476 [unknown] [unknown] localhost 140027304381760 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-09-25 15:15:34.849 [unknown] [unknown] localhost 140601334590784 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-09-25 15:15:34.856 [unknown] [unknown] localhost 140601334590784 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-09-25 15:15:34.856 [unknown] [unknown] localhost 140601334590784 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-09-25 15:15:34.857 [unknown] [unknown] localhost 140601334590784 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-09-25 15:15:34.857 [unknown] [unknown] localhost 140601334590784 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-09-25 15:15:34.857 [unknown] [unknown] localhost 140601334590784 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-09-25 15:15:34.857 [unknown] [unknown] localhost 140601334590784 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-09-25 15:15:34.872 [unknown] [unknown] localhost 140601334590784 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-09-25 15:15:34.873 [unknown] [unknown] localhost 140601334590784 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-09-25 15:15:34.886 [unknown] [unknown] localhost 140601334590784 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-09-25 15:15:34.886 [unknown] [unknown] localhost 140601334590784 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-09-25 15:15:34.886 [unknown] [unknown] localhost 140601334590784 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-09-25 15:15:34.886 [unknown] [unknown] localhost 140601334590784 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-09-25 15:15:34.886 [unknown] [unknown] localhost 140601334590784 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-09-25 15:15:34.886 [unknown] [unknown] localhost 140601334590784 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-09-25 15:15:34.969 [unknown] [unknown] localhost 140601334590784 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-09-25 15:15:35.002 [unknown] [unknown] localhost 140601334590784 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-09-25 15:15:35.077 [unknown] [unknown] localhost 140601334590784 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-09-25 15:15:35.078 [unknown] [unknown] localhost 140601334590784 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-09-25 15:15:35.105 [unknown] [unknown] localhost 140601334590784 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-09-25 15:15:35.128 [unknown] [unknown] localhost 140601334590784 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-09-25 15:15:35.128 [unknown] [unknown] localhost 140601334590784 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-09-25 15:25:21.138 [unknown] [unknown] localhost 140386288274752 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-09-25 15:25:21.143 [unknown] [unknown] localhost 140386288274752 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-09-25 15:25:21.143 [unknown] [unknown] localhost 140386288274752 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-09-25 15:25:21.143 [unknown] [unknown] localhost 140386288274752 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-09-25 15:25:21.143 [unknown] [unknown] localhost 140386288274752 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-09-25 15:25:21.143 [unknown] [unknown] localhost 140386288274752 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-09-25 15:25:21.143 [unknown] [unknown] localhost 140386288274752 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-09-25 15:25:21.155 [unknown] [unknown] localhost 140386288274752 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-09-25 15:25:21.157 [unknown] [unknown] localhost 140386288274752 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-09-25 15:25:21.166 [unknown] [unknown] localhost 140386288274752 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-09-25 15:25:21.166 [unknown] [unknown] localhost 140386288274752 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-09-25 15:25:21.166 [unknown] [unknown] localhost 140386288274752 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-09-25 15:25:21.166 [unknown] [unknown] localhost 140386288274752 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-09-25 15:25:21.166 [unknown] [unknown] localhost 140386288274752 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-09-25 15:25:21.166 [unknown] [unknown] localhost 140386288274752 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-09-25 15:25:21.240 [unknown] [unknown] localhost 140386288274752 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-09-25 15:25:21.261 [unknown] [unknown] localhost 140386288274752 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-09-25 15:25:21.330 [unknown] [unknown] localhost 140386288274752 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-09-25 15:25:21.331 [unknown] [unknown] localhost 140386288274752 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-09-25 15:25:21.355 [unknown] [unknown] localhost 140386288274752 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-09-25 15:25:21.361 [unknown] [unknown] localhost 140386288274752 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-09-25 15:25:21.361 [unknown] [unknown] localhost 140386288274752 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-09-25 15:54:32.743 [unknown] [unknown] localhost 140513731136832 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-09-25 15:54:32.745 [unknown] [unknown] localhost 140513731136832 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-09-25 15:54:32.745 [unknown] [unknown] localhost 140513731136832 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-09-25 15:54:32.745 [unknown] [unknown] localhost 140513731136832 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-09-25 15:54:32.745 [unknown] [unknown] localhost 140513731136832 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-09-25 15:54:32.745 [unknown] [unknown] localhost 140513731136832 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-09-25 15:54:32.745 [unknown] [unknown] localhost 140513731136832 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-09-25 15:54:32.759 [unknown] [unknown] localhost 140513731136832 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-09-25 15:54:32.760 [unknown] [unknown] localhost 140513731136832 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-09-25 15:54:32.766 [unknown] [unknown] localhost 140513731136832 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-09-25 15:54:32.766 [unknown] [unknown] localhost 140513731136832 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-09-25 15:54:32.766 [unknown] [unknown] localhost 140513731136832 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-09-25 15:54:32.766 [unknown] [unknown] localhost 140513731136832 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-09-25 15:54:32.766 [unknown] [unknown] localhost 140513731136832 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-09-25 15:54:32.766 [unknown] [unknown] localhost 140513731136832 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-09-25 15:54:32.830 [unknown] [unknown] localhost 140513731136832 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-09-25 15:54:32.856 [unknown] [unknown] localhost 140513731136832 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-09-25 15:54:32.946 [unknown] [unknown] localhost 140513731136832 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-09-25 15:54:32.947 [unknown] [unknown] localhost 140513731136832 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-09-25 15:54:32.976 [unknown] [unknown] localhost 140513731136832 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-09-25 15:54:33.001 [unknown] [unknown] localhost 140513731136832 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-09-25 15:54:33.001 [unknown] [unknown] localhost 140513731136832 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-09-25 21:48:33.067 [unknown] [unknown] localhost 140703186394432 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-09-25 21:48:33.072 [unknown] [unknown] localhost 140703186394432 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-09-25 21:48:33.073 [unknown] [unknown] localhost 140703186394432 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-09-25 21:48:33.073 [unknown] [unknown] localhost 140703186394432 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-09-25 21:48:33.073 [unknown] [unknown] localhost 140703186394432 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-09-25 21:48:33.073 [unknown] [unknown] localhost 140703186394432 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-09-25 21:48:33.073 [unknown] [unknown] localhost 140703186394432 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-09-25 21:48:33.086 [unknown] [unknown] localhost 140703186394432 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-09-25 21:48:33.087 [unknown] [unknown] localhost 140703186394432 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-09-25 21:48:33.098 [unknown] [unknown] localhost 140703186394432 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-09-25 21:48:33.098 [unknown] [unknown] localhost 140703186394432 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-09-25 21:48:33.098 [unknown] [unknown] localhost 140703186394432 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-09-25 21:48:33.099 [unknown] [unknown] localhost 140703186394432 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-09-25 21:48:33.099 [unknown] [unknown] localhost 140703186394432 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-09-25 21:48:33.099 [unknown] [unknown] localhost 140703186394432 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-09-25 21:48:33.231 [unknown] [unknown] localhost 140703186394432 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-09-25 21:48:33.328 [unknown] [unknown] localhost 140703186394432 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-09-25 21:48:33.669 [unknown] [unknown] localhost 140703186394432 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-09-25 21:48:33.670 [unknown] [unknown] localhost 140703186394432 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-09-25 21:48:33.699 [unknown] [unknown] localhost 140703186394432 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-09-25 21:48:33.736 [unknown] [unknown] localhost 140703186394432 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-09-25 21:48:33.736 [unknown] [unknown] localhost 140703186394432 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-09-28 09:36:53.661 [unknown] [unknown] localhost 139657928678720 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-09-28 09:36:53.664 [unknown] [unknown] localhost 139657928678720 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-09-28 09:36:53.664 [unknown] [unknown] localhost 139657928678720 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-09-28 09:36:53.664 [unknown] [unknown] localhost 139657928678720 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-09-28 09:36:53.664 [unknown] [unknown] localhost 139657928678720 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-09-28 09:36:53.664 [unknown] [unknown] localhost 139657928678720 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-09-28 09:36:53.665 [unknown] [unknown] localhost 139657928678720 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-09-28 09:36:53.677 [unknown] [unknown] localhost 139657928678720 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-09-28 09:36:53.678 [unknown] [unknown] localhost 139657928678720 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-09-28 09:36:53.692 [unknown] [unknown] localhost 139657928678720 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-09-28 09:36:53.692 [unknown] [unknown] localhost 139657928678720 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-09-28 09:36:53.692 [unknown] [unknown] localhost 139657928678720 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-09-28 09:36:53.692 [unknown] [unknown] localhost 139657928678720 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-09-28 09:36:53.693 [unknown] [unknown] localhost 139657928678720 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-09-28 09:36:53.693 [unknown] [unknown] localhost 139657928678720 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-09-28 09:36:53.875 [unknown] [unknown] localhost 139657928678720 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-09-28 09:36:53.923 [unknown] [unknown] localhost 139657928678720 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-09-28 09:36:54.216 [unknown] [unknown] localhost 139657928678720 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-09-28 09:36:54.217 [unknown] [unknown] localhost 139657928678720 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-09-28 09:36:54.248 [unknown] [unknown] localhost 139657928678720 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-09-28 09:36:54.282 [unknown] [unknown] localhost 139657928678720 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-09-28 09:36:54.282 [unknown] [unknown] localhost 139657928678720 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-09-28 10:37:49.957 [unknown] [unknown] localhost 139723908943168 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-09-28 10:37:49.961 [unknown] [unknown] localhost 139723908943168 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-09-28 10:37:49.961 [unknown] [unknown] localhost 139723908943168 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-09-28 10:37:49.962 [unknown] [unknown] localhost 139723908943168 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-09-28 10:37:49.962 [unknown] [unknown] localhost 139723908943168 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-09-28 10:37:49.962 [unknown] [unknown] localhost 139723908943168 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-09-28 10:37:49.962 [unknown] [unknown] localhost 139723908943168 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-09-28 10:37:49.971 [unknown] [unknown] localhost 139723908943168 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-09-28 10:37:49.972 [unknown] [unknown] localhost 139723908943168 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-09-28 10:37:49.995 [unknown] [unknown] localhost 139723908943168 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-09-28 10:37:49.995 [unknown] [unknown] localhost 139723908943168 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-09-28 10:37:49.995 [unknown] [unknown] localhost 139723908943168 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-09-28 10:37:49.995 [unknown] [unknown] localhost 139723908943168 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-09-28 10:37:49.996 [unknown] [unknown] localhost 139723908943168 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-09-28 10:37:49.996 [unknown] [unknown] localhost 139723908943168 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-09-28 10:37:50.237 [unknown] [unknown] localhost 139723908943168 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-09-28 10:37:50.265 [unknown] [unknown] localhost 139723908943168 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-09-28 10:37:50.620 [unknown] [unknown] localhost 139723908943168 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-09-28 10:37:50.621 [unknown] [unknown] localhost 139723908943168 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-09-28 10:37:50.648 [unknown] [unknown] localhost 139723908943168 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-09-28 10:37:50.690 [unknown] [unknown] localhost 139723908943168 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-09-28 10:37:50.690 [unknown] [unknown] localhost 139723908943168 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-09-28 11:09:58.959 [unknown] [unknown] localhost 140348617616704 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-09-28 11:09:58.960 [unknown] [unknown] localhost 140348617616704 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-09-28 11:09:58.961 [unknown] [unknown] localhost 140348617616704 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-09-28 11:09:58.961 [unknown] [unknown] localhost 140348617616704 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-09-28 11:09:58.961 [unknown] [unknown] localhost 140348617616704 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-09-28 11:09:58.961 [unknown] [unknown] localhost 140348617616704 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-09-28 11:09:58.961 [unknown] [unknown] localhost 140348617616704 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-09-28 11:09:58.972 [unknown] [unknown] localhost 140348617616704 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-09-28 11:09:58.973 [unknown] [unknown] localhost 140348617616704 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-09-28 11:09:58.987 [unknown] [unknown] localhost 140348617616704 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-09-28 11:09:58.987 [unknown] [unknown] localhost 140348617616704 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-09-28 11:09:58.987 [unknown] [unknown] localhost 140348617616704 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-09-28 11:09:58.988 [unknown] [unknown] localhost 140348617616704 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-09-28 11:09:58.988 [unknown] [unknown] localhost 140348617616704 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-09-28 11:09:58.988 [unknown] [unknown] localhost 140348617616704 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-09-28 11:09:59.202 [unknown] [unknown] localhost 140348617616704 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-09-28 11:09:59.299 [unknown] [unknown] localhost 140348617616704 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-09-28 11:09:59.656 [unknown] [unknown] localhost 140348617616704 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-09-28 11:09:59.656 [unknown] [unknown] localhost 140348617616704 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-09-28 11:09:59.688 [unknown] [unknown] localhost 140348617616704 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-09-28 11:09:59.698 [unknown] [unknown] localhost 140348617616704 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-09-28 11:09:59.698 [unknown] [unknown] localhost 140348617616704 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-09-28 15:18:12.162 [unknown] [unknown] localhost 140305361116480 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-09-28 15:18:12.163 [unknown] [unknown] localhost 140305361116480 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-09-28 15:18:12.163 [unknown] [unknown] localhost 140305361116480 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-09-28 15:18:12.163 [unknown] [unknown] localhost 140305361116480 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-09-28 15:18:12.163 [unknown] [unknown] localhost 140305361116480 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-09-28 15:18:12.163 [unknown] [unknown] localhost 140305361116480 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-09-28 15:18:12.163 [unknown] [unknown] localhost 140305361116480 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-09-28 15:18:12.187 [unknown] [unknown] localhost 140305361116480 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-09-28 15:18:12.188 [unknown] [unknown] localhost 140305361116480 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-09-28 15:18:12.199 [unknown] [unknown] localhost 140305361116480 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-09-28 15:18:12.199 [unknown] [unknown] localhost 140305361116480 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-09-28 15:18:12.199 [unknown] [unknown] localhost 140305361116480 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-09-28 15:18:12.199 [unknown] [unknown] localhost 140305361116480 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-09-28 15:18:12.199 [unknown] [unknown] localhost 140305361116480 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-09-28 15:18:12.199 [unknown] [unknown] localhost 140305361116480 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-09-28 15:18:12.301 [unknown] [unknown] localhost 140305361116480 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-09-28 15:18:12.408 [unknown] [unknown] localhost 140305361116480 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-09-28 15:18:12.701 [unknown] [unknown] localhost 140305361116480 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-09-28 15:18:12.702 [unknown] [unknown] localhost 140305361116480 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-09-28 15:18:12.736 [unknown] [unknown] localhost 140305361116480 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-09-28 15:18:12.745 [unknown] [unknown] localhost 140305361116480 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-09-28 15:18:12.745 [unknown] [unknown] localhost 140305361116480 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-09-28 15:40:14.523 [unknown] [unknown] localhost 139997506747712 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-09-28 15:40:14.525 [unknown] [unknown] localhost 139997506747712 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-09-28 15:40:14.525 [unknown] [unknown] localhost 139997506747712 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-09-28 15:40:14.525 [unknown] [unknown] localhost 139997506747712 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-09-28 15:40:14.525 [unknown] [unknown] localhost 139997506747712 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-09-28 15:40:14.525 [unknown] [unknown] localhost 139997506747712 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-09-28 15:40:14.525 [unknown] [unknown] localhost 139997506747712 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-09-28 15:40:14.537 [unknown] [unknown] localhost 139997506747712 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-09-28 15:40:14.539 [unknown] [unknown] localhost 139997506747712 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-09-28 15:40:14.552 [unknown] [unknown] localhost 139997506747712 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-09-28 15:40:14.552 [unknown] [unknown] localhost 139997506747712 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-09-28 15:40:14.552 [unknown] [unknown] localhost 139997506747712 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-09-28 15:40:14.552 [unknown] [unknown] localhost 139997506747712 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-09-28 15:40:14.552 [unknown] [unknown] localhost 139997506747712 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-09-28 15:40:14.552 [unknown] [unknown] localhost 139997506747712 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-09-28 15:40:14.818 [unknown] [unknown] localhost 139997506747712 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-09-28 15:40:14.920 [unknown] [unknown] localhost 139997506747712 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-09-28 15:40:15.255 [unknown] [unknown] localhost 139997506747712 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-09-28 15:40:15.256 [unknown] [unknown] localhost 139997506747712 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-09-28 15:40:15.281 [unknown] [unknown] localhost 139997506747712 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-09-28 15:40:15.288 [unknown] [unknown] localhost 139997506747712 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-09-28 15:40:15.288 [unknown] [unknown] localhost 139997506747712 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-09-28 17:28:48.640 [unknown] [unknown] localhost 140445801520448 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-09-28 17:28:48.641 [unknown] [unknown] localhost 140445801520448 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-09-28 17:28:48.641 [unknown] [unknown] localhost 140445801520448 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-09-28 17:28:48.641 [unknown] [unknown] localhost 140445801520448 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-09-28 17:28:48.641 [unknown] [unknown] localhost 140445801520448 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-09-28 17:28:48.641 [unknown] [unknown] localhost 140445801520448 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-09-28 17:28:48.641 [unknown] [unknown] localhost 140445801520448 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-09-28 17:28:48.659 [unknown] [unknown] localhost 140445801520448 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-09-28 17:28:48.661 [unknown] [unknown] localhost 140445801520448 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-09-28 17:28:48.694 [unknown] [unknown] localhost 140445801520448 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-09-28 17:28:48.694 [unknown] [unknown] localhost 140445801520448 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-09-28 17:28:48.695 [unknown] [unknown] localhost 140445801520448 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-09-28 17:28:48.695 [unknown] [unknown] localhost 140445801520448 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-09-28 17:28:48.695 [unknown] [unknown] localhost 140445801520448 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-09-28 17:28:48.695 [unknown] [unknown] localhost 140445801520448 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-09-28 17:28:48.986 [unknown] [unknown] localhost 140445801520448 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-09-28 17:28:49.079 [unknown] [unknown] localhost 140445801520448 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-09-28 17:28:49.458 [unknown] [unknown] localhost 140445801520448 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-09-28 17:28:49.485 [unknown] [unknown] localhost 140445801520448 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-09-28 17:28:49.518 [unknown] [unknown] localhost 140445801520448 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-09-28 17:28:49.527 [unknown] [unknown] localhost 140445801520448 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-09-28 17:28:49.527 [unknown] [unknown] localhost 140445801520448 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-09-28 17:43:55.493 [unknown] [unknown] localhost 140700621081920 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-09-28 17:43:55.495 [unknown] [unknown] localhost 140700621081920 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-09-28 17:43:55.495 [unknown] [unknown] localhost 140700621081920 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-09-28 17:43:55.495 [unknown] [unknown] localhost 140700621081920 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-09-28 17:43:55.495 [unknown] [unknown] localhost 140700621081920 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-09-28 17:43:55.496 [unknown] [unknown] localhost 140700621081920 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-09-28 17:43:55.496 [unknown] [unknown] localhost 140700621081920 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-09-28 17:43:55.519 [unknown] [unknown] localhost 140700621081920 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-09-28 17:43:55.521 [unknown] [unknown] localhost 140700621081920 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-09-28 17:43:55.535 [unknown] [unknown] localhost 140700621081920 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-09-28 17:43:55.535 [unknown] [unknown] localhost 140700621081920 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-09-28 17:43:55.536 [unknown] [unknown] localhost 140700621081920 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-09-28 17:43:55.536 [unknown] [unknown] localhost 140700621081920 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-09-28 17:43:55.536 [unknown] [unknown] localhost 140700621081920 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-09-28 17:43:55.536 [unknown] [unknown] localhost 140700621081920 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-09-28 17:43:55.608 [unknown] [unknown] localhost 140700621081920 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-09-28 17:43:55.628 [unknown] [unknown] localhost 140700621081920 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-09-28 17:43:55.698 [unknown] [unknown] localhost 140700621081920 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-09-28 17:43:55.699 [unknown] [unknown] localhost 140700621081920 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-09-28 17:43:55.723 [unknown] [unknown] localhost 140700621081920 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-09-28 17:43:55.739 [unknown] [unknown] localhost 140700621081920 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-09-28 17:43:55.739 [unknown] [unknown] localhost 140700621081920 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-09-28 18:55:21.748 [unknown] [unknown] localhost 140154420686144 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-09-28 18:55:21.750 [unknown] [unknown] localhost 140154420686144 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-09-28 18:55:21.750 [unknown] [unknown] localhost 140154420686144 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-09-28 18:55:21.750 [unknown] [unknown] localhost 140154420686144 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-09-28 18:55:21.750 [unknown] [unknown] localhost 140154420686144 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-09-28 18:55:21.750 [unknown] [unknown] localhost 140154420686144 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-09-28 18:55:21.750 [unknown] [unknown] localhost 140154420686144 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-09-28 18:55:21.758 [unknown] [unknown] localhost 140154420686144 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-09-28 18:55:21.760 [unknown] [unknown] localhost 140154420686144 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-09-28 18:55:21.774 [unknown] [unknown] localhost 140154420686144 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-09-28 18:55:21.774 [unknown] [unknown] localhost 140154420686144 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-09-28 18:55:21.774 [unknown] [unknown] localhost 140154420686144 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-09-28 18:55:21.774 [unknown] [unknown] localhost 140154420686144 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-09-28 18:55:21.774 [unknown] [unknown] localhost 140154420686144 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-09-28 18:55:21.774 [unknown] [unknown] localhost 140154420686144 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-09-28 18:55:22.046 [unknown] [unknown] localhost 140154420686144 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-09-28 18:55:22.066 [unknown] [unknown] localhost 140154420686144 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-09-28 18:55:22.460 [unknown] [unknown] localhost 140154420686144 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-09-28 18:55:22.461 [unknown] [unknown] localhost 140154420686144 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-09-28 18:55:22.502 [unknown] [unknown] localhost 140154420686144 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-09-28 18:55:22.517 [unknown] [unknown] localhost 140154420686144 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-09-28 18:55:22.517 [unknown] [unknown] localhost 140154420686144 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-09-28 19:41:08.707 [unknown] [unknown] localhost 140152141028672 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-09-28 19:41:08.711 [unknown] [unknown] localhost 140152141028672 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-09-28 19:41:08.711 [unknown] [unknown] localhost 140152141028672 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-09-28 19:41:08.711 [unknown] [unknown] localhost 140152141028672 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-09-28 19:41:08.711 [unknown] [unknown] localhost 140152141028672 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-09-28 19:41:08.711 [unknown] [unknown] localhost 140152141028672 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-09-28 19:41:08.711 [unknown] [unknown] localhost 140152141028672 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-09-28 19:41:08.731 [unknown] [unknown] localhost 140152141028672 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-09-28 19:41:08.733 [unknown] [unknown] localhost 140152141028672 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-09-28 19:41:08.743 [unknown] [unknown] localhost 140152141028672 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-09-28 19:41:08.743 [unknown] [unknown] localhost 140152141028672 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-09-28 19:41:08.744 [unknown] [unknown] localhost 140152141028672 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-09-28 19:41:08.744 [unknown] [unknown] localhost 140152141028672 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-09-28 19:41:08.744 [unknown] [unknown] localhost 140152141028672 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-09-28 19:41:08.744 [unknown] [unknown] localhost 140152141028672 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-09-28 19:41:08.813 [unknown] [unknown] localhost 140152141028672 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-09-28 19:41:08.838 [unknown] [unknown] localhost 140152141028672 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-09-28 19:41:08.920 [unknown] [unknown] localhost 140152141028672 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-09-28 19:41:08.921 [unknown] [unknown] localhost 140152141028672 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-09-28 19:41:08.952 [unknown] [unknown] localhost 140152141028672 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-09-28 19:41:08.986 [unknown] [unknown] localhost 140152141028672 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-09-28 19:41:08.986 [unknown] [unknown] localhost 140152141028672 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-09-28 21:11:27.560 [unknown] [unknown] localhost 139677768768832 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-09-28 21:11:27.565 [unknown] [unknown] localhost 139677768768832 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-09-28 21:11:27.565 [unknown] [unknown] localhost 139677768768832 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-09-28 21:11:27.565 [unknown] [unknown] localhost 139677768768832 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-09-28 21:11:27.566 [unknown] [unknown] localhost 139677768768832 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-09-28 21:11:27.566 [unknown] [unknown] localhost 139677768768832 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-09-28 21:11:27.566 [unknown] [unknown] localhost 139677768768832 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-09-28 21:11:27.587 [unknown] [unknown] localhost 139677768768832 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-09-28 21:11:27.589 [unknown] [unknown] localhost 139677768768832 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-09-28 21:11:27.598 [unknown] [unknown] localhost 139677768768832 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-09-28 21:11:27.598 [unknown] [unknown] localhost 139677768768832 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-09-28 21:11:27.598 [unknown] [unknown] localhost 139677768768832 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-09-28 21:11:27.598 [unknown] [unknown] localhost 139677768768832 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-09-28 21:11:27.598 [unknown] [unknown] localhost 139677768768832 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-09-28 21:11:27.598 [unknown] [unknown] localhost 139677768768832 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-09-28 21:11:27.899 [unknown] [unknown] localhost 139677768768832 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-09-28 21:11:27.962 [unknown] [unknown] localhost 139677768768832 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-09-28 21:11:28.467 [unknown] [unknown] localhost 139677768768832 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-09-28 21:11:28.467 [unknown] [unknown] localhost 139677768768832 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-09-28 21:11:28.495 [unknown] [unknown] localhost 139677768768832 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-09-28 21:11:28.518 [unknown] [unknown] localhost 139677768768832 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-09-28 21:11:28.518 [unknown] [unknown] localhost 139677768768832 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-10-05 18:39:23.857 [unknown] [unknown] localhost 140312630930752 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-10-05 18:39:23.861 [unknown] [unknown] localhost 140312630930752 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-10-05 18:39:23.862 [unknown] [unknown] localhost 140312630930752 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-10-05 18:39:23.862 [unknown] [unknown] localhost 140312630930752 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-10-05 18:39:23.862 [unknown] [unknown] localhost 140312630930752 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-10-05 18:39:23.862 [unknown] [unknown] localhost 140312630930752 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-10-05 18:39:23.862 [unknown] [unknown] localhost 140312630930752 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-10-05 18:39:23.879 [unknown] [unknown] localhost 140312630930752 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-10-05 18:39:23.880 [unknown] [unknown] localhost 140312630930752 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-10-05 18:39:23.902 [unknown] [unknown] localhost 140312630930752 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-10-05 18:39:23.902 [unknown] [unknown] localhost 140312630930752 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-10-05 18:39:23.902 [unknown] [unknown] localhost 140312630930752 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-10-05 18:39:23.902 [unknown] [unknown] localhost 140312630930752 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-10-05 18:39:23.902 [unknown] [unknown] localhost 140312630930752 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-10-05 18:39:23.902 [unknown] [unknown] localhost 140312630930752 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-10-05 18:39:24.181 [unknown] [unknown] localhost 140312630930752 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-10-05 18:39:24.268 [unknown] [unknown] localhost 140312630930752 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-10-05 18:39:24.550 [unknown] [unknown] localhost 140312630930752 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-10-05 18:39:24.551 [unknown] [unknown] localhost 140312630930752 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-10-05 18:39:24.590 [unknown] [unknown] localhost 140312630930752 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-10-05 18:39:24.598 [unknown] [unknown] localhost 140312630930752 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-10-05 18:39:24.598 [unknown] [unknown] localhost 140312630930752 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-10-08 16:54:13.769 [unknown] [unknown] localhost 139635021225280 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-10-08 16:54:13.776 [unknown] [unknown] localhost 139635021225280 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-10-08 16:54:13.776 [unknown] [unknown] localhost 139635021225280 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-10-08 16:54:13.776 [unknown] [unknown] localhost 139635021225280 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-10-08 16:54:13.776 [unknown] [unknown] localhost 139635021225280 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-10-08 16:54:13.777 [unknown] [unknown] localhost 139635021225280 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-10-08 16:54:13.777 [unknown] [unknown] localhost 139635021225280 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-10-08 16:54:13.811 [unknown] [unknown] localhost 139635021225280 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-10-08 16:54:13.813 [unknown] [unknown] localhost 139635021225280 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-10-08 16:54:13.827 [unknown] [unknown] localhost 139635021225280 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-10-08 16:54:13.827 [unknown] [unknown] localhost 139635021225280 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-10-08 16:54:13.827 [unknown] [unknown] localhost 139635021225280 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-10-08 16:54:13.827 [unknown] [unknown] localhost 139635021225280 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-10-08 16:54:13.827 [unknown] [unknown] localhost 139635021225280 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-10-08 16:54:13.827 [unknown] [unknown] localhost 139635021225280 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-10-08 16:54:14.126 [unknown] [unknown] localhost 139635021225280 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-10-08 16:54:14.200 [unknown] [unknown] localhost 139635021225280 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-10-08 16:54:14.553 [unknown] [unknown] localhost 139635021225280 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-10-08 16:54:14.553 [unknown] [unknown] localhost 139635021225280 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-10-08 16:54:14.584 [unknown] [unknown] localhost 139635021225280 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-10-08 16:54:14.615 [unknown] [unknown] localhost 139635021225280 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-10-08 16:54:14.615 [unknown] [unknown] localhost 139635021225280 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-10-08 17:11:08.535 [unknown] [unknown] localhost 140288398712128 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-10-08 17:11:08.536 [unknown] [unknown] localhost 140288398712128 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-10-08 17:11:08.536 [unknown] [unknown] localhost 140288398712128 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-10-08 17:11:08.537 [unknown] [unknown] localhost 140288398712128 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-10-08 17:11:08.537 [unknown] [unknown] localhost 140288398712128 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-10-08 17:11:08.537 [unknown] [unknown] localhost 140288398712128 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-10-08 17:11:08.537 [unknown] [unknown] localhost 140288398712128 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-10-08 17:11:08.550 [unknown] [unknown] localhost 140288398712128 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-10-08 17:11:08.553 [unknown] [unknown] localhost 140288398712128 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-10-08 17:11:08.560 [unknown] [unknown] localhost 140288398712128 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-10-08 17:11:08.560 [unknown] [unknown] localhost 140288398712128 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-10-08 17:11:08.561 [unknown] [unknown] localhost 140288398712128 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-10-08 17:11:08.561 [unknown] [unknown] localhost 140288398712128 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-10-08 17:11:08.561 [unknown] [unknown] localhost 140288398712128 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-10-08 17:11:08.561 [unknown] [unknown] localhost 140288398712128 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-10-08 17:11:08.622 [unknown] [unknown] localhost 140288398712128 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-10-08 17:11:08.644 [unknown] [unknown] localhost 140288398712128 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-10-08 17:11:08.712 [unknown] [unknown] localhost 140288398712128 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-10-08 17:11:08.713 [unknown] [unknown] localhost 140288398712128 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-10-08 17:11:08.739 [unknown] [unknown] localhost 140288398712128 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-10-08 17:11:08.759 [unknown] [unknown] localhost 140288398712128 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-10-08 17:11:08.760 [unknown] [unknown] localhost 140288398712128 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-10-08 17:59:57.973 [unknown] [unknown] localhost 140501600058688 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-10-08 17:59:57.975 [unknown] [unknown] localhost 140501600058688 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-10-08 17:59:57.975 [unknown] [unknown] localhost 140501600058688 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-10-08 17:59:57.975 [unknown] [unknown] localhost 140501600058688 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-10-08 17:59:57.975 [unknown] [unknown] localhost 140501600058688 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-10-08 17:59:57.975 [unknown] [unknown] localhost 140501600058688 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-10-08 17:59:57.976 [unknown] [unknown] localhost 140501600058688 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-10-08 17:59:57.991 [unknown] [unknown] localhost 140501600058688 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-10-08 17:59:57.993 [unknown] [unknown] localhost 140501600058688 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-10-08 17:59:58.002 [unknown] [unknown] localhost 140501600058688 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-10-08 17:59:58.002 [unknown] [unknown] localhost 140501600058688 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-10-08 17:59:58.002 [unknown] [unknown] localhost 140501600058688 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-10-08 17:59:58.003 [unknown] [unknown] localhost 140501600058688 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-10-08 17:59:58.003 [unknown] [unknown] localhost 140501600058688 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-10-08 17:59:58.003 [unknown] [unknown] localhost 140501600058688 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-10-08 17:59:58.068 [unknown] [unknown] localhost 140501600058688 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-10-08 17:59:58.089 [unknown] [unknown] localhost 140501600058688 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-10-08 17:59:58.155 [unknown] [unknown] localhost 140501600058688 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-10-08 17:59:58.156 [unknown] [unknown] localhost 140501600058688 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-10-08 17:59:58.181 [unknown] [unknown] localhost 140501600058688 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-10-08 17:59:58.189 [unknown] [unknown] localhost 140501600058688 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-10-08 17:59:58.190 [unknown] [unknown] localhost 140501600058688 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-10-08 19:13:29.220 [unknown] [unknown] localhost 140680924515648 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-10-08 19:13:29.221 [unknown] [unknown] localhost 140680924515648 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-10-08 19:13:29.221 [unknown] [unknown] localhost 140680924515648 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-10-08 19:13:29.222 [unknown] [unknown] localhost 140680924515648 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-10-08 19:13:29.222 [unknown] [unknown] localhost 140680924515648 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-10-08 19:13:29.222 [unknown] [unknown] localhost 140680924515648 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-10-08 19:13:29.222 [unknown] [unknown] localhost 140680924515648 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-10-08 19:13:29.231 [unknown] [unknown] localhost 140680924515648 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-10-08 19:13:29.233 [unknown] [unknown] localhost 140680924515648 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-10-08 19:13:29.240 [unknown] [unknown] localhost 140680924515648 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-10-08 19:13:29.240 [unknown] [unknown] localhost 140680924515648 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-10-08 19:13:29.240 [unknown] [unknown] localhost 140680924515648 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-10-08 19:13:29.240 [unknown] [unknown] localhost 140680924515648 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-10-08 19:13:29.240 [unknown] [unknown] localhost 140680924515648 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-10-08 19:13:29.241 [unknown] [unknown] localhost 140680924515648 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-10-08 19:13:29.508 [unknown] [unknown] localhost 140680924515648 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-10-08 19:13:29.605 [unknown] [unknown] localhost 140680924515648 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-10-08 19:13:29.928 [unknown] [unknown] localhost 140680924515648 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-10-08 19:13:29.928 [unknown] [unknown] localhost 140680924515648 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-10-08 19:13:29.960 [unknown] [unknown] localhost 140680924515648 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-10-08 19:13:29.968 [unknown] [unknown] localhost 140680924515648 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-10-08 19:13:29.968 [unknown] [unknown] localhost 140680924515648 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-10-08 19:25:51.950 [unknown] [unknown] localhost 140364544630080 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-10-08 19:25:51.957 [unknown] [unknown] localhost 140364544630080 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-10-08 19:25:51.958 [unknown] [unknown] localhost 140364544630080 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-10-08 19:25:51.958 [unknown] [unknown] localhost 140364544630080 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-10-08 19:25:51.958 [unknown] [unknown] localhost 140364544630080 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-10-08 19:25:51.958 [unknown] [unknown] localhost 140364544630080 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-10-08 19:25:51.958 [unknown] [unknown] localhost 140364544630080 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-10-08 19:25:51.972 [unknown] [unknown] localhost 140364544630080 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-10-08 19:25:51.975 [unknown] [unknown] localhost 140364544630080 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-10-08 19:25:51.989 [unknown] [unknown] localhost 140364544630080 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-10-08 19:25:51.990 [unknown] [unknown] localhost 140364544630080 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-10-08 19:25:51.990 [unknown] [unknown] localhost 140364544630080 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-10-08 19:25:51.990 [unknown] [unknown] localhost 140364544630080 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-10-08 19:25:51.990 [unknown] [unknown] localhost 140364544630080 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-10-08 19:25:51.990 [unknown] [unknown] localhost 140364544630080 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-10-08 19:25:52.053 [unknown] [unknown] localhost 140364544630080 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-10-08 19:25:52.075 [unknown] [unknown] localhost 140364544630080 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-10-08 19:25:52.149 [unknown] [unknown] localhost 140364544630080 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-10-08 19:25:52.150 [unknown] [unknown] localhost 140364544630080 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-10-08 19:25:52.187 [unknown] [unknown] localhost 140364544630080 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-10-08 19:25:52.198 [unknown] [unknown] localhost 140364544630080 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-10-08 19:25:52.198 [unknown] [unknown] localhost 140364544630080 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-10-08 20:58:42.329 [unknown] [unknown] localhost 140543614709056 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-10-08 20:58:42.335 [unknown] [unknown] localhost 140543614709056 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-10-08 20:58:42.335 [unknown] [unknown] localhost 140543614709056 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-10-08 20:58:42.335 [unknown] [unknown] localhost 140543614709056 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-10-08 20:58:42.335 [unknown] [unknown] localhost 140543614709056 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-10-08 20:58:42.335 [unknown] [unknown] localhost 140543614709056 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-10-08 20:58:42.336 [unknown] [unknown] localhost 140543614709056 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-10-08 20:58:42.348 [unknown] [unknown] localhost 140543614709056 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-10-08 20:58:42.350 [unknown] [unknown] localhost 140543614709056 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-10-08 20:58:42.359 [unknown] [unknown] localhost 140543614709056 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-10-08 20:58:42.359 [unknown] [unknown] localhost 140543614709056 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-10-08 20:58:42.359 [unknown] [unknown] localhost 140543614709056 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-10-08 20:58:42.360 [unknown] [unknown] localhost 140543614709056 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-10-08 20:58:42.360 [unknown] [unknown] localhost 140543614709056 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-10-08 20:58:42.360 [unknown] [unknown] localhost 140543614709056 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-10-08 20:58:42.428 [unknown] [unknown] localhost 140543614709056 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-10-08 20:58:42.450 [unknown] [unknown] localhost 140543614709056 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-10-08 20:58:42.526 [unknown] [unknown] localhost 140543614709056 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-10-08 20:58:42.527 [unknown] [unknown] localhost 140543614709056 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-10-08 20:58:42.550 [unknown] [unknown] localhost 140543614709056 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-10-08 20:58:42.562 [unknown] [unknown] localhost 140543614709056 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-10-08 20:58:42.562 [unknown] [unknown] localhost 140543614709056 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-10-09 17:00:55.916 [unknown] [unknown] localhost 140165528075584 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-10-09 17:00:55.922 [unknown] [unknown] localhost 140165528075584 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-10-09 17:00:55.923 [unknown] [unknown] localhost 140165528075584 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-10-09 17:00:55.923 [unknown] [unknown] localhost 140165528075584 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-10-09 17:00:55.923 [unknown] [unknown] localhost 140165528075584 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-10-09 17:00:55.923 [unknown] [unknown] localhost 140165528075584 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-10-09 17:00:55.923 [unknown] [unknown] localhost 140165528075584 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-10-09 17:00:55.932 [unknown] [unknown] localhost 140165528075584 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-10-09 17:00:55.934 [unknown] [unknown] localhost 140165528075584 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-10-09 17:00:55.945 [unknown] [unknown] localhost 140165528075584 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-10-09 17:00:55.945 [unknown] [unknown] localhost 140165528075584 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-10-09 17:00:55.946 [unknown] [unknown] localhost 140165528075584 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-10-09 17:00:55.946 [unknown] [unknown] localhost 140165528075584 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-10-09 17:00:55.946 [unknown] [unknown] localhost 140165528075584 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-10-09 17:00:55.946 [unknown] [unknown] localhost 140165528075584 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-10-09 17:00:56.203 [unknown] [unknown] localhost 140165528075584 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-10-09 17:00:56.297 [unknown] [unknown] localhost 140165528075584 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-10-09 17:00:56.658 [unknown] [unknown] localhost 140165528075584 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-10-09 17:00:56.658 [unknown] [unknown] localhost 140165528075584 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-10-09 17:00:56.684 [unknown] [unknown] localhost 140165528075584 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-10-09 17:00:56.691 [unknown] [unknown] localhost 140165528075584 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-10-09 17:00:56.691 [unknown] [unknown] localhost 140165528075584 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-10-09 18:05:29.468 [unknown] [unknown] localhost 140126498381120 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-10-09 18:05:29.470 [unknown] [unknown] localhost 140126498381120 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-10-09 18:05:29.470 [unknown] [unknown] localhost 140126498381120 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-10-09 18:05:29.470 [unknown] [unknown] localhost 140126498381120 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-10-09 18:05:29.470 [unknown] [unknown] localhost 140126498381120 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-10-09 18:05:29.470 [unknown] [unknown] localhost 140126498381120 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-10-09 18:05:29.470 [unknown] [unknown] localhost 140126498381120 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-10-09 18:05:29.484 [unknown] [unknown] localhost 140126498381120 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-10-09 18:05:29.486 [unknown] [unknown] localhost 140126498381120 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-10-09 18:05:29.492 [unknown] [unknown] localhost 140126498381120 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-10-09 18:05:29.492 [unknown] [unknown] localhost 140126498381120 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-10-09 18:05:29.492 [unknown] [unknown] localhost 140126498381120 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-10-09 18:05:29.492 [unknown] [unknown] localhost 140126498381120 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-10-09 18:05:29.493 [unknown] [unknown] localhost 140126498381120 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-10-09 18:05:29.493 [unknown] [unknown] localhost 140126498381120 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-10-09 18:05:29.558 [unknown] [unknown] localhost 140126498381120 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-10-09 18:05:29.583 [unknown] [unknown] localhost 140126498381120 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-10-09 18:05:29.660 [unknown] [unknown] localhost 140126498381120 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-10-09 18:05:29.662 [unknown] [unknown] localhost 140126498381120 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-10-09 18:05:29.690 [unknown] [unknown] localhost 140126498381120 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-10-09 18:05:29.703 [unknown] [unknown] localhost 140126498381120 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-10-09 18:05:29.703 [unknown] [unknown] localhost 140126498381120 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-10-09 18:23:00.420 [unknown] [unknown] localhost 140121275088192 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-10-09 18:23:00.424 [unknown] [unknown] localhost 140121275088192 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-10-09 18:23:00.424 [unknown] [unknown] localhost 140121275088192 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-10-09 18:23:00.424 [unknown] [unknown] localhost 140121275088192 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-10-09 18:23:00.424 [unknown] [unknown] localhost 140121275088192 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-10-09 18:23:00.425 [unknown] [unknown] localhost 140121275088192 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-10-09 18:23:00.425 [unknown] [unknown] localhost 140121275088192 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-10-09 18:23:00.448 [unknown] [unknown] localhost 140121275088192 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-10-09 18:23:00.449 [unknown] [unknown] localhost 140121275088192 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-10-09 18:23:00.456 [unknown] [unknown] localhost 140121275088192 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-10-09 18:23:00.457 [unknown] [unknown] localhost 140121275088192 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-10-09 18:23:00.457 [unknown] [unknown] localhost 140121275088192 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-10-09 18:23:00.457 [unknown] [unknown] localhost 140121275088192 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-10-09 18:23:00.458 [unknown] [unknown] localhost 140121275088192 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-10-09 18:23:00.458 [unknown] [unknown] localhost 140121275088192 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-10-09 18:23:00.568 [unknown] [unknown] localhost 140121275088192 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-10-09 18:23:00.600 [unknown] [unknown] localhost 140121275088192 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-10-09 18:23:00.678 [unknown] [unknown] localhost 140121275088192 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-10-09 18:23:00.679 [unknown] [unknown] localhost 140121275088192 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-10-09 18:23:00.707 [unknown] [unknown] localhost 140121275088192 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-10-09 18:23:00.737 [unknown] [unknown] localhost 140121275088192 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-10-09 18:23:00.737 [unknown] [unknown] localhost 140121275088192 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-10-09 18:32:23.156 [unknown] [unknown] localhost 139981627571520 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-10-09 18:32:23.157 [unknown] [unknown] localhost 139981627571520 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-10-09 18:32:23.157 [unknown] [unknown] localhost 139981627571520 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-10-09 18:32:23.157 [unknown] [unknown] localhost 139981627571520 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-10-09 18:32:23.158 [unknown] [unknown] localhost 139981627571520 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-10-09 18:32:23.158 [unknown] [unknown] localhost 139981627571520 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-10-09 18:32:23.158 [unknown] [unknown] localhost 139981627571520 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-10-09 18:32:23.177 [unknown] [unknown] localhost 139981627571520 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-10-09 18:32:23.179 [unknown] [unknown] localhost 139981627571520 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-10-09 18:32:23.192 [unknown] [unknown] localhost 139981627571520 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-10-09 18:32:23.193 [unknown] [unknown] localhost 139981627571520 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-10-09 18:32:23.193 [unknown] [unknown] localhost 139981627571520 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-10-09 18:32:23.193 [unknown] [unknown] localhost 139981627571520 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-10-09 18:32:23.193 [unknown] [unknown] localhost 139981627571520 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-10-09 18:32:23.193 [unknown] [unknown] localhost 139981627571520 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-10-09 18:32:23.260 [unknown] [unknown] localhost 139981627571520 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-10-09 18:32:23.281 [unknown] [unknown] localhost 139981627571520 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-10-09 18:32:23.355 [unknown] [unknown] localhost 139981627571520 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-10-09 18:32:23.356 [unknown] [unknown] localhost 139981627571520 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-10-09 18:32:23.407 [unknown] [unknown] localhost 139981627571520 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-10-09 18:32:23.416 [unknown] [unknown] localhost 139981627571520 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-10-09 18:32:23.416 [unknown] [unknown] localhost 139981627571520 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-10-09 18:53:28.979 [unknown] [unknown] localhost 140657981726016 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-10-09 18:53:28.980 [unknown] [unknown] localhost 140657981726016 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-10-09 18:53:28.980 [unknown] [unknown] localhost 140657981726016 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-10-09 18:53:28.980 [unknown] [unknown] localhost 140657981726016 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-10-09 18:53:28.980 [unknown] [unknown] localhost 140657981726016 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-10-09 18:53:28.980 [unknown] [unknown] localhost 140657981726016 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-10-09 18:53:28.980 [unknown] [unknown] localhost 140657981726016 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-10-09 18:53:28.998 [unknown] [unknown] localhost 140657981726016 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-10-09 18:53:28.999 [unknown] [unknown] localhost 140657981726016 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-10-09 18:53:29.012 [unknown] [unknown] localhost 140657981726016 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-10-09 18:53:29.012 [unknown] [unknown] localhost 140657981726016 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-10-09 18:53:29.012 [unknown] [unknown] localhost 140657981726016 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-10-09 18:53:29.012 [unknown] [unknown] localhost 140657981726016 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-10-09 18:53:29.012 [unknown] [unknown] localhost 140657981726016 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-10-09 18:53:29.012 [unknown] [unknown] localhost 140657981726016 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-10-09 18:53:29.077 [unknown] [unknown] localhost 140657981726016 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-10-09 18:53:29.097 [unknown] [unknown] localhost 140657981726016 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-10-09 18:53:29.165 [unknown] [unknown] localhost 140657981726016 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-10-09 18:53:29.165 [unknown] [unknown] localhost 140657981726016 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-10-09 18:53:29.200 [unknown] [unknown] localhost 140657981726016 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-10-09 18:53:29.209 [unknown] [unknown] localhost 140657981726016 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-10-09 18:53:29.209 [unknown] [unknown] localhost 140657981726016 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-10-10 20:35:48.094 [unknown] [unknown] localhost 139705266392384 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-10-10 20:35:48.098 [unknown] [unknown] localhost 139705266392384 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-10-10 20:35:48.098 [unknown] [unknown] localhost 139705266392384 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-10-10 20:35:48.098 [unknown] [unknown] localhost 139705266392384 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-10-10 20:35:48.098 [unknown] [unknown] localhost 139705266392384 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-10-10 20:35:48.098 [unknown] [unknown] localhost 139705266392384 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-10-10 20:35:48.098 [unknown] [unknown] localhost 139705266392384 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-10-10 20:35:48.107 [unknown] [unknown] localhost 139705266392384 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-10-10 20:35:48.109 [unknown] [unknown] localhost 139705266392384 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-10-10 20:35:48.124 [unknown] [unknown] localhost 139705266392384 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-10-10 20:35:48.124 [unknown] [unknown] localhost 139705266392384 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-10-10 20:35:48.124 [unknown] [unknown] localhost 139705266392384 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-10-10 20:35:48.124 [unknown] [unknown] localhost 139705266392384 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-10-10 20:35:48.124 [unknown] [unknown] localhost 139705266392384 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-10-10 20:35:48.124 [unknown] [unknown] localhost 139705266392384 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-10-10 20:35:48.384 [unknown] [unknown] localhost 139705266392384 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-10-10 20:35:48.470 [unknown] [unknown] localhost 139705266392384 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-10-10 20:35:48.840 [unknown] [unknown] localhost 139705266392384 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-10-10 20:35:48.840 [unknown] [unknown] localhost 139705266392384 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-10-10 20:35:48.870 [unknown] [unknown] localhost 139705266392384 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-10-10 20:35:48.879 [unknown] [unknown] localhost 139705266392384 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-10-10 20:35:48.879 [unknown] [unknown] localhost 139705266392384 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-10-10 20:44:05.191 [unknown] [unknown] localhost 140024128269632 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-10-10 20:44:05.194 [unknown] [unknown] localhost 140024128269632 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-10-10 20:44:05.194 [unknown] [unknown] localhost 140024128269632 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-10-10 20:44:05.194 [unknown] [unknown] localhost 140024128269632 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-10-10 20:44:05.194 [unknown] [unknown] localhost 140024128269632 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-10-10 20:44:05.194 [unknown] [unknown] localhost 140024128269632 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-10-10 20:44:05.194 [unknown] [unknown] localhost 140024128269632 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-10-10 20:44:05.211 [unknown] [unknown] localhost 140024128269632 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-10-10 20:44:05.213 [unknown] [unknown] localhost 140024128269632 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-10-10 20:44:05.225 [unknown] [unknown] localhost 140024128269632 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-10-10 20:44:05.225 [unknown] [unknown] localhost 140024128269632 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-10-10 20:44:05.225 [unknown] [unknown] localhost 140024128269632 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-10-10 20:44:05.225 [unknown] [unknown] localhost 140024128269632 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-10-10 20:44:05.225 [unknown] [unknown] localhost 140024128269632 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-10-10 20:44:05.225 [unknown] [unknown] localhost 140024128269632 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-10-10 20:44:05.298 [unknown] [unknown] localhost 140024128269632 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-10-10 20:44:05.320 [unknown] [unknown] localhost 140024128269632 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-10-10 20:44:05.391 [unknown] [unknown] localhost 140024128269632 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-10-10 20:44:05.392 [unknown] [unknown] localhost 140024128269632 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-10-10 20:44:05.415 [unknown] [unknown] localhost 140024128269632 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-10-10 20:44:05.424 [unknown] [unknown] localhost 140024128269632 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-10-10 20:44:05.424 [unknown] [unknown] localhost 140024128269632 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-10-10 20:52:22.061 [unknown] [unknown] localhost 139812245634368 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-10-10 20:52:22.062 [unknown] [unknown] localhost 139812245634368 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-10-10 20:52:22.062 [unknown] [unknown] localhost 139812245634368 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-10-10 20:52:22.062 [unknown] [unknown] localhost 139812245634368 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-10-10 20:52:22.062 [unknown] [unknown] localhost 139812245634368 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-10-10 20:52:22.062 [unknown] [unknown] localhost 139812245634368 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-10-10 20:52:22.062 [unknown] [unknown] localhost 139812245634368 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-10-10 20:52:22.071 [unknown] [unknown] localhost 139812245634368 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-10-10 20:52:22.073 [unknown] [unknown] localhost 139812245634368 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-10-10 20:52:22.087 [unknown] [unknown] localhost 139812245634368 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-10-10 20:52:22.087 [unknown] [unknown] localhost 139812245634368 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-10-10 20:52:22.087 [unknown] [unknown] localhost 139812245634368 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-10-10 20:52:22.087 [unknown] [unknown] localhost 139812245634368 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-10-10 20:52:22.087 [unknown] [unknown] localhost 139812245634368 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-10-10 20:52:22.087 [unknown] [unknown] localhost 139812245634368 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-10-10 20:52:22.153 [unknown] [unknown] localhost 139812245634368 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-10-10 20:52:22.176 [unknown] [unknown] localhost 139812245634368 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-10-10 20:52:22.251 [unknown] [unknown] localhost 139812245634368 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-10-10 20:52:22.252 [unknown] [unknown] localhost 139812245634368 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-10-10 20:52:22.274 [unknown] [unknown] localhost 139812245634368 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-10-10 20:52:22.284 [unknown] [unknown] localhost 139812245634368 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-10-10 20:52:22.284 [unknown] [unknown] localhost 139812245634368 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.
+0 LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+0 LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+0 LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+0 LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+0 LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+0 WARNING:  failed to open feature control file, please check whether it exists: FileName=gaussdb.version, Errno=2, Errmessage=No such file or directory.
+0 WARNING:  failed to parse feature control file: gaussdb.version.
+0 WARNING:  Failed to load the product control file, so gaussdb cannot distinguish product version.
+0 LOG:  Failed to initialze environment for codegen.
+The core dump path is an invalid directory
+2024-10-11 10:48:11.978 [unknown] [unknown] localhost 140367826173248 0  0 [BACKEND] LOG:  when starting as multi_standby mode, we couldn't support data replicaton.
+2024-10-11 10:48:11.979 [unknown] [unknown] localhost 140367826173248 0  0 [BACKEND] LOG:  [Alarm Module]can not read GAUSS_WARNING_TYPE env.
+	
+2024-10-11 10:48:11.979 [unknown] [unknown] localhost 140367826173248 0  0 [BACKEND] LOG:  [Alarm Module]Host Name: localhost.localdomain 
+	
+2024-10-11 10:48:11.979 [unknown] [unknown] localhost 140367826173248 0  0 [BACKEND] LOG:  [Alarm Module]Host IP: 127.0.0.1 
+	
+2024-10-11 10:48:11.979 [unknown] [unknown] localhost 140367826173248 0  0 [BACKEND] LOG:  [Alarm Module]Get ENV GS_CLUSTER_NAME failed!
+	
+2024-10-11 10:48:11.979 [unknown] [unknown] localhost 140367826173248 0  0 [BACKEND] LOG:  [Alarm Module]Invalid data in AlarmItem file! Read alarm English name failed! line: 52
+	
+2024-10-11 10:48:11.979 [unknown] [unknown] localhost 140367826173248 0  0 [BACKEND] LOG:  Transparent encryption disabled.
+	
+2024-10-11 10:48:12.003 [unknown] [unknown] localhost 140367826173248 0  0 [BACKEND] LOG:  loaded library "security_plugin"
+2024-10-11 10:48:12.004 [unknown] [unknown] localhost 140367826173248 0  0 [BACKEND] WARNING:  could not create any HA TCP/IP sockets
+2024-10-11 10:48:12.014 [unknown] [unknown] localhost 140367826173248 0  0 [BACKEND] WARNING:  No explicit IP is configured for listen_addresses GUC.
+2024-10-11 10:48:12.014 [unknown] [unknown] localhost 140367826173248 0  0 [BACKEND] LOG:  InitNuma numaNodeNum: 1 numa_distribute_mode: none inheritThreadPool: 0.
+2024-10-11 10:48:12.014 [unknown] [unknown] localhost 140367826173248 0  0 [BACKEND] LOG:  reserved memory for backend threads is: 220 MB
+2024-10-11 10:48:12.014 [unknown] [unknown] localhost 140367826173248 0  0 [BACKEND] LOG:  reserved memory for WAL buffers is: 128 MB
+2024-10-11 10:48:12.014 [unknown] [unknown] localhost 140367826173248 0  0 [BACKEND] LOG:  Set max backend reserve memory is: 348 MB, max dynamic memory is: 11097 MB
+2024-10-11 10:48:12.014 [unknown] [unknown] localhost 140367826173248 0  0 [BACKEND] LOG:  shared memory 330 Mbytes, memory context 11445 Mbytes, max process memory 12288 Mbytes
+2024-10-11 10:48:12.297 [unknown] [unknown] localhost 140367826173248 0  0 [CACHE] LOG:  set data cache  size(402653184)
+2024-10-11 10:48:12.465 [unknown] [unknown] localhost 140367826173248 0  0 [CACHE] LOG:  set metadata cache  size(134217728)
+2024-10-11 10:48:12.946 [unknown] [unknown] localhost 140367826173248 0  0 [BACKEND] LOG:  gaussdb: fsync file "/opt/ogdata/gaussdb.state.temp" success
+2024-10-11 10:48:12.946 [unknown] [unknown] localhost 140367826173248 0  0 [BACKEND] LOG:  create gaussdb state file success: db state(STARTING_STATE), server mode(Normal)
+2024-10-11 10:48:12.969 [unknown] [unknown] localhost 140367826173248 0  0 [BACKEND] LOG:  max_safe_fds = 977, usable_fds = 1000, already_open = 13
+The core dump path is an invalid directory
+2024-10-11 10:48:12.978 [unknown] [unknown] localhost 140367826173248 0  0 [BACKEND] LOG:  the configure file /opt/og/openGauss-server/dest//etc/gscgroup_omm.cfg doesn't exist or the size of configure file has changed. Please create it by root user!
+2024-10-11 10:48:12.978 [unknown] [unknown] localhost 140367826173248 0  0 [BACKEND] LOG:  Failed to parse cgroup config file.

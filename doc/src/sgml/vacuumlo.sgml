@@ -1,0 +1,205 @@
+<!-- doc/src/sgml/vacuumlo.sgml -->
+
+<refentry id="vacuumlo">
+ <refmeta>
+  <refentrytitle><application>vacuumlo</application></refentrytitle>
+  <manvolnum>1</manvolnum>
+  <refmiscinfo>Application</refmiscinfo>
+ </refmeta>
+
+ <refnamediv>
+  <refname>vacuumlo</refname>
+  <refpurpose>remove orphaned large objects from a <productname>PostgreSQL</productname> database</refpurpose>
+ </refnamediv>
+
+ <indexterm zone="vacuumlo">
+  <primary>vacuumlo</primary>
+ </indexterm>
+
+ <refsynopsisdiv>
+  <cmdsynopsis>
+   <command>vacuumlo</command>
+   <arg choice="opt" rep="repeat"><replaceable>option</replaceable></arg>
+   <arg choice="plain" rep="repeat"><replaceable>dbname</replaceable></arg>
+  </cmdsynopsis>
+ </refsynopsisdiv>
+
+ <refsect1>
+  <title>Description</title>
+
+
+&xconly;
+
+ <para>
+  <application>vacuumlo</> has not been supported
+  by <productname>Postgres-XC</> at present.  This may be supported in
+  the future releases.
+ </para>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </refsect1>
+
+</refentry>
