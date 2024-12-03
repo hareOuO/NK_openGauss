@@ -1,0 +1,14 @@
+
+test: delete update namespace case select_having select_implicit
+test: hw_test_operate_user
+#test: hw_createtbl_llt gsqlerr
+#test run gsqlerr and scanEreport
+#test: gsqlerr
+#test: gs_log_plan
+#test gs_initdb tool
+#test: gs_initdb gs_log_test
+#test: license_checker
+#test connect through ssl cert
+#test: hw_sslconn
+#test ssl connect through cert with pwd
+#test: hw_sslpwd

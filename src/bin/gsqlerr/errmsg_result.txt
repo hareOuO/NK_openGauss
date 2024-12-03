@@ -1,0 +1,6282 @@
+/*****************INSERT ERRMSG***************/
+
+GAUSS-08262: "cannot reindex when the global temporary table is not in use"
+SQLSTATE: 0A000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08263: "PrintUnexpectedPqBufferContent: invalid params[buffer: null len: %d]"
+SQLSTATE: 22023
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08264: "The hexadecimal number is greater than the maximum INT value"
+SQLSTATE: 22023
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08265: "Illegal magic number %d for relation mapping file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08266: "Permission denied, must be sysadmin to execute ALTER SYSTEM SET command."
+SQLSTATE: 42501
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08267: "Can not open configure file."
+SQLSTATE: 58P03
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08268: "Read configure file falied."
+SQLSTATE: 58P03
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08269: "errcode:%u, SIGBUS signal received, Gaussdb will shut down immediately"
+SQLSTATE: UE000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08270: "errcode:%u, Uncorrected Error occurred at dirty page. The error address is: 0x%llx. Gaussdb will shut down immediately."
+SQLSTATE: UE001
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08271: "errcode:%u, SIGBUS signal received, sigbus_addr is None. Gaussdb will shut down immediately"
+SQLSTATE: UE000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08272: "errcode:%u, SIGBUS signal received. The error address is: 0x%llx, Gaussdb will shut down immediately"
+SQLSTATE: UE000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08273: "Invalid time param."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08274: "Functions series of standby statement history only supported in standby mode."
+SQLSTATE: 0A000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08275: "Only system/monitor admin can use this function."
+SQLSTATE: 42501
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08276: "function standby_statement_history does not match relation statement_history."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08277: "Too many time parameters, no more than two."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08278: "Invalid time param, time1 cannot bigger than time2."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08279: "drop index failed"
+SQLSTATE: 22000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08280: "create WDR snapshot index failed"
+SQLSTATE: 22000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08281: "Fail to generate plan"
+SQLSTATE: XX008
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08282: "Invalid plan->exec_nodes object when get random data nodes."
+SQLSTATE: XX008
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08283: "consumer_num_datanodes should not be zero"
+SQLSTATE: 22012
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08284: "The distribution of merged and exec node are not the same\nmerged distribution is %s\nsupblan distribution is %s"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08285: "attnum overflow the length of subplan targetlist"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08286: "target list is too short"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08287: "should found plan in gpc"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08288: "openGauss current do not support AIO"
+SQLSTATE: 0A000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08289: "unknown media type"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08290: "transaction log file '%X/%X' is invalid,it should be larger than the restart_lsn '%X/%X' of slot."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08291: "Could not connect to the %s, we have tried %d times, the connection info : %s"
+SQLSTATE: YY004
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08292: "Could not obtain database list : %s"
+SQLSTATE: 29000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08293: "Could not obtain temp schema list : %s"
+SQLSTATE: 29000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08294: "Error when parse schema name : %s"
+SQLSTATE: 29000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08295: "Could not obtain active backend list : %s"
+SQLSTATE: 29000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08296: "Could not drop temp schema %s, %s: %s\n"
+SQLSTATE: 29000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08297: "strrchr failed, can't find '%c' in '%s'\n"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08298: "Could not connect to the database %s."
+SQLSTATE: 29000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08299: "Single Node should only has local stream operator."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08300: "Explicit prepare transaction is not supported for memory table"
+SQLSTATE: HV025
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08301: "init xlog failed, throw fatal for this thread"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08302: "could not open xlog dir in GetOldestXLOGSegNo."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08303: "failed to translate name to xlog in GetOldestXLOGSegNo."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08304: "a non-exclusive backup is already in progress in this session"
+SQLSTATE: 55000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08305: "a backup is already in progress in this session"
+SQLSTATE: 55000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08306: "non-exclusive backup in progress"
+SQLSTATE: 55000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08307: "non-exclusive backup is not in progress"
+SQLSTATE: 55000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08308: "count not get an available snapshot slot"
+SQLSTATE: DB010
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08309: "snapshot refcount must be zero"
+SQLSTATE: DB010
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08310: "snapshot or user_data could not be null when release snapshot, snapshot: %p, user_data: %p"
+SQLSTATE: DB010
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08311: "num_internal_lock_partitions attr has invalid lwlock num:%s."
+SQLSTATE: OP0A3
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08312: "num_internal_lock_partitions attr has invalid lwlock name: %s."
+SQLSTATE: OP0A3
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08313: "num_internal_lock_partitions attr has invalid input syntax."
+SQLSTATE: OP0A3
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08314: "Invalid attribute for internal lock partitions."
+SQLSTATE: OP0A3
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08315: "standby page buffer is invalid!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08316: "DRS_sender could not connect to the remote server, we have tried %d times, the connection info :%s : %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08317: "could not send replication command '%s': %s\n"
+SQLSTATE: 29000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08318: "Standby mode doesn't support drop logical slot."
+SQLSTATE: 0A000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08319: "Cannot create an archive replication slot because there is already one"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08320: "invalid target wal lsn while advancing logical replication restart lsn."
+SQLSTATE: 22023
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08321: "terminating Walsender process due to replication timeout."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+/*****************DELETE ERRMSG***************/
+
+GAUSS-01624: "Expected TargetEntry node, but got node with type %d"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01625: "can not generate shippable query for base relations of type other than plain tables"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01626: "can not handle multiple relations in a single baserel"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01627: "a join relation path should have both left and right paths"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01628: "unexpected unshippable quals in JOIN tree"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01629: "join with unshippable join clauses can not be shipped"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01631: "Creating remote query plan for relations of type %d is not supported"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01632: "expected a VAR node but got node of type %d"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01633: "No distribution information found for remote query path"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01634: "creating remote query plan for relations of type %d is not supported"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01637: "Duplicate node_ids not expected in source target list"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01638: "Duplicate ctids not expected in source target list"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01640: "cache lookup failed for attribute %s of relation %u"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01641: "Source data plan's target list does not contain ctid colum"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01642: "Unexpected command type: %d"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03514: "xlog flush request %X/%X is not satisfied --- flushed only to %X/%X"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04194: "unrecognized storage manager name '%s'"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04195: "invalid storage manager ID: %d"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05633: "File does not exits or it is being used.Can not open file: %s."
+SQLSTATE: 58P03
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05862: "create index failed"
+SQLSTATE: 22000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06102: "not support for distributed scenarios yet."
+SQLSTATE: 0A000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06110: "can not advise for temporary table: %s."
+SQLSTATE: 42601
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06624: "can not find var with varno = %u and varattno = %d"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06625: "qry_tle should not be null"
+SQLSTATE: XX005
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06626: "Partition column can't be updated in current version"
+SQLSTATE: 42P10
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06770: "XuanYuanDB current do not support AIO"
+SQLSTATE: 0A000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06831: "pgarch_ArchiverObsCopyLoop failed when call SyncRepGetSyncRecPtr"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07744: "the proc group is corrupted, the head is %u, the wakeidx is %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07758: "nNumaNodes is zero."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08203: "terminating Walsender process due to replication timeout.now time(%s) timeout time(%s) last recv time(%s) heartbeat time(%s)"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08261: "terminating walreceiver due to heartbeat timeout,now time(%s) last heartbeat time(%s) calculateTime(%s)"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+/*****************IMCOMPLETE ERRMSG***************/
+
+GAUSS-00146: "Sort method %s is not supported!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00265: "Un-support feature"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00421: "function %s asks parameters"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00429: "could not create pipe for syslog: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00430: "could not redirect stdout: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00431: "could not redirect stderr: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00432: "checkpoint request failed"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00434: "could not open archive status directory '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00437: "the options of -M is not recognized"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00442: "could not create any TCP/IP sockets"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00444: "no socket created for listening"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00445: "could not create I/O completion port for child queue"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00446: "could not load pg_hba.conf"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00448: "%s: could not locate matching postgres executable"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00449: "could not open directory '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00450: "data directory '%s' does not exist"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00451: "could not read permissions of directory '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00457: "hot standby is not possible because wal_level was not set to 'hot_standby'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00458: "when starting as dual mode, we must ensure wal_level was not 'minimal' and max_wal_senders was set at least 1"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00481: "parameter error in ParseHaListenAddr()"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00484: "could not read statistics message: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00485: "database hash table corrupted during cleanup --- abort"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00487: "could not create pipe for sysaudit: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00488: "could not write to audit file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00526: "could not create directory '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00527: "could not stat directory '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00540: "could not set permissions on directory '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00542: "could not remove symbolic link '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00543: "could not create symbolic link '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00546: "could not create tablespace directory '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00547: "could not access directory '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00575: "Permission denied to create role with option UNENCRYPTED."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00584: "The password does not satisfy the complexity requirement"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00588: "The password could not be NULL."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00590: "the relation pg_user_status is invalid"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00630: "md5-password encryption failed."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00631: "sha256-password encryption failed."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00638: "The parameter roleID of CheckPasswordComplexity is NULL"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00639: "The parameter newPasswd of CheckPasswordComplexity is NULL"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00640: "Password should not equal to the rolname."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00641: "reverse_string failed, possibility out of memory"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00644: "New password should not equal to the reverse of old ones."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00645: "the parameter passwd of AddAuthHistory is null"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00646: "sha256-password encryption failed"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00647: "The password cannot be reused."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00648: "TryLockAccount(): roleid is not valid."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00649: "Permission denied."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00650: "TryLockAccount(): parameter extrafails is less than zero."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00651: "The tuple of pg_user_status not found"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00652: "TryUnlockAccount(): roleid is not valid."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00653: "IsAccountLocked(): roleid is not valid."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00654: "getAccountLockedStyle: roleid is not valid."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00655: "DropUserStatus(): roleid is not valid."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00664: "Unsupport feature"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00665: "column store unsupport constraint '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00810: "cache lookup failed for relation %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-00816: "cache lookup failed for partition %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01091: "cstore.%s is a internal table"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01094: "pg_partition entry for partid %u vanished during vacuuming"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01095: "unexpected relkind!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01149: "could not write to COPY file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01153: "could not read from COPY file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01158: "unimplemented CopyDest mode"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01166: "invalid user-define header file '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01167: "no data in user-define header file '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01168: "user-define header should not longger than 1MB"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01210: "could not close file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01216: "could not open file '%s' for writing: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01218: "could not chmod file '%s' : %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01219: "Invalid file format"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01221: "Column Store unsupport CHECK constraint"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01228: "Missing data when batch insert compressed data !"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01230: "could not open file '%s' for reading: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01251: "could not read symbolic link '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01252: "symbolic link '%s' target is too long"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01253: "Invalid URL '%s' in LOCATION"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01254: "unrecognized URL '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01255: "wrong URL format '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01256: "unable to open file '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01257: "unable to fseek file '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01258: "no files found to import"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01259: "%s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01260: "Incomplete Message from GDS ."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01261: "unimplemented bulkload mode"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01264: "Found invalid error recored"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01265: "could not cache error info:%m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01266: "could not fetch error record:%m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01267: "incomplete error record"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01375: "Bad socket."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01376: "Unexpected EOF on GDS connection '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01378: "invalid URI '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01476: "unsupported datatype"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01617: "partitionPruningForExpr: parameter can not be null"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01618: "get null for partition pruning"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01619: "For every node in same expression, pruning result's intervalOffset MUST be same"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01698: "invalid relation file path %s."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01699: "invalid relation file path %s: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01717: "could not remove file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01719: "cache lookup failed for partitioned table %u in pg_partition"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01737: "number of partition key columns MUST less or equal than 4"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01811: "could not access file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01896: "foreign-data wrapper with OID %u does not exist"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01897: "foreign server with OID %u does not exist"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01898: "type with OID %u does not exist"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01954: "cache lookup failed for partitioned index %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01955: "Memory alloc failed for indexInfo"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01956: "cache lookup failed for index %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01957: "mergingBtreeIndexes, zero or less than 2 or greater than 4 source index relations"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01958: "mergingBtreeIndexes, only btree indexes can be merged"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01971: "could not stat control file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01973: "could not stat file or directory '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01974: "Postmaster exited, aborting active base backup"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01975: "shutdown requested, aborting active base backup"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01976: "server run mode changed, aborting active base backup"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01977: "could not open file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01979: "base backup could not send data, aborting backup"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01983: "cannot continue WAL streaming, recovery has already ended"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01988: "could not read to data file %s length %u: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01989: "fseek data file num %u error"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01991: "terminating datareceiver due to Secondary Standby has no data"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01992: "cannot continue DATA streaming, recovery has already ended"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01993: "terminating datareceiver process due to the death of datarcvwriter"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01994: "terminating datareceiver due to timeout"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01996: "no replication connection config information."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-01999: "could not write to data file %s buffer len %u, length %u: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02000: "could not write to data file %s at offset %u, length %u: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02004: "could not receive the ongoing mode infomation from the primary server: %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02005: "invalid response from primary server"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02007: "could not receive database system identifier and timeline ID from the primary server: %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02008: "database system identifier differs between the primary and standby"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02009: "timeline %u of the primary does not match recovery target timeline %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02010: "could not start DATA streaming: %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02011: "could not receive data from DATA stream: %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02012: "data replication terminated by primary server :%s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02013: "could not send data to DATA stream: %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02014: "socket not open"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02015: "select() failed: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02016: "replconninfo1 or replconninfo2 not configured."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02019: "terminating walreceiver process due to the death of walrcvwriter"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02022: "rm xlog comand is not from primary,peer_role=%d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02023: "return type must be a row type"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02026: "requested WAL segment %s has already been removed"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02030: "%u/%u/%u invalid bcm buffer %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02039: "could not rename file '%s' to '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02040: "could not unlink file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02041: "could not fsync file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02042: "could not read file '%s', read %d of %u: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02045: "replication slot file '%s' has corrupted length %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02046: "replication slot file %s: checksum mismatch, is %u, should be %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02047: "too many replication slots active before shutdown"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02050: "could not get the local protocal version, make sure the PG_PROTOCOL_VERSION is defined"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02053: "Invalid xlog offset at %X/%X. Please check xlog files or rebuild the primary/standby relationship."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02054: "failed to identify consistence at %X/%X: %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02055: "could not parse primary record's crc,primary_reccrc=%s reccrc=%u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02057: "could not create replication slot %s : %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02058: "could not start WAL streaming: %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02059: "could not receive data from WAL stream: %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02060: "replication terminated by primary server at %X/%X"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02061: "could not send data to WAL stream: %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02062: "sockaddr is NULL, because there is no connection to primary"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02063: "cannot continue Data streaming, recovery has already ended"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02064: "writing incorrect data page checksum at: rnode[%u,%u,%u], blocknum[%u], pageoffset[%u], size[%u], queueoffset[%u/%u]"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02065: "invalid tablespace link %s: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02067: "'database %u/%u' invalid directory : %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02119: "Error: no such supported locator type: %c\n"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02181: "pooler failed to send res: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02182: "could not receive data from client: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02185: "pooler failed to send pids: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02196: "Failed to read response from Datanodes Detail: %s\n"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02258: "Failed to read response from Datanodes. Detail: %s\n"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02260: "Unhandled datatype for modulo or hash distribution\n"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02318: "attribute %d has wrong type"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02410: "failed to fetch tuple for EvalPlanQual recheck"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02417: "could not rewind hash-join temporary file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02419: "could not read from hash-join temporary file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02445: "poll() failed: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02457: "could not create shared memory segment: error code %lu"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02458: "pre-existing shared memory block is still in use"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02463: "could not create signal listener pipe for PID %d: error code %lu"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02464: "could not create semaphores: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02466: "could not create shared memory segment: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02468: "could not stat data directory '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02470: "could not create semaphore: error code %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02471: "could not lock semaphore: error code %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02472: "could not unlock semaphore: error code %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02473: "could not try-lock semaphore: error code %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02493: "could not write block %ld of temporary file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02494: "could not read block %ld of temporary file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02506: "%s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02520: "could not change directory to '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02528: "could not create lock file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02529: "could not open lock file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02530: "could not read lock file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02534: "could not remove old lock file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02535: "could not write lock file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02544: "database locale is incompatible with operating system"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02555: "failed to create timer for thread"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02557: "could not load library '%s': %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02558: "incompatible library '%s': missing magic block"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02559: "incompatible library '%s': version mismatch"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02560: "incompatible library '%s': magic block mismatch"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02587: "could not reopen file '%s' as stderr: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02588: "could not reopen file '%s' as stdout: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02676: "could not read from file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02684: "md5-password encryption failed"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02686: "Invalid username/password,set role denied."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02687: "Invalid username/password,set session_authorization denied."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02733: "could not open relation mapping file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02735: "relation mapping file '%s' contains invalid data"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02736: "relation mapping file '%s' contains incorrect checksum"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02738: "could not write to relation mapping file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02740: "could not close relation mapping file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02765: "could not remove cache file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02789: "could not create file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02790: "could not write to file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02953: "could not convert string to UTF-16: error code %lu"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02954: "could not compare Unicode strings: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02982: "could not stat file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02984: "could not seek in file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-02985: "could not read file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03172: "invalid argument for enum_recv"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03175: "could not open tablespace directory '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03328: "could not initialize XML library"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03453: "Xid is invalid."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03507: "could not access status of transaction %lu"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03515: "not enough data in file '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03518: "could not open transaction log directory '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03519: "required WAL directory '%s' does not exist"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03520: "could not create missing directory '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03523: "syntax error in history file: %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03524: "invalid data in history file: %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03525: "invalid data in history file '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03528: "could not create control file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03529: "could not write to control file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03530: "could not fsync control file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03531: "could not close control file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03532: "could not open control file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03533: "could not read from control file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03534: "database files are incompatible with server"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03535: "incorrect checksum in control file"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03536: "could not write bootstrap transaction log file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03537: "could not fsync bootstrap transaction log file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03538: "could not close bootstrap transaction log file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03539: "could not open recovery command file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03540: "recovery_target_timeline is not a valid number: '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03541: "recovery_target_xid is not a valid number: '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03543: "unrecognized recovery parameter '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03545: "recovery target timeline %u does not exist"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03548: "control file contains invalid data"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03549: "requested timeline %u is not a child of database system timeline %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03550: "could not find redo location referenced by checkpoint record"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03551: "could not locate required checkpoint record"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03552: "could not locate a valid checkpoint record"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03553: "invalid next transaction ID"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03554: "invalid redo in checkpoint record"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03555: "invalid redo record in shutdown checkpoint"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03556: "backup_label contains data inconsistent with control file"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03558: "requested recovery stop point is before consistent recovery point"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03559: "WAL ends before end of online backup"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03560: "WAL ends before consistent recovery point"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03562: "concurrent transaction log activity while database system is shutting down"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03563: "online backup was canceled, recovery cannot continue"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03564: "unexpected timeline ID %u (after %u) in checkpoint record"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03565: "unexpected timeline ID %u (should be %u) in checkpoint record"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03575: "could not write file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03580: "invalid record offset at %X/%X."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03594: "could not write two-phase state file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03596: "could not close two-phase state file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03598: "could not recreate two-phase state file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03599: "could not fsync two-phase state file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03619: "invalid value for boolean option '%s': %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03620: "invalid value for integer option '%s': %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03621: "value %s out of bounds for option '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03622: "invalid value for floating point option '%s': %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03675: "index '%s' contains an inner tuple marked as invalid"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03759: "relation '%s' is not table or index"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03770: "read incomplete record from partition value cache."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03771: "could not write cache file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03772: "could not read cache file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03774: "Column store don't support"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03775: "unsupported datatype branch"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03838: "Column store don't support this system column"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03860: "Un-support CHECK constraint"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03866: "could not write into hash-join temporary file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03867: "could not write to hashAgg temporary file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03868: "could not read from hashAgg temporary file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03888: "redundant options"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03891: "Failed to initialize Cgroup. Please check if workload manager is enabled and Cgroups have been created!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03893: "invalid control group: %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03899: "read workload_gpname failed."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03906: "Can not alter default_pool"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03909: "Can not drop default_pool"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03910: "cannot drop resource pool '%s' because other objects depend on it"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03915: "Can not alter default_group"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03918: "Can not drop default_group"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03919: "cannot drop workload group '%s' because other objects depend on it"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03921: "Application Workload Group Mapping '%s': object can not create"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03926: "Can not alter default_application"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03929: "Can not drop default_application"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03985: "Invalid formatter options '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03986: "locations can not use different protocols"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03987: "invalid file header location '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03988: "Loading mode '%s' not recognized"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-03999: "can not scan a WRITE ONLY foreign table"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04002: "SHARED mode can only be used with TEXT format"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04003: "can't find error record table '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04005: "could not read from file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04006: "unable to open URL '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04008: "unsupport BINARY format"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04010: "%s doesn't exist, please create it first"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04011: "%s exists and is a file, please remove it first and create directory"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04018: "could not translate host name '%s' to address: %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04029: "could not open server file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04030: "could not read server file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04032: "could not create server file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04033: "could not chmod server file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04034: "could not write server file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04050: "malloc failed"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04051: "could not set the cipher list (no valid ciphers available)"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04052: "sslciphers can not be null"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04053: "unrecognized ssl ciphers name: '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04058: "could not load private key file '%s': %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04059: "check of private key '%s'failed: %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04061: "could not load the ca certificate file"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04062: "could not load root certificate file '%s': %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04063: "could not load SSL certificate revocation list file '%s': %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04119: "unexpected data beyond EOF in block %u of relation %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04128: "malloc fails, out of memory"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04129: "Could not open file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04130: "could not extend file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04131: "flush file '%s' failed: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04138: "could not initialize CStore Column space desc hash table"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04139: "No CUID is left for new CU in relation '%u'. Please execute the VACUUM FULL before do anything else"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04140: "build global column space cache hash table failed"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04159: "HeapMemIndex entry size is wrong for data structure '%s': expected %lu, actual %lu"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04163: "ShmemIndex entry size is wrong for data structure '%s': expected %lu, actual %lu"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04167: "could not close file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04173: "Invalid socket fd '%d' for poll():%m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04178: "could not read directory '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04182: "could not read block %u in file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04184: "could not write block %u in file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04187: "could not truncate file '%s' to %u blocks: it's only %u blocks now"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04188: "could not truncate file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04189: "could not truncate file '%s' to %u blocks: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04193: "could not seek to end of file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04280: "could not fetch expected length:%m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04313: "can't get old group buckets."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04345: "Operator with OID %u dose not exist."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04350: "duplicated URL '%s' in LOCATION"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04365: "The expiration time could not be earlier than the starting time."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04366: "The old password can not be NULL, please input your old password with 'replace' grammar."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04367: "The old password is invalid."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04378: "you are not allowed to do that operation immediately, please try again later"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04379: "The account is not within the period of validity."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04383: "Bucketmap is NULL"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04390: "Failed to initialze NativeTarget for LLVM."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04391: "Failed to initialze NativeTargetAsmPrinter for LLVM."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04392: "Failed to initialze NativeTargetAsmParser for LLVM."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04407: "Not allowed to insert into relation pg_auth_history."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04421: "standby_rec=%x/%x standby latest record's crc %u and primary corresponding record's crc %u not matched"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04422: "%u/%u/%u invalid bcm meta buffer %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04423: "could not create data file '%s', dummy_data_writer_file_fd=%d: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04424: "Vector aggregation does not support this distinct clause in aggregate function"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04440: "Failed to connect hdfs."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04441: "Unsupport store format, only support ORC format for DFS table."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04484: "InProgressBuf not null: id %d flags %u, buf: id %d flags %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04485: "posix_memalign fails, The alignment argument was not a power of two, or was not a multiple of sizeof(void *)"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04492: "redundant options."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04503: "wrong buffer passed to BCM_clear, BlockNumber from buf is %u,mapBlock is %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04504: "data receiver could not connect to the primary server: %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04530: "Failed to read response from Datanodes while sending query ID with sync. Detail: %s\n"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04546: "could not open roach %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04547: "could not read from roach"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04548: "Failed to init roach routine."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04550: "could not close roach %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04551: "could not write to roach"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04564: "could not write to batchstore temporary file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04565: "could not write to tuplestore temporary file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04566: "unsupported to set memory_detail_tracking value under release version."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04574: "unsupported view for memory protection feature is disabled."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04578: "ExpectedEntries should be > 0 and < 10000000."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04580: "Add too many values to the bloom filter."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04581: "BloomFilters are not compatible for merging."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04607: "Unsupport address, cfgpath, storepath options when the filesystem is not HDFS."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04608: "Failed to get storepath from tablespace options."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04609: "Failed to get cfgpath from tablespace options."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04613: "Failed to drop external directory, because the cfgpath option has not been found from pg_tablespace."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04623: "invalid GDS command: %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04624: "Failed to deserialize command, which type is %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04629: "gs_switch_relfilenode can be only used by redistribution tool."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04637: "It is not allowed to assign version option for non-dfs table."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04638: "Unsupport '%s' option"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04639: "Invalid string for 'VERSION' option"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04640: "Num of partition keys in value-partitioned table should not be zeror"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04641: "Num of partition keys in value-partitioned table exceeds max allowed num:%d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04642: "Unsupport partition strategy '%s' feature for dfs table."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04667: "Failed to get import task for dn:%s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04668: "Receive wrong messge %d from GDS."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04669: "Receive incomplete message from GDS."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04752: "could not initialize partition pruning result cache."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04753: "Unsupported data type on column:%s when forming partition signature"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04754: "could not write to partition staging temporary file while loading partition %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04756: "could not rewind DFS Partition Loading temporary file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04763: "No cfgpath is specified for a DFS server."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04764: "No storepath is specified for a DFS server."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04767: "could not access status of transaction %lu, nextXid is %lu"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04770: "write cu failed, colid(%d) cuid(%u), offset(%lu), size(%d) : %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04774: "Snapshot too old."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04778: "Unable to get store format for Dfs relation %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04784: "Relation with OID %u does not exist."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04892: "could not get element type of array type %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04909: "initialize the built-in function failed: %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04951: "File '%s' does not exist."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04952: "Library File '%s' does not have READ permission."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04955: "Copy file '%s' failed: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04958: "Library file '%s' does not exist."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04964: "can not get current user name for the C function file."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04965: "can not get user name for current process."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-04985: "Failed to write data to the dfs file list, error code: %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05025: "Failed to Generate the random number,errcode:%d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05031: "could not create SSL context : %s.)"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05034: "DH: generating parameters (3072 bits) failed"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05046: "varno is unvalid"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05054: "Parsing null pointer to CheckTsDelete!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05055: "Timeseries only supports deletion by time range!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05078: "check failure with rt_fetch function"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05143: "relation '%s' does not have hash buckets"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05278: "the replication type should be multi-standby, now is %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05310: "%s.%s not found when analyze fetching global statistics."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05311: "Fetch statistics from myself is unexpected. Maybe switchover happened."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05331: "replication type is invalid in PGXCNodeGetNodeId (nodeoid = %u, node_type = %c"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05337: "pooler: could not find node of node[%d], oid[%u], needCreateArrayLen[%d], loopIndex[%d], i[%d], j[%d], isNull[%d]"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05340: "invalid %s node number: %d, max_value is: %d."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05349: "malloc memory failed in dynamic loader."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05397: "Dictionary file '%s' does not exist or cannot access the directory."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05398: "Dictionary File '%s' does not have READ permission."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05401: "Copy dictionary file '%s' failed: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05435: "could not stat bucket dir '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05436: "rel path is not a dir '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05437: "could not stat file under bucket dir '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05452: "file length cannot be divisibed by 8k: file %s, offset %ld, nbytes %lu"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05453: "cheksum failed in file '%s'(computed: %d, recorded: %d)"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05458: "collection list has not been initialized!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05497: "An exception occurred when the locktag data is transferred!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05498: "The input parameter %s is invalid!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05499: "The input locktag is invalid!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05505: "This function is not available in multipule nodes mode"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05586: "Catalog attribute %d for relation '%s' has been updated concurrently"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05595: "recover failed could not write to relation mapping file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05596: "recover failed could not fsync relation mapping file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05597: "recover failed could not close relation mapping file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05600: "pg_localtime must not be null!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05603: "could not load library '%s', get error report failed"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05611: "bogus lock file '%s',could not unlink it : %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05612: "bogus data in lock file '%s': '%s', please kill the instance process, than remove the damaged lock file"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05623: "failed to initialize %s to " INT64_FORMAT
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05634: "could not rename file '%s' to '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05635: "GaussDB can't support idle time less than 0 or more than %d seconds."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05646: "Get GAUSSHOME failed, please check."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05647: "calculated CRC checksum does not match value stored in file"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05659: "detected write past chunk end in %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05664: "We can not set memory context parent with different session number"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05669: "pinned portal is not ready to be auto-held"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05684: "could not write to row store temp file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05685: "could not read from row store temp file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05686: "row store : dn node id(%d) exceeds max bank num(%d)"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05687: "row store : cn node id(%d) exceeds max bank num(%d)"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05688: "failed to get cn/dn node id for OID %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05689: "row store : cannot write cell into either memory or disk"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05690: "row store : expect data from row store, but no data read"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05691: "row store : expect to read node_id = %u but got %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05692: "could not seek store temp file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05693: "row store : expect to read from file but no file opened"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05694: "row store : cannot determine msg len when %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05695: "row store : msg and msglen mismatch when %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05696: "row store : LZ4_compress_default failed trying to compress the data"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05697: "row store : unexpected original len of msg when decompressing data"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05698: "row store : unexpected compressed len when decompressing data"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05704: "Cannot found valid cid in UsedComboCids. UsedComboCids: %d, tuple cid: %u."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05706: "Built-in functions should not be added into pg_proc"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05707: "(s|sender init)\tFailed to init sender[%d] for %s."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05709: "(s|libcomm_cpu_rate init)\tFailed to malloc g_libcomm_used_rate."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05710: "(r|receivers init)\tFailed to malloc g_r_node_sock[%d]."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05711: "(r|receivers init)\tFailed to malloc g_receivers[%d]."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05712: "(s|sender init)\tFailed to malloc g_s_node_sock[%d]."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05713: "(s|sender init)\tFailed to malloc g_delay_info[%d]."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05714: "(s|sender init)\tFailed to malloc g_senders[%d]."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05715: "(r|cmailbox init)\tFailed to init cmailbox."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05716: "(s|pmailbox init)\tFailed to init pmailbox."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05717: "(s|pmailbox init)\tFailed to init g_usable_streamid."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05718: "Failed to build mailbox[%d]."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05719: "communicator palloc CommReceiverPIDS mempry failed"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05720: "(s|flow ctrl init)\tFailed to init poller list:%s."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05721: "(r|flow ctrl init)\tFailed to do listen:%s."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05722: "(r|flow ctrl init)\tFailed to init poller list:%s."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05723: "(s|flow ctrl)\tFailed to do epoll wait[%d] with errno[%d]:%s."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05724: "(r|flow ctrl)\tFailed to do epoll wait[%d] with errno[%d]:%s."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05725: "(r|recv loop)\tFailed to do epoll wait[%d] with errno[%d]:%s."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05726: "(r|receiver init)\tFailed to init receiver listen socket:%s."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05727: "(r|receiver init)\tFailed to init receiver semaphore:%s."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05728: "(r|receiver init)\tFailed to init thd_receiver_id:%s."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05729: "(r|receiver init)\tFailed to init poller list:%s."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05730: "(r|receiver init)\tFailed to add libcomm listen socket[%d] and version[%d] to poller list."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05731: "(r|receiver init)\tLibcomm init receiver threads fail, wait(10s) timeout, please check the machine resource usage, and try again later."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05755: "could not initialize Dummny server hash table"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05773: "[CapView] OOM in capture view"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05774: "[CapView] could not write to view perf file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05775: "[CapView] could not ftell json file :%m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05776: "[CapView] pls check database name and view name!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05777: "[CapView] view name is too long!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05778: "[CapView] invalid view name!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05780: "[CapView] in capture_view_to_json proc, view_name or is_all_db can not by null"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05781: "[CapView] in capture_view_to_json proc, is_all_db can only be 0 or 1"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05783: "[CapView] capture view to json failed! detail: %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05785: "[CapView] calc realpath failed"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05786: "[CapView] could not open log file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05787: "[CapView] could not chmod view json file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05793: "[UniqueSQL] check unique sql array slot index!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05794: "[UniqueSQL] invalid 'r' message. node: %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05795: "[UniqueSQL] palloc failed for results!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05796: "[UniqueSQL] during get stat from remote, failed to send/recv data!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05797: "[UniqueSQL] palloc0 error when querying unique sql stat!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05800: "[UniqueSQL] recv invalid sql ids count"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05801: "out of memory during allocating list element."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05806: "[user] cannot alloc memory for user stat"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05880: "it's an encrypted cluster, but parameter not initialized!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05881: "encrypt failed, return code is %u!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05882: "encrypt failed after retry three times, error code is %u!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05930: "stat cipher file '%s' failed, detail: %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05931: "stat rand file '%s' failed, detail: %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05932: "cipher file '%s' has group or world access;permissions should be u=rw (0600) or less with Error: %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05933: "rand file '%s' has group or world access;permissions should be u=rw (0600) or less with Error: %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05935: "Failed to set the socket(%d) for SSL"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05936: "Failed to certificate file '%s' in SSL object"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05937: "Failed to check the private key File."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05938: "SSL connect failed, code %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05939: "gz_open failed: errno %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05940: "gz_read failed: offset %ld, errno %d, returned size %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05941: "vfd_file_open failed: vfd(-1), errno %d, file '%s' "
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05942: "vfd_file_open2 failed: vfd(-1), errno %d, file '%s' "
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05943: "vfd_file_read2 failed: errno %d, returned size %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05944: "vfd_file_write2 failed: errno %d, returned size %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05945: "unzOpen2_64 failed: file '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05946: "unzGetGlobalInfo64 failed: file '%s', err %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05947: "unzOpenCurrentFile failed: file '%s', err %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05948: "unzCloseCurrentFile failed: err %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05949: "unzReadCurrentFile failed: err %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05950: "unzGoToNextFile failed: err %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05951: "unzOpenCurrentFile failed: err %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05967: "invalid size [%lu]"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05981: "Unknow message type '%c' for dywlm client send."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-05997: "invalid retcode [%d]"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06000: "Unknow message type '%c' for client records."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06068: "need two valid user."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06111: "analyze prefetch block list can not be NULL"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06117: "invalid nodeId: %s(%d)"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06118: "Invalid node group member found while doing table switch (%u,%u)"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06126: "could not open header file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06148: "bulkload illegal chars conversion is just allowed for char type attribute, the original character with byte sequence %s in encoding '%s' has no equivalent in encoding '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06149: "bulkload illegal chars conversion is just allowed for char type attribute, the original invalid byte sequence for encoding '%s': %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06194: "could not open extension control file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06224: "env $GAUSSHOME not found, please set it first"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06225: "failed to bind fd(%d) to ssl"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06227: "The peer GDS has performed an orderly shutdown on current connection."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06228: "exception from GDS '%s':%m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06317: "Standby do not support nextval, please do it in primary!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06320: "Standby do not support setval, please do it in primary!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06407: "The obs foreign partition table cannot support on text, csv, carbondata format."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06408: "The obs foreign table has column type bytea, cannot support on orc format."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06454: "Hash bkt dir '%s' not exists:%m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06455: "could not create directory '%s':%m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06526: "Password cannot contain characters except numbers, alphabetic characters and specified special characters."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06573: "right operator can not be NULL"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06591: "[Join Unique] best_path should not be NULL"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06684: "%d of duplicate bucket id found"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06699: "Read from key file failed."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06700: "decrypt input key failed."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06701: "Decode password for client key failed."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06702: "Read certificate files failed."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06703: "connect to ai engine failed"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06704: "AiEngine is not available in multipule nodes mode"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06705: "IpAddress should not be NULL."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06706: "Port should not be NULL."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06707: "Optname should not be NULL."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06708: "Orientation should not be NULL."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06709: "could not open temporary statistics file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06711: "TemplateName should not be NULL."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06712: "ModelName should not be NULL."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06725: "could not close temporary statistics file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06726: "could not write to file: '%lu.csv': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06744: "Timeseries relation %u cloud not find tag column %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06769: "no free slot when start job worker"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06774: "AutoVacuum Data share mem is already init"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06775: "AutoVacuum Data share mem is not init"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06780: "could not create Unix-domain socket: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06781: "bind socket path %s failed:%m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06782: "listen socket failed: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06786: "create UDFWorkMemContext failed"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06796: "UnixSocketDir is not valid, length is between 1 and %lu: %s/%s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06829: "process suicides because the victim of lwlock deadlock is an auxiliary thread"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06830: "the move_loc buffer should be invalid."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06834: "Integer overflow when update database-wid stats"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06835: "Failed to get database-wide stats."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06836: "timed_checkpoints overflow"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06837: "requested_checkpoints overflow"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06838: "checkpoint_write_time overflow"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06839: "checkpoint_sync_time overflow"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06840: "buf_written_checkpoints overflow"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06841: "buf_written_clean overflow"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06842: "maxwritten_clean overflow"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06843: "buf_written_backend overflow"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06844: "buf_fsync_backend overflow"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06845: "buf_alloc overflow"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06847: "Invalid page size"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06851: "the options of -n is deprecated"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06852: "the options of -T is deprecated"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06854: "could not create listen socket for '%s:%d'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06855: "pooler_port must equal to gsql listen port plus one!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06856: "could not create ha listen socket for '%s:%d'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06857: "could not create Ha listen socket for ReplConnInfoArr[%d]'%s:%d'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06858: "could not create Unix-domain socket for '%s:%d'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06859: "Init libcomm for stream failed, maybe listen port already in use"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06865: "set basic info of stream failed!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06868: "unrecorgnized proc type %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06869: "create timer fail at thread : %lu"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06870: "unsupport thread role type %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06874: "could not add lock when DN is not redo all xlog, redo done flag is false"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06875: "could not add lock when DN is not redo all xlog."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06881: "cannot read disable connection file: '%s' \n"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06882: "syslogger could not open file %d: %m,exit\n"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06909: "MPP with-recursive step%d, %s failed [code:%d] to read response 'R' from Datanodes. Detail: %s\n"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06924: "unexpect list length %d of mem_list from info_query_string."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06925: "analyzeNode is null."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06947: "canceling statement due to %s.%s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06948: "canceling statement due to %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06969: "Received an invalid commit csn: %lu."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06971: "Please use 'ALTER ROLE user_name IDENTIFIED BY 'password' REPLACE 'old password';' to modify the expired password of user %s before operation!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-06998: "invalid commit csn: %lu."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07022: "string of invalid transaction message would overflow buffer"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07026: "epoll receive %d events which exceed the limitation %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07123: "slot is out of range"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07155: "could not write hashvalue %u to hash-join temporary file, written length %lu."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07156: "could not write tuple to hash-join temporary file: written length %lu, tuple length %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07157: "could not read from hash-join temporary file: read length %zu"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07158: "The hash-join temporary file is corrupted,hashvalue:%u, length:%u."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07159: "could not read from hash-join temporary file(t_len:%u,nread:%lu): %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07300: "could not write to hashJoin temporary file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07301: "could not read hashkey from hash-join temporary file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07317: "[SonicHash] could not rewind sonic hash-join temporary file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07330: "make sure connection to elastic_search_ip_addr, error info: %s\n"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07360: "Could not find tuple for label %lld"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07408: "Failed to get currentFileName !"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07409: "setDescByFilePath cannot find filename"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07415: "The leftop is null"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07416: "The rightop is null"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07433: "The arg is null"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07489: "could not seek temporary file: %ld"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07490: "could not read temporary file: %ld"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07491: "myDistances is NULL!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07504: "attempted to kill a tuple inserted by another transaction: %lu, %lu"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07505: "Can't fit xid into page. relation '%s', now xid is %lu, base is %lu, min is %u, max is %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07506: "Can't fit xid into page, now xid is %lu, base is %lu, min is %u, max is %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07507: "heap_delete: invalid tid %hu, max tid %hu, rnode[%u,%u,%u], block %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07511: "heap_update: invalid tid %hu, max tid %hu, rnode[%u,%u,%u], block %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07518: "heap_redo: unknown op code %hhu"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07519: "heap2_redo: unknown op code %hhu"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07520: "heap3_redo: unknown op code %hhu"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07527: "gpiScan is null, when set partition oid"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07528: "gpiScan is null, when get partition oid"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07537: "btree_redo: unknown op code %hhu"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07538: "Failed to check input value: invalid token '%s'.\n"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07543: "Datanode '%s' fail to seek buffer file be (0, 0) after reset actual length"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07555: "ClogXlogDdlParseToBlock: unknown op code %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07556: "cannot mark transaction %lu committed without CSN %lu"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07564: "HashRedoParseToBlock: unimplemented"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07565: "heap_multi_insert_redo: total tuple length mismatch"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07566: "heap_inplace_redo: no tuple data"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07567: "HeapRedoParseToBlock: unknown op code %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07568: "Heap2RedoParseIoBlock: unknown op code %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07570: "HeapRedoDataBlock: unknown op code %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07571: "HeapRedoVmBlock: unknown op code %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07572: "heap2_redo_block: unknown op code %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07573: "Heap2RedoVmBlock: unknown op code %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07574: "Heap3RedoParseToBlock: unknown op code %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07575: "heap3_redo_block: unknown op code %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07576: "BtreeRedoParseToBlock: unknown op code %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07577: "btree_redo_block: unknown op code %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07580: "smgr_redo_parse_to_block: unknown op code %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07582: "xlog_redo_parse_to_block: unknown op code %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07583: "unexpected XLogReadBufferForRedo result when restoring backup %u/%u/%u forknumber %d block %u lsn %X/%X"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07584: "lsn check error, lsn in record (%X/%X) ,lsn in current page %X/%X, page info:%u/%u/%u forknum %d blknum:%u lsn %X/%X"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07594: "XLogBlockDataCommonRedo: redobuffer checkfailed"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07595: "XLogBlockDataCommonRedo: unknown rmid %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07596: "XLogBlockVmCommonRedo: redobuffer checkfailed"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07597: "XLogBlockRedoForExtremeRTO: redobuffer checkfailed"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07598: "XLogParseToBlockCommonFunc: rmid checkfailed"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07599: "just do panic"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07611: "Length of CBM file home path exceeds MAXPGPATH!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07612: "Length of absolute CBM file path would exceed MAXPGPATH!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07614: "Failed to truncate CBM file '%s' to length %ld"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07615: "could not create new CBM file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07616: "could not open CBM file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07617: "failed to stat current cbm file %s :%m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07627: "fsync CBM file '%s' failed during flushing"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07628: "could not write CBM file '%s', page offset %ld"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07629: "close CBM file '%s' failed during rotate"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07631: "could not rename file '%s' to '%s' during rotate: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07632: "could not open CBM file directory '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07638: "could not open CBM file '%s' while merging: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07650: "could not create merge dest CBM file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07655: "timeout when call pg_cbm_rotate_file"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07656: "Incorrect xid status %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07657: "CLOG STATUS ERROR: xid %lu status %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07658: "CLOG PAGE STATUS ERROR: xid %lu status %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07659: "CLOG STATUS ERROR: xid: %lu input status %s, current status %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07663: "Initialize the csn log failed."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07666: "Read file error"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07667: "Read file size mismatch: expected %d, read %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07668: "Write file error"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07669: "Write file size mismatch: expected %d, written %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07670: "Seek file error"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07671: "DW extend file failed, expected_file_size %ld, offset %ld, extend_size %ld"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07673: "DW check file size failed, expected_size %ld, actual_size %ld"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07674: "File header is broken"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07675: "Could not truncate dw file during startup!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07676: "Could not create file '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07677: "DW file close failed"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07678: "Could not remove the residual batch flush DW single flush file"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07679: "Could not remove the residual single flush DW single flush file"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07680: "Could not remove the DW build file"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07681: "batch flush DW file does not exist"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07682: "single flush DW file does not exist"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07683: "Could not open file '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07684: "[batch flush] Double write already closed"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07686: "PRTrackRemoveEntry:Redo item hash table corrupted"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07701: "MultiRedoGetWorkerId parallel redo and extreme redo is close, should not be here!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07702: "MultiRedoMain parallel redo and extreme redo is close, should not be here!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07703: "multixact_redo_parse_to_block: unknown op code %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07716: "could not access status of transaction %lu , nextXid is %lu "
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07717: "the current valid prepared xid list or the next valid prepared list should not be NULL"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07720: "could not read two-phase state from xlog at %X/%X, errormsg: %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07721: "expected two-phase state data is not present in xlog at %X/%X"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07722: "could not read two-phase state file."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07725: "cannot abort prepared transaction %lu, it was already committed"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07739: "Wrong type: %d in execSendSavepoint."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07740: "Wrong type: %d when handling savepoints."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07742: "SUBXACT_TEST %s: Commit subtransaction %s before notice GTM failed."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07745: "space reserved for WAL record does not match what was written"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07746: "could not find WAL buffer for %X/%X"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07747: "could not seek in log file %s to offset %u: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07748: "could not write to log file %s at offset %u, length %lu: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07749: "could not open file '%s' (log segment %s): %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07750: "lseek2:could not seek in log file %s to offset %u: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07751: "could not open xlog file '%s' (log segment %s): %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07752: "could not close log file %s: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07754: "recover failed could not open control file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07755: "recover failed could not write to control file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07756: "recover failed could not fsync control file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07757: "recover failed could not close control file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07759: "XLOGShmemInit num_xloginsert_locks should be multiple of NUMA node number in the system."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07760: "XLOGShmemInit could not alloc memory on node %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07761: "cann't read a random number from file '/dev/urandom'."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07762: "could not open file '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07763: "lseek file error '%s' "
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07764: "could not write file '%s' "
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07765: "could not fsync file '%s' "
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07766: "could not close file '%s' "
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07768: "old version XLog must be shutdown checkpoint or online checkpoint."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07769: "redo starts at %X/%X"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07770: "redo can not support old version!!!!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07771: "there are some received xlog have not been redo the tail of last redo lsn:%X/%X, received lsn:%X/%X"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07772: "curMinRecLSN little prev checkpoint lsn is %08X/%08X,now lsn is %08X/%08X"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07773: "current dirty page list head recLSN %08X/%08X smaller than redo lsn %08X/%08X"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07775: "could not fsync log segment %s: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07776: "could not fsync log file %s: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07777: "could not fsync write-through log file %s: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07778: "could not fdatasync log file %s: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07780: "file size is wrong, '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07787: "failed to touch %s file during enable xlog delay: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07788: "could not remove %s file: %m. This will lead to residual of stale xlog segments"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07789: "failed to stat %s file:%m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07790: "could not open rewind file: %s\n"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07792: "could not remove %s file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07793: "failed to write %s file during enable delay ddl recycle"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07796: "failed to write %s file during disable delay ddl recycle"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07797: "could not remove %s file after write failure: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07799: "could not remove %s file before unlink col relation files: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07800: "mpfl_pwrite_file failed, MPFL_FILE_SIZE %d, offset %ld, write_size %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07801: "mpfl_pwrite_file: Write file error"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07802: "mpfl_pwrite_file: Write file size mismatch: expected %d, written %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07803: "Could not remove max_flush_lsn file"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07810: "get sync flush lsn error"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07821: "invalid xlog info mask %hhx"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07822: "invalid page header in block %u, spc oid %u db oid %u relfilenode %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07824: "could not close log file %u, segment %lu: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07826: "failed to locate backup block with ID %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07827: "block with WILL_INIT flag in WAL record must be zeroed by redo routine"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07829: "can not get xlog lsn from record page block %u lsn %lu"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07830: "could not seek in log segment %s to offset %u: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07831: "could not read from log segment %s, offset %u, length %d, readbytes %d: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07832: "Memory allocation failed.\n"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07837: "[exception] private ref->refcount is %d in UnpinBuffer"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07876: "complete IO, slot(%d), flag(%d)"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07885: "Cannot save CUDesc for a dropped column '%s' of table '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07887: "Cannot fill VecBatch for a dropped column '%s' of table '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07888: "compression unit descriptor not found, table(%s), column(%s), relfilenode(%u/%u/%u), cuid(%u))."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07889: "CU Delete bitmap is missing."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07896: "compression unit descriptor(talbe '%s', column '%s', cuid %u) not found"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07916: "No cache found when print data cache slot leak warning: slotId:%d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07918: "CU partial write, file '%s', offset(%lu), total(%d), expected(%d), actual(%d): %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07919: "could not extend file '%s', offset(%lu), total(%d), expected(%d), actual(%d): %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07920: "read file '%s' failed, %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07921: "some data are read from '%s', offset(%lu), load size(%d), expected read(%d), actual read(%d)"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07922: "could not read file '%s', offset(%lu), load size(%d), expected read(%d), actual read(%d): %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07923: "write file '%s' failed in savecu!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07924: "write file '%s' failed in OverwriteCU!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07925: "read file '%s' failed in load!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07926: "unexpected cu file read info: offset(%lu), size(%d), readFileId(%d), readOffset(%lu), expect_read_size(%d)."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07927: "read file '%s' failed, offset(%lu), size(%d), expect_read_size(%d), acture_read_size(%d), maybe you should upgrade cstore data files first"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07928: "could not read file '%s', offset(%lu), size(%d), expect_read_size(%d), acture_read_size(%d): %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07929: "read file '%s' failed in wsload!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07937: "could not initialize OBS connector hash table"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07938: "could not munmap() while flushing data: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07939: "unable to open process pid directory '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07941: "io_submit() async read failed %d, dispatch count(%d)"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07942: "io_submit() async write failed %d, dispatch count(%d)"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07944: "io_submit() async cu read failed %d, dispatch count(%d)"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07945: "io_submit() async cu write failed %d, dispatch count(%d)"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07946: "FileAccess() extend file failed %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07948: "Allocate dir failed."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07949: "could not write to temporary file: the file size exceeds the max size: %ldBYTE"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07950: "could not write to temporary file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07951: "could not read from temporary file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07964: "standby_redo: unknown op code %hhu"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07973: "force thread %lu to exit because of lwlock deadlock"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07982: "InitNuma NUMA is not available"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07985: "InitProcess numa_run_on_node_mask failed. errno:%d "
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-07995: "MOTBeginRedoRecovery: failed to create session context."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08020: "Session startup: failed to create session context."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08023: "MOT supports indexes of type BTREE only (btree or btree_art)"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08033: "could not find WAL file '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08034: "could not find any WAL files"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08035: "unexpected WAL file size '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08036: "Cannot stat file %s when judge it's a rowdatafile for roach. OS error: %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08037: "base backup receive stop message, aborting backup"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08038: "base backup cheksum failed in file '%s'(computed: %d, recorded: %d), aborting backup"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08042: "Invalid relation while clearing BCM status: rnode[%u,%u,%u], blocknum[%u], pageoffset[%lu], size[%u], attid[%d]"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08044: "heap sync hash table not cleaned, num of entries:%ld"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08047: "Failed to write the wal data: the database path %s doesn't exist."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08048: "could not fdatasync data file num %u, fd %d: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08051: "bufferSize reaches the limit of INT_MAX"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08052: "could not read to data file slice %s length %u: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08053: "ParseDataHeader failed due to insufficient buffer."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08054: "ParseDataHeader failed due to illegal currentLen %u."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08058: "Current length is illegal, the dataRcvReceiveelement info is : %u, %u, %u, %u "
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08059: "received incorrect data page checksum at: rnode[%u,%u,%u], blockno[%u], segno[%u], pageoffset[%u], size[%u], queueoffset[%u/%u]"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08063: "Secondery standby finish read data error, total len %u, bufsize %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08064: "Secondery standby read data error, total len %u, bufsize %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08067: "create epoll failed %d."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08068: "epoll_wait fd %d error :%m, agent thread exit."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08069: "Can't find the oldest unidentified connection."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08111: "could not read from log segment %s, offset %u, length %lu: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08125: "could not write to xid %lu's data file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08126: "could not read from reorderbuffer spill file: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08127: "incomplete read from reorderbuffer spill file: read %d instead of %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08128: "illegality read length %lu"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08129: "could not read from reorderbuffer spill file: read %d instead of %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08135: "could not read file '%s', read %d instead of %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08147: "could not read file '%s', read %lu of %lu: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08150: "could not read file '%s', size overflow"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08151: "snapbuild state file %s: checksum mismatch, is %u, should be %u"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08168: "could not rm directory '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08169: "could not read file '%s', content is %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08170: "replication slot file '%s' has wrong magic %u instead of %d"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08171: "recover failed could not open slot file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08172: "recover failed could not write to slot file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08173: "recover failed could not fsync slot file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08174: "recover failed could not close slot file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08175: "message is inleagel '%s'"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08183: "could not seek in log file %s to offset %d: %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08184: "unexpected page addr %lu of log file %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08186: "Refuse WAL streaming, connection mode is %d, connertion IP is %s:%d\n"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08188: "WAL streaming isn't employed to sync all the replication data log."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08195: "Unexpected seek in the walreceiver buffer. xlogrecptr is (%X:%X) but local xlogptr is (%X:%X).nbyte is %lu, walfreeoffset is %ld walwriteoffset is %ld walreadoffset is %ld"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08196: "Unexpected seek in the walreceiver buffer. xlogrecptr is (%X:%X) but local xlogptr is (%X:%X)."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08198: "enable_cbm_tracking must be turn on when enable_mix_replication is on!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08202: "walsender stop switchover process for catchup is alive, the process need to be restart"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08204: "could not stat bucket directory '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08205: "could not create bucket directory '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08207: "Bucket dir '%s' exists when creating bucket dir under not-redo"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08208: "md async write error"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08248: "could not create log directory '%s': %s\n"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08251: "Please use 'ALTER ROLE user_name PASSWORD 'password';' to set the password of user %s before other operation!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08257: "the function or procedure with exception can't be pushed down for execution"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08262: "cannot reindex when the global temporary table is not in use"
+SQLSTATE: 0A000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08263: "PrintUnexpectedPqBufferContent: invalid params[buffer: null len: %d]"
+SQLSTATE: 22023
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08264: "The hexadecimal number is greater than the maximum INT value"
+SQLSTATE: 22023
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08265: "Illegal magic number %d for relation mapping file '%s': %m"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08266: "Permission denied, must be sysadmin to execute ALTER SYSTEM SET command."
+SQLSTATE: 42501
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08267: "Can not open configure file."
+SQLSTATE: 58P03
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08268: "Read configure file falied."
+SQLSTATE: 58P03
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08269: "errcode:%u, SIGBUS signal received, Gaussdb will shut down immediately"
+SQLSTATE: UE000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08270: "errcode:%u, Uncorrected Error occurred at dirty page. The error address is: 0x%llx. Gaussdb will shut down immediately."
+SQLSTATE: UE001
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08271: "errcode:%u, SIGBUS signal received, sigbus_addr is None. Gaussdb will shut down immediately"
+SQLSTATE: UE000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08272: "errcode:%u, SIGBUS signal received. The error address is: 0x%llx, Gaussdb will shut down immediately"
+SQLSTATE: UE000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08273: "Invalid time param."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08274: "Functions series of standby statement history only supported in standby mode."
+SQLSTATE: 0A000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08275: "Only system/monitor admin can use this function."
+SQLSTATE: 42501
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08276: "function standby_statement_history does not match relation statement_history."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08277: "Too many time parameters, no more than two."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08278: "Invalid time param, time1 cannot bigger than time2."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08279: "drop index failed"
+SQLSTATE: 22000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08280: "create WDR snapshot index failed"
+SQLSTATE: 22000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08281: "Fail to generate plan"
+SQLSTATE: XX008
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08282: "Invalid plan->exec_nodes object when get random data nodes."
+SQLSTATE: XX008
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08283: "consumer_num_datanodes should not be zero"
+SQLSTATE: 22012
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08284: "The distribution of merged and exec node are not the same\nmerged distribution is %s\nsupblan distribution is %s"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08285: "attnum overflow the length of subplan targetlist"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08286: "target list is too short"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08287: "should found plan in gpc"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08288: "openGauss current do not support AIO"
+SQLSTATE: 0A000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08289: "unknown media type"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08290: "transaction log file '%X/%X' is invalid,it should be larger than the restart_lsn '%X/%X' of slot."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08291: "Could not connect to the %s, we have tried %d times, the connection info : %s"
+SQLSTATE: YY004
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08292: "Could not obtain database list : %s"
+SQLSTATE: 29000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08293: "Could not obtain temp schema list : %s"
+SQLSTATE: 29000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08294: "Error when parse schema name : %s"
+SQLSTATE: 29000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08295: "Could not obtain active backend list : %s"
+SQLSTATE: 29000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08296: "Could not drop temp schema %s, %s: %s\n"
+SQLSTATE: 29000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08297: "strrchr failed, can't find '%c' in '%s'\n"
+SQLSTATE: XX000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08298: "Could not connect to the database %s."
+SQLSTATE: 29000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08299: "Single Node should only has local stream operator."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08300: "Explicit prepare transaction is not supported for memory table"
+SQLSTATE: HV025
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08301: "init xlog failed, throw fatal for this thread"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08302: "could not open xlog dir in GetOldestXLOGSegNo."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08303: "failed to translate name to xlog in GetOldestXLOGSegNo."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08304: "a non-exclusive backup is already in progress in this session"
+SQLSTATE: 55000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08305: "a backup is already in progress in this session"
+SQLSTATE: 55000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08306: "non-exclusive backup in progress"
+SQLSTATE: 55000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08307: "non-exclusive backup is not in progress"
+SQLSTATE: 55000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08308: "count not get an available snapshot slot"
+SQLSTATE: DB010
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08309: "snapshot refcount must be zero"
+SQLSTATE: DB010
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08310: "snapshot or user_data could not be null when release snapshot, snapshot: %p, user_data: %p"
+SQLSTATE: DB010
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08311: "num_internal_lock_partitions attr has invalid lwlock num:%s."
+SQLSTATE: OP0A3
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08312: "num_internal_lock_partitions attr has invalid lwlock name: %s."
+SQLSTATE: OP0A3
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08313: "num_internal_lock_partitions attr has invalid input syntax."
+SQLSTATE: OP0A3
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08314: "Invalid attribute for internal lock partitions."
+SQLSTATE: OP0A3
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08315: "standby page buffer is invalid!"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08316: "DRS_sender could not connect to the remote server, we have tried %d times, the connection info :%s : %s"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08317: "could not send replication command '%s': %s\n"
+SQLSTATE: 29000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08318: "Standby mode doesn't support drop logical slot."
+SQLSTATE: 0A000
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08319: "Cannot create an archive replication slot because there is already one"
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08320: "invalid target wal lsn while advancing logical replication restart lsn."
+SQLSTATE: 22023
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+GAUSS-08321: "terminating Walsender process due to replication timeout."
+SQLSTATE: 
+CAUSE: "This is an internal error"
+ACTION: "Please contact engineer to support."
+
+
+/********************SUMMARY******************/
+Insert ErrorMsg Num: 60
+Delete ErrorMsg Num: 31
+Incomplete ErrorMsg Num: 954
+ErrorMsg Num before Make: 7302
+ErrorMsg Num after  Make: 7331

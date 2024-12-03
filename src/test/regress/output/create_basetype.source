@@ -1,0 +1,166 @@
+create type complex;
+CREATE FUNCTION complex_in(cstring)
+    RETURNS complex
+    AS '@libdir@/regress@DLSUFFIX@','complex_in'
+    LANGUAGE C IMMUTABLE STRICT not fenced;
+NOTICE:  return type complex is only a shell
+CREATE FUNCTION complex_out(complex)
+    RETURNS cstring
+    AS '@libdir@/regress@DLSUFFIX@','complex_out'
+    LANGUAGE C IMMUTABLE STRICT not fenced;
+NOTICE:  argument type complex is only a shell
+CREATE FUNCTION complex_recv(internal)
+   RETURNS complex
+   AS '@libdir@/regress@DLSUFFIX@','complex_recv'
+   LANGUAGE C IMMUTABLE STRICT not fenced;
+NOTICE:  return type complex is only a shell
+CREATE FUNCTION complex_send(complex)
+   RETURNS bytea
+   AS '@libdir@/regress@DLSUFFIX@','complex_send'
+   LANGUAGE C IMMUTABLE STRICT not fenced;
+NOTICE:  argument type complex is only a shell
+CREATE TYPE complex (
+   internallength = 16,
+   input = complex_in,
+   output = complex_out,
+   receive = complex_recv,
+   send = complex_send,
+   alignment = double
+);
+create table t1 (
+sk int,
+a complex,
+b complex
+)
+WITH (orientation=row);
+insert into t1 values(1,'(1,2)','(2,3)');
+insert into t1 values(1,'(3,4)','(4,5)');
+select * from t1;
+ sk |   a   |   b   
+----+-------+-------
+  1 | (1,2) | (2,3)
+  1 | (3,4) | (4,5)
+(2 rows)
+
+create table t1_rep (
+sk int,
+a complex,
+b complex
+)
+WITH (orientation=row) ;
+insert into t1_rep values(1,'(1,2)','(2,3)');
+insert into t1_rep values(1,'(3,4)','(4,5)');
+select * from t1_rep;
+ sk |   a   |   b   
+----+-------+-------
+  1 | (1,2) | (2,3)
+  1 | (3,4) | (4,5)
+(2 rows)
+
+insert into t1 values(1,'(1,2)','(2,3)');
+insert into t1 values(1,'(3,4)','(4,5)');
+CREATE FUNCTION test_type(complex) RETURNS complex
+AS 'select $1;'
+LANGUAGE SQL;
+call test_type(cast('(1,2)' as complex));
+ test_type 
+-----------
+ (1,2)
+(1 row)
+
+create schema schema1;
+alter type complex set schema schema1;
+create table t1_schema_test1 (
+sk int,
+a complex,
+b complex
+)
+WITH (orientation=row);
+ERROR:  type "complex" does not exist
+LINE 3: a complex,
+          ^
+set current_schema = schema1;
+create table t1_schema_test2 (
+sk int,
+a complex,
+b complex
+)
+WITH (orientation=row);
+alter type complex set schema public;
+set current_schema = public;
+alter type complex rename to complex_1;
+alter type complex_1 rename to complex;
+drop type complex cascade;
+NOTICE:  drop cascades to 11 other objects
+DETAIL:  drop cascades to function complex_in(cstring)
+drop cascades to function complex_out(complex)
+drop cascades to function complex_recv(internal)
+drop cascades to function complex_send(complex)
+drop cascades to table t1 column a
+drop cascades to table t1 column b
+drop cascades to table t1_rep column a
+drop cascades to table t1_rep column b
+drop cascades to function test_type(complex)
+drop cascades to table schema1.t1_schema_test2 column a
+drop cascades to table schema1.t1_schema_test2 column b
+drop schema schema1 cascade;
+NOTICE:  drop cascades to table schema1.t1_schema_test2
+drop table t1;
+drop table t1_rep;
+\h create type
+Command:     CREATE TYPE
+Description: define a new data type
+Syntax:
+CREATE TYPE name AS
+    ( [ attribute_name data_type [ COLLATE collation ] [, ... ] ] )
+
+CREATE TYPE name AS ENUM
+    ( [ 'label' [, ... ] ] )
+
+CREATE TYPE name (
+    INPUT = input_function,
+    OUTPUT = output_function
+    [ , RECEIVE = receive_function ]
+    [ , SEND = send_function ]
+    [ , TYPMOD_IN = type_modifier_input_function ]
+    [ , TYPMOD_OUT = type_modifier_output_function ]
+    [ , ANALYZE = analyze_function ]
+    [ , INTERNALLENGTH = { internallength | VARIABLE } ]
+    [ , PASSEDBYVALUE ]
+    [ , ALIGNMENT = alignment ]
+    [ , STORAGE = storage ]
+    [ , LIKE = like_type ]
+    [ , CATEGORY = category ]
+    [ , PREFERRED = preferred ]
+    [ , DEFAULT = default ]
+    [ , ELEMENT = element ]
+    [ , DELIMITER = delimiter ]
+    [ , COLLATABLE = collatable ]
+)
+
+CREATE TYPE name
+
+\h alter type
+Command:     ALTER TYPE
+Description: change the definition of a type
+Syntax:
+ALTER TYPE name action [, ... ]
+ALTER TYPE name OWNER TO { new_owner | CURRENT_USER | SESSION_USER }
+ALTER TYPE name RENAME ATTRIBUTE attribute_name TO new_attribute_name [ CASCADE | RESTRICT ]
+ALTER TYPE name RENAME TO new_name
+ALTER TYPE name SET SCHEMA new_schema
+ALTER TYPE name ADD VALUE [ IF NOT EXISTS ] new_enum_value [ { BEFORE | AFTER } neighbor_enum_value ]
+ALTER TYPE name RENAME VALUE existing_enum_value TO new_enum_value
+
+where action is one of:
+
+    ADD ATTRIBUTE attribute_name data_type [ COLLATE collation ] [ CASCADE | RESTRICT ]
+    DROP ATTRIBUTE [ IF EXISTS ] attribute_name [ CASCADE | RESTRICT ]
+    ALTER ATTRIBUTE attribute_name [ SET DATA ] TYPE data_type [ COLLATE collation ] [ CASCADE | RESTRICT ]
+
+\h drop type
+Command:     DROP TYPE
+Description: remove a data type
+Syntax:
+DROP TYPE [ IF EXISTS ] name [, ...] [ CASCADE | RESTRICT ]
+

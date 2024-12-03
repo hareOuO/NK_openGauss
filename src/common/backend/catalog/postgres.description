@@ -1,0 +1,888 @@
+16	pg_type	0	boolean, 'true'/'false'
+17	pg_type	0	variable-length string, binary values escaped
+18	pg_type	0	single character
+19	pg_type	0	63-byte type for storing system identifiers
+20	pg_type	0	~18 digit integer, 8-byte storage
+21	pg_type	0	-32 thousand to 32 thousand, 2-byte storage
+5545	pg_type	0	0 to 255, 1-byte storage
+22	pg_type	0	array of int2, used in system tables
+23	pg_type	0	-2 billion to 2 billion integer, 4-byte storage
+24	pg_type	0	registered procedure
+25	pg_type	0	variable-length string, no limit specified
+26	pg_type	0	object identifier(oid), maximum 4 billion
+27	pg_type	0	(block, offset), physical location of tuple
+28	pg_type	0	transaction id
+31	pg_type	0	short transaction id
+29	pg_type	0	command identifier type, sequence in transaction id
+30	pg_type	0	array of oids, used in system tables
+32	pg_type	0	array of oids, used in system tables and support toast storage
+86	pg_type	0	variable-length string, binary values escaped
+142	pg_type	0	XML content
+194	pg_type	0	string representing an internal node tree
+210	pg_type	0	storage manager
+600	pg_type	0	geometric point '(x, y)'
+601	pg_type	0	geometric line segment '(pt1,pt2)'
+602	pg_type	0	geometric path '(pt1,...)'
+603	pg_type	0	geometric box '(lower left,upper right)'
+604	pg_type	0	geometric polygon '(pt1,...)'
+628	pg_type	0	geometric line (not implemented)
+700	pg_type	0	single-precision floating point number, 4-byte storage
+701	pg_type	0	double-precision floating point number, 8-byte storage
+702	pg_type	0	absolute, limited-range date and time (Unix system time)
+703	pg_type	0	relative, limited-range time interval (Unix delta time)
+704	pg_type	0	(abstime,abstime), time interval
+718	pg_type	0	geometric circle '(center,radius)'
+790	pg_type	0	monetary amounts, $d,ddd.cc
+829	pg_type	0	XX:XX:XX:XX:XX:XX, MAC address
+869	pg_type	0	IP address/netmask, host address, netmask optional
+650	pg_type	0	network IP address/netmask, network address
+1033	pg_type	0	access control list
+1042	pg_type	0	char(length), blank-padded string, fixed storage length
+1043	pg_type	0	varchar(length), non-blank-padded string, variable storage length
+3969	pg_type	0	nvarchar2(length), non-blank-padded string, variable storage length
+1082	pg_type	0	date
+1083	pg_type	0	time of day
+1114	pg_type	0	date and time
+1184	pg_type	0	date and time with time zone
+1186	pg_type	0	@ <number> <units>, time interval
+1266	pg_type	0	time of day with time zone
+1560	pg_type	0	fixed-length bit string
+1562	pg_type	0	variable-length bit string
+1700	pg_type	0	numeric(precision, decimal), arbitrary precision number
+1790	pg_type	0	reference to cursor (portal name)
+2202	pg_type	0	registered procedure (with args)
+2203	pg_type	0	registered operator
+2204	pg_type	0	registered operator (with args)
+2205	pg_type	0	registered class
+2206	pg_type	0	registered type
+2950	pg_type	0	UUID datatype
+3614	pg_type	0	text representation for text search
+3642	pg_type	0	GiST index internal text representation for text search
+3615	pg_type	0	query representation for text search
+3734	pg_type	0	registered text search configuration
+3769	pg_type	0	registered text search dictionary
+2970	pg_type	0	txid snapshot
+3904	pg_type	0	range of integers
+3906	pg_type	0	range of numerics
+3908	pg_type	0	range of timestamps without time zone
+3910	pg_type	0	range of timestamps with time zone
+3912	pg_type	0	range of dates
+3926	pg_type	0	range of bigints
+9003	pg_type	0	date and time
+4301	pg_type	0	hypper log log type
+4302	pg_type	0	hypper log log array
+4303	pg_type	0	hypper log log hashval
+4304	pg_type	0	hypper log log hashval array
+4370	pg_type	0	hypper log log internal type
+4371	pg_type	0	hypper log log internal type
+4402	pg_type	0	encrypted data variable-length string, binary values escaped
+4403	pg_type	0	encrypted data variable-length string, binary values escaped
+4404	pg_type	0	encrypted data variable-length string, binary values escaped
+4405	pg_type	0	encrypted data variable-length string, binary values escaped
+15	pg_operator	0	equal
+36	pg_operator	0	not equal
+37	pg_operator	0	less than
+76	pg_operator	0	greater than
+80	pg_operator	0	less than or equal
+82	pg_operator	0	greater than or equal
+58	pg_operator	0	less than
+59	pg_operator	0	greater than
+85	pg_operator	0	not equal
+91	pg_operator	0	equal
+1694	pg_operator	0	less than or equal
+1695	pg_operator	0	greater than or equal
+92	pg_operator	0	equal
+93	pg_operator	0	equal
+94	pg_operator	0	equal
+95	pg_operator	0	less than
+96	pg_operator	0	equal
+97	pg_operator	0	less than
+98	pg_operator	0	equal
+349	pg_operator	0	append element onto end of array
+374	pg_operator	0	prepend element onto front of array
+375	pg_operator	0	concatenate
+352	pg_operator	0	equal
+353	pg_operator	0	equal
+354	pg_operator	0	less than
+355	pg_operator	0	equal
+356	pg_operator	0	equal
+357	pg_operator	0	less than
+388	pg_operator	0	factorial
+389	pg_operator	0	deprecated, use ! instead
+385	pg_operator	0	equal
+386	pg_operator	0	equal
+387	pg_operator	0	equal
+402	pg_operator	0	not equal
+2799	pg_operator	0	less than
+2800	pg_operator	0	greater than
+2801	pg_operator	0	less than or equal
+2802	pg_operator	0	greater than or equal
+410	pg_operator	0	equal
+411	pg_operator	0	not equal
+412	pg_operator	0	less than
+413	pg_operator	0	greater than
+414	pg_operator	0	less than or equal
+415	pg_operator	0	greater than or equal
+416	pg_operator	0	equal
+417	pg_operator	0	not equal
+418	pg_operator	0	less than
+419	pg_operator	0	greater than
+420	pg_operator	0	less than or equal
+430	pg_operator	0	greater than or equal
+439	pg_operator	0	modulus
+473	pg_operator	0	absolute value
+484	pg_operator	0	negate
+485	pg_operator	0	is left of
+486	pg_operator	0	overlaps or is left of
+487	pg_operator	0	overlaps or is right of
+488	pg_operator	0	is right of
+489	pg_operator	0	is contained by
+490	pg_operator	0	contains
+491	pg_operator	0	same as
+492	pg_operator	0	overlaps
+493	pg_operator	0	is left of
+494	pg_operator	0	overlaps or is left of
+495	pg_operator	0	overlaps or is right of
+496	pg_operator	0	is right of
+497	pg_operator	0	is contained by
+498	pg_operator	0	contains
+499	pg_operator	0	same as
+500	pg_operator	0	overlaps
+501	pg_operator	0	greater than or equal by area
+502	pg_operator	0	greater than by area
+503	pg_operator	0	equal by area
+504	pg_operator	0	less than by area
+505	pg_operator	0	less than or equal by area
+506	pg_operator	0	is above
+507	pg_operator	0	is left of
+508	pg_operator	0	is right of
+509	pg_operator	0	is below
+510	pg_operator	0	same as
+511	pg_operator	0	point inside box
+433	pg_operator	0	contains
+512	pg_operator	0	point within closed path, or point on open path
+513	pg_operator	0	center of
+514	pg_operator	0	multiply
+517	pg_operator	0	distance between
+518	pg_operator	0	not equal
+519	pg_operator	0	not equal
+520	pg_operator	0	greater than
+521	pg_operator	0	greater than
+522	pg_operator	0	less than or equal
+523	pg_operator	0	less than or equal
+524	pg_operator	0	greater than or equal
+525	pg_operator	0	greater than or equal
+526	pg_operator	0	multiply
+527	pg_operator	0	divide
+528	pg_operator	0	divide
+529	pg_operator	0	modulus
+530	pg_operator	0	modulus
+531	pg_operator	0	not equal
+532	pg_operator	0	equal
+533	pg_operator	0	equal
+534	pg_operator	0	less than
+535	pg_operator	0	less than
+536	pg_operator	0	greater than
+537	pg_operator	0	greater than
+538	pg_operator	0	not equal
+539	pg_operator	0	not equal
+540	pg_operator	0	less than or equal
+541	pg_operator	0	less than or equal
+542	pg_operator	0	greater than or equal
+543	pg_operator	0	greater than or equal
+544	pg_operator	0	multiply
+545	pg_operator	0	multiply
+546	pg_operator	0	divide
+547	pg_operator	0	divide
+550	pg_operator	0	add
+551	pg_operator	0	add
+552	pg_operator	0	add
+553	pg_operator	0	add
+554	pg_operator	0	subtract
+555	pg_operator	0	subtract
+556	pg_operator	0	subtract
+557	pg_operator	0	subtract
+558	pg_operator	0	negate
+559	pg_operator	0	negate
+560	pg_operator	0	equal
+561	pg_operator	0	not equal
+562	pg_operator	0	less than
+563	pg_operator	0	greater than
+564	pg_operator	0	less than or equal
+565	pg_operator	0	greater than or equal
+566	pg_operator	0	equal
+567	pg_operator	0	not equal
+568	pg_operator	0	less than
+569	pg_operator	0	greater than
+570	pg_operator	0	less than or equal
+571	pg_operator	0	greater than or equal
+572	pg_operator	0	same as
+573	pg_operator	0	contains
+574	pg_operator	0	overlaps
+575	pg_operator	0	equal by length
+576	pg_operator	0	not equal by length
+577	pg_operator	0	less than by length
+578	pg_operator	0	greater than by length
+579	pg_operator	0	less than or equal by length
+580	pg_operator	0	greater than or equal by length
+581	pg_operator	0	add
+582	pg_operator	0	subtract
+583	pg_operator	0	is contained by
+584	pg_operator	0	negate
+585	pg_operator	0	negate
+586	pg_operator	0	add
+587	pg_operator	0	subtract
+588	pg_operator	0	divide
+589	pg_operator	0	multiply
+590	pg_operator	0	absolute value
+591	pg_operator	0	add
+592	pg_operator	0	subtract
+593	pg_operator	0	divide
+594	pg_operator	0	multiply
+595	pg_operator	0	absolute value
+596	pg_operator	0	square root
+597	pg_operator	0	cube root
+1284	pg_operator	0	start of interval
+606	pg_operator	0	convert to tinterval
+607	pg_operator	0	equal
+608	pg_operator	0	not equal
+609	pg_operator	0	less than
+610	pg_operator	0	greater than
+611	pg_operator	0	less than or equal
+612	pg_operator	0	greater than or equal
+644	pg_operator	0	not equal
+645	pg_operator	0	less than
+646	pg_operator	0	greater than
+647	pg_operator	0	less than or equal
+648	pg_operator	0	greater than or equal
+649	pg_operator	0	equal
+613	pg_operator	0	distance between
+614	pg_operator	0	distance between
+615	pg_operator	0	distance between
+616	pg_operator	0	distance between
+617	pg_operator	0	distance between
+618	pg_operator	0	distance between
+620	pg_operator	0	equal
+621	pg_operator	0	not equal
+622	pg_operator	0	less than
+623	pg_operator	0	greater than
+624	pg_operator	0	less than or equal
+625	pg_operator	0	greater than or equal
+630	pg_operator	0	not equal
+631	pg_operator	0	less than
+632	pg_operator	0	less than or equal
+633	pg_operator	0	greater than
+634	pg_operator	0	greater than or equal
+5513	pg_operator	0	equal
+5514	pg_operator	0	not equal
+5515	pg_operator	0	less than
+5516	pg_operator	0	less than or equal
+5517	pg_operator	0	greater than
+5518	pg_operator	0	greater than or equal
+639	pg_operator	0	matches regular expression, case-sensitive
+640	pg_operator	0	does not match regular expression, case-sensitive
+641	pg_operator	0	matches regular expression, case-sensitive
+642	pg_operator	0	does not match regular expression, case-sensitive
+643	pg_operator	0	not equal
+654	pg_operator	0	concatenate
+660	pg_operator	0	less than
+661	pg_operator	0	less than or equal
+662	pg_operator	0	greater than
+663	pg_operator	0	greater than or equal
+664	pg_operator	0	less than
+665	pg_operator	0	less than or equal
+666	pg_operator	0	greater than
+667	pg_operator	0	greater than or equal
+670	pg_operator	0	equal
+671	pg_operator	0	not equal
+672	pg_operator	0	less than
+673	pg_operator	0	less than or equal
+674	pg_operator	0	greater than
+675	pg_operator	0	greater than or equal
+682	pg_operator	0	absolute value
+684	pg_operator	0	add
+685	pg_operator	0	subtract
+686	pg_operator	0	multiply
+687	pg_operator	0	divide
+688	pg_operator	0	add
+689	pg_operator	0	subtract
+690	pg_operator	0	multiply
+691	pg_operator	0	divide
+692	pg_operator	0	add
+693	pg_operator	0	subtract
+694	pg_operator	0	multiply
+695	pg_operator	0	divide
+818	pg_operator	0	add
+819	pg_operator	0	subtract
+820	pg_operator	0	multiply
+821	pg_operator	0	divide
+822	pg_operator	0	add
+823	pg_operator	0	subtract
+824	pg_operator	0	multiply
+825	pg_operator	0	divide
+706	pg_operator	0	distance between
+707	pg_operator	0	distance between
+708	pg_operator	0	distance between
+709	pg_operator	0	distance between
+712	pg_operator	0	distance between
+713	pg_operator	0	not equal
+731	pg_operator	0	add points (translate)
+732	pg_operator	0	subtract points (translate)
+733	pg_operator	0	multiply points (scale/rotate)
+734	pg_operator	0	divide points (scale/rotate)
+735	pg_operator	0	concatenate
+736	pg_operator	0	add (translate path)
+737	pg_operator	0	subtract (translate path)
+738	pg_operator	0	multiply (rotate/scale path)
+739	pg_operator	0	divide (rotate/scale path)
+755	pg_operator	0	contains
+756	pg_operator	0	is contained by
+757	pg_operator	0	contains
+758	pg_operator	0	is contained by
+759	pg_operator	0	contains
+773	pg_operator	0	absolute value
+792	pg_operator	0	equal
+793	pg_operator	0	less than
+794	pg_operator	0	greater than
+795	pg_operator	0	less than or equal
+796	pg_operator	0	greater than or equal
+797	pg_operator	0	number of points
+798	pg_operator	0	intersect
+799	pg_operator	0	sum of path segment lengths
+800	pg_operator	0	is above (allows touching)
+801	pg_operator	0	is below (allows touching)
+802	pg_operator	0	deprecated, use && instead
+803	pg_operator	0	box intersection
+804	pg_operator	0	add point to box (translate)
+805	pg_operator	0	subtract point from box (translate)
+806	pg_operator	0	multiply box by point (scale)
+807	pg_operator	0	divide box by point (scale)
+808	pg_operator	0	horizontally aligned
+809	pg_operator	0	vertically aligned
+811	pg_operator	0	equal
+812	pg_operator	0	not equal
+813	pg_operator	0	less than
+814	pg_operator	0	greater than
+815	pg_operator	0	less than or equal
+816	pg_operator	0	greater than or equal
+843	pg_operator	0	multiply
+844	pg_operator	0	divide
+845	pg_operator	0	multiply
+900	pg_operator	0	equal
+901	pg_operator	0	not equal
+902	pg_operator	0	less than
+903	pg_operator	0	greater than
+904	pg_operator	0	less than or equal
+905	pg_operator	0	greater than or equal
+906	pg_operator	0	add
+907	pg_operator	0	subtract
+908	pg_operator	0	multiply
+909	pg_operator	0	divide
+3346	pg_operator	0	multiply
+3347	pg_operator	0	divide
+912	pg_operator	0	multiply
+913	pg_operator	0	divide
+914	pg_operator	0	multiply
+915	pg_operator	0	divide
+3352	pg_operator	0	multiply
+3353	pg_operator	0	divide
+916	pg_operator	0	multiply
+3349	pg_operator	0	multiply
+917	pg_operator	0	multiply
+918	pg_operator	0	multiply
+3354	pg_operator	0	multiply
+3825	pg_operator	0	divide
+965	pg_operator	0	exponentiation
+966	pg_operator	0	add/update ACL item
+967	pg_operator	0	remove ACL item
+968	pg_operator	0	contains
+974	pg_operator	0	equal
+969	pg_operator	0	center of
+970	pg_operator	0	center of
+971	pg_operator	0	center of
+1054	pg_operator	0	equal
+1055	pg_operator	0	matches regular expression, case-sensitive
+1056	pg_operator	0	does not match regular expression, case-sensitive
+1057	pg_operator	0	not equal
+1058	pg_operator	0	less than
+1059	pg_operator	0	less than or equal
+1060	pg_operator	0	greater than
+1061	pg_operator	0	greater than or equal
+1070	pg_operator	0	equal
+1071	pg_operator	0	not equal
+1072	pg_operator	0	less than
+1073	pg_operator	0	greater than
+1074	pg_operator	0	less than or equal
+1075	pg_operator	0	greater than or equal
+1076	pg_operator	0	add
+1077	pg_operator	0	subtract
+1093	pg_operator	0	equal
+1094	pg_operator	0	not equal
+1095	pg_operator	0	less than
+1096	pg_operator	0	less than or equal
+1097	pg_operator	0	greater than
+1098	pg_operator	0	greater than or equal
+1099	pg_operator	0	subtract
+1100	pg_operator	0	add
+1101	pg_operator	0	subtract
+1108	pg_operator	0	equal
+1109	pg_operator	0	not equal
+1110	pg_operator	0	less than
+1111	pg_operator	0	less than or equal
+1112	pg_operator	0	greater than
+1113	pg_operator	0	greater than or equal
+1550	pg_operator	0	equal
+1551	pg_operator	0	not equal
+1552	pg_operator	0	less than
+1553	pg_operator	0	less than or equal
+1554	pg_operator	0	greater than
+1555	pg_operator	0	greater than or equal
+1116	pg_operator	0	add
+1117	pg_operator	0	subtract
+1118	pg_operator	0	divide
+1119	pg_operator	0	multiply
+1120	pg_operator	0	equal
+1121	pg_operator	0	not equal
+1122	pg_operator	0	less than
+1123	pg_operator	0	greater than
+1124	pg_operator	0	less than or equal
+1125	pg_operator	0	greater than or equal
+1126	pg_operator	0	add
+1127	pg_operator	0	subtract
+1128	pg_operator	0	divide
+1129	pg_operator	0	multiply
+1130	pg_operator	0	equal
+1131	pg_operator	0	not equal
+1132	pg_operator	0	less than
+1133	pg_operator	0	greater than
+1134	pg_operator	0	less than or equal
+1135	pg_operator	0	greater than or equal
+1207	pg_operator	0	matches LIKE expression
+1208	pg_operator	0	does not match LIKE expression
+1209	pg_operator	0	matches LIKE expression
+1210	pg_operator	0	does not match LIKE expression
+1211	pg_operator	0	matches LIKE expression
+1212	pg_operator	0	does not match LIKE expression
+1226	pg_operator	0	matches regular expression, case-insensitive
+1227	pg_operator	0	does not match regular expression, case-insensitive
+1228	pg_operator	0	matches regular expression, case-insensitive
+1229	pg_operator	0	does not match regular expression, case-insensitive
+1234	pg_operator	0	matches regular expression, case-insensitive
+1235	pg_operator	0	does not match regular expression, case-insensitive
+1320	pg_operator	0	equal
+1321	pg_operator	0	not equal
+1322	pg_operator	0	less than
+1323	pg_operator	0	less than or equal
+1324	pg_operator	0	greater than
+1325	pg_operator	0	greater than or equal
+1327	pg_operator	0	add
+1328	pg_operator	0	subtract
+1329	pg_operator	0	subtract
+1330	pg_operator	0	equal
+1331	pg_operator	0	not equal
+1332	pg_operator	0	less than
+1333	pg_operator	0	less than or equal
+1334	pg_operator	0	greater than
+1335	pg_operator	0	greater than or equal
+1336	pg_operator	0	negate
+1337	pg_operator	0	add
+1338	pg_operator	0	subtract
+1360	pg_operator	0	convert date and time to timestamp
+1361	pg_operator	0	convert date and time with time zone to timestamp with time zone
+1363	pg_operator	0	convert time and date to timestamp
+1366	pg_operator	0	convert time with time zone and date to timestamp with time zone
+1399	pg_operator	0	subtract
+1420	pg_operator	0	center of
+1500	pg_operator	0	equal by area
+1501	pg_operator	0	not equal by area
+1502	pg_operator	0	less than by area
+1503	pg_operator	0	greater than by area
+1504	pg_operator	0	less than or equal by area
+1505	pg_operator	0	greater than or equal by area
+1506	pg_operator	0	is left of
+1507	pg_operator	0	overlaps or is left of
+1508	pg_operator	0	overlaps or is right of
+1509	pg_operator	0	is right of
+1510	pg_operator	0	is contained by
+1511	pg_operator	0	contains
+1512	pg_operator	0	same as
+1513	pg_operator	0	overlaps
+1514	pg_operator	0	is above
+1515	pg_operator	0	is below
+1516	pg_operator	0	add
+1517	pg_operator	0	subtract
+1518	pg_operator	0	multiply
+1519	pg_operator	0	divide
+1520	pg_operator	0	distance between
+1521	pg_operator	0	number of points
+1522	pg_operator	0	distance between
+1523	pg_operator	0	distance between
+1524	pg_operator	0	distance between
+1525	pg_operator	0	intersect
+1526	pg_operator	0	parallel
+1527	pg_operator	0	perpendicular
+1528	pg_operator	0	horizontal
+1529	pg_operator	0	vertical
+1535	pg_operator	0	equal
+1536	pg_operator	0	intersection point
+1537	pg_operator	0	intersect
+1538	pg_operator	0	intersect
+1539	pg_operator	0	intersect
+1546	pg_operator	0	point on line
+1547	pg_operator	0	is contained by
+1548	pg_operator	0	lseg on line
+1549	pg_operator	0	is contained by
+1557	pg_operator	0	closest point to A on B
+1558	pg_operator	0	closest point to A on B
+1559	pg_operator	0	closest point to A on B
+1566	pg_operator	0	closest point to A on B
+1567	pg_operator	0	closest point to A on B
+1568	pg_operator	0	closest point to A on B
+1577	pg_operator	0	closest point to A on B
+1578	pg_operator	0	closest point to A on B
+1583	pg_operator	0	multiply
+1584	pg_operator	0	multiply
+1585	pg_operator	0	divide
+1586	pg_operator	0	not equal
+1587	pg_operator	0	less than by length
+1588	pg_operator	0	less than or equal by length
+1589	pg_operator	0	greater than by length
+1590	pg_operator	0	greater than or equal by length
+1591	pg_operator	0	distance between endpoints
+1611	pg_operator	0	intersect
+1612	pg_operator	0	parallel
+1613	pg_operator	0	perpendicular
+1614	pg_operator	0	horizontal
+1615	pg_operator	0	vertical
+1616	pg_operator	0	equal
+1617	pg_operator	0	intersection point
+1220	pg_operator	0	equal
+1221	pg_operator	0	not equal
+1222	pg_operator	0	less than
+1223	pg_operator	0	less than or equal
+1224	pg_operator	0	greater than
+1225	pg_operator	0	greater than or equal
+3147	pg_operator	0	bitwise not
+3148	pg_operator	0	bitwise and
+3149	pg_operator	0	bitwise or
+1201	pg_operator	0	equal
+1202	pg_operator	0	not equal
+1203	pg_operator	0	less than
+1204	pg_operator	0	less than or equal
+1205	pg_operator	0	greater than
+1206	pg_operator	0	greater than or equal
+931	pg_operator	0	is subnet
+932	pg_operator	0	is subnet or equal
+933	pg_operator	0	is supernet
+934	pg_operator	0	is supernet or equal
+2634	pg_operator	0	bitwise not
+2635	pg_operator	0	bitwise and
+2636	pg_operator	0	bitwise or
+2637	pg_operator	0	add
+2638	pg_operator	0	add
+2639	pg_operator	0	subtract
+2640	pg_operator	0	subtract
+1625	pg_operator	0	matches LIKE expression, case-insensitive
+1626	pg_operator	0	does not match LIKE expression, case-insensitive
+1627	pg_operator	0	matches LIKE expression, case-insensitive
+1628	pg_operator	0	does not match LIKE expression, case-insensitive
+1629	pg_operator	0	matches LIKE expression, case-insensitive
+1630	pg_operator	0	does not match LIKE expression, case-insensitive
+1751	pg_operator	0	negate
+1752	pg_operator	0	equal
+1753	pg_operator	0	not equal
+1754	pg_operator	0	less than
+1755	pg_operator	0	less than or equal
+1756	pg_operator	0	greater than
+1757	pg_operator	0	greater than or equal
+1758	pg_operator	0	add
+1759	pg_operator	0	subtract
+1760	pg_operator	0	multiply
+1761	pg_operator	0	divide
+1762	pg_operator	0	modulus
+1038	pg_operator	0	exponentiation
+1763	pg_operator	0	absolute value
+1784	pg_operator	0	equal
+1785	pg_operator	0	not equal
+1786	pg_operator	0	less than
+1787	pg_operator	0	greater than
+1788	pg_operator	0	less than or equal
+1789	pg_operator	0	greater than or equal
+1791	pg_operator	0	bitwise and
+1792	pg_operator	0	bitwise or
+1793	pg_operator	0	bitwise exclusive or
+1794	pg_operator	0	bitwise not
+1795	pg_operator	0	bitwise shift left
+1796	pg_operator	0	bitwise shift right
+1797	pg_operator	0	concatenate
+1800	pg_operator	0	add
+1801	pg_operator	0	subtract
+1802	pg_operator	0	add
+1803	pg_operator	0	subtract
+1804	pg_operator	0	equal
+1805	pg_operator	0	not equal
+1806	pg_operator	0	less than
+1807	pg_operator	0	greater than
+1808	pg_operator	0	less than or equal
+1809	pg_operator	0	greater than or equal
+1849	pg_operator	0	add
+1862	pg_operator	0	equal
+1863	pg_operator	0	not equal
+1864	pg_operator	0	less than
+1865	pg_operator	0	greater than
+1866	pg_operator	0	less than or equal
+1867	pg_operator	0	greater than or equal
+1868	pg_operator	0	equal
+1869	pg_operator	0	not equal
+1870	pg_operator	0	less than
+1871	pg_operator	0	greater than
+1872	pg_operator	0	less than or equal
+1873	pg_operator	0	greater than or equal
+1874	pg_operator	0	bitwise and
+1875	pg_operator	0	bitwise or
+1876	pg_operator	0	bitwise exclusive or
+1877	pg_operator	0	bitwise not
+1878	pg_operator	0	bitwise shift left
+1879	pg_operator	0	bitwise shift right
+1880	pg_operator	0	bitwise and
+1881	pg_operator	0	bitwise or
+1882	pg_operator	0	bitwise exclusive or
+1883	pg_operator	0	bitwise not
+1884	pg_operator	0	bitwise shift left
+1885	pg_operator	0	bitwise shift right
+1886	pg_operator	0	bitwise and
+1887	pg_operator	0	bitwise or
+1888	pg_operator	0	bitwise exclusive or
+1889	pg_operator	0	bitwise not
+1890	pg_operator	0	bitwise shift left
+1891	pg_operator	0	bitwise shift right
+1916	pg_operator	0	unary plus
+1917	pg_operator	0	unary plus
+1918	pg_operator	0	unary plus
+1919	pg_operator	0	unary plus
+1920	pg_operator	0	unary plus
+1921	pg_operator	0	unary plus
+1955	pg_operator	0	equal
+1956	pg_operator	0	not equal
+1957	pg_operator	0	less than
+1958	pg_operator	0	less than or equal
+1959	pg_operator	0	greater than
+1960	pg_operator	0	greater than or equal
+2016	pg_operator	0	matches LIKE expression
+2017	pg_operator	0	does not match LIKE expression
+2018	pg_operator	0	concatenate
+4453	pg_operator	0	equal
+4454	pg_operator	0	not equal
+4422	pg_operator	0	equal
+4423	pg_operator	0	not equal
+4431	pg_operator	0	equal
+4432	pg_operator	0	not equal
+3798	pg_operator	0	equal
+3799	pg_operator	0	not equal
+3800	pg_operator	0	less than
+3801	pg_operator	0	less than or equal
+3802	pg_operator	0	greater than
+3803	pg_operator	0	greater than or equal
+3804	pg_operator	0	matches like expression
+3805	pg_operator	0	does not match like expression
+2060	pg_operator	0	equal
+2061	pg_operator	0	not equal
+2062	pg_operator	0	less than
+2063	pg_operator	0	less than or equal
+2064	pg_operator	0	greater than
+2065	pg_operator	0	greater than or equal
+2066	pg_operator	0	add
+2067	pg_operator	0	subtract
+2068	pg_operator	0	subtract
+2314	pg_operator	0	less than
+2315	pg_operator	0	less than or equal
+2317	pg_operator	0	greater than or equal
+2318	pg_operator	0	greater than
+2326	pg_operator	0	less than
+2327	pg_operator	0	less than or equal
+2329	pg_operator	0	greater than or equal
+2330	pg_operator	0	greater than
+2345	pg_operator	0	less than
+2346	pg_operator	0	less than or equal
+2347	pg_operator	0	equal
+2348	pg_operator	0	greater than or equal
+2349	pg_operator	0	greater than
+2350	pg_operator	0	not equal
+2358	pg_operator	0	less than
+2359	pg_operator	0	less than or equal
+2360	pg_operator	0	equal
+2361	pg_operator	0	greater than or equal
+2362	pg_operator	0	greater than
+2363	pg_operator	0	not equal
+2371	pg_operator	0	less than
+2372	pg_operator	0	less than or equal
+2373	pg_operator	0	equal
+2374	pg_operator	0	greater than or equal
+2375	pg_operator	0	greater than
+2376	pg_operator	0	not equal
+2384	pg_operator	0	less than
+2385	pg_operator	0	less than or equal
+2386	pg_operator	0	equal
+2387	pg_operator	0	greater than or equal
+2388	pg_operator	0	greater than
+2389	pg_operator	0	not equal
+2534	pg_operator	0	less than
+2535	pg_operator	0	less than or equal
+2536	pg_operator	0	equal
+2537	pg_operator	0	greater than or equal
+2538	pg_operator	0	greater than
+2539	pg_operator	0	not equal
+2540	pg_operator	0	less than
+2541	pg_operator	0	less than or equal
+2542	pg_operator	0	equal
+2543	pg_operator	0	greater than or equal
+2544	pg_operator	0	greater than
+2545	pg_operator	0	not equal
+2551	pg_operator	0	add
+2552	pg_operator	0	add
+2553	pg_operator	0	add
+2554	pg_operator	0	add
+2555	pg_operator	0	add
+2570	pg_operator	0	is below
+2571	pg_operator	0	overlaps or is below
+2572	pg_operator	0	overlaps or is above
+2573	pg_operator	0	is above
+2574	pg_operator	0	is below
+2575	pg_operator	0	overlaps or is below
+2576	pg_operator	0	overlaps or is above
+2577	pg_operator	0	is above
+2589	pg_operator	0	overlaps or is below
+2590	pg_operator	0	overlaps or is above
+2750	pg_operator	0	overlaps
+2751	pg_operator	0	contains
+2752	pg_operator	0	is contained by
+2779	pg_operator	0	concatenate
+2780	pg_operator	0	concatenate
+2860	pg_operator	0	deprecated, use <@ instead
+2861	pg_operator	0	deprecated, use @> instead
+2862	pg_operator	0	deprecated, use <@ instead
+2863	pg_operator	0	deprecated, use @> instead
+2864	pg_operator	0	deprecated, use <@ instead
+2865	pg_operator	0	deprecated, use @> instead
+2866	pg_operator	0	deprecated, use <@ instead
+2867	pg_operator	0	deprecated, use <@ instead
+2868	pg_operator	0	deprecated, use @> instead
+2869	pg_operator	0	deprecated, use <@ instead
+2870	pg_operator	0	deprecated, use @> instead
+2871	pg_operator	0	deprecated, use <@ instead
+2872	pg_operator	0	deprecated, use @> instead
+2873	pg_operator	0	deprecated, use <@ instead
+2874	pg_operator	0	deprecated, use <@ instead
+2875	pg_operator	0	deprecated, use <@ instead
+2876	pg_operator	0	deprecated, use <@ instead
+2877	pg_operator	0	deprecated, use @> instead
+2972	pg_operator	0	equal
+2973	pg_operator	0	not equal
+2974	pg_operator	0	less than
+2975	pg_operator	0	greater than
+2976	pg_operator	0	less than or equal
+2977	pg_operator	0	greater than or equal
+3516	pg_operator	0	equal
+3517	pg_operator	0	not equal
+3518	pg_operator	0	less than
+3519	pg_operator	0	greater than
+3520	pg_operator	0	less than or equal
+3521	pg_operator	0	greater than or equal
+3627	pg_operator	0	less than
+3628	pg_operator	0	less than or equal
+3629	pg_operator	0	equal
+3630	pg_operator	0	not equal
+3631	pg_operator	0	greater than or equal
+3632	pg_operator	0	greater than
+3633	pg_operator	0	concatenate
+3636	pg_operator	0	text search match
+3637	pg_operator	0	text search match
+3660	pg_operator	0	deprecated, use @@ instead
+3661	pg_operator	0	deprecated, use @@ instead
+3674	pg_operator	0	less than
+3675	pg_operator	0	less than or equal
+3676	pg_operator	0	equal
+3677	pg_operator	0	not equal
+3678	pg_operator	0	greater than or equal
+3679	pg_operator	0	greater than
+3680	pg_operator	0	AND-concatenate
+3681	pg_operator	0	OR-concatenate
+3682	pg_operator	0	NOT tsquery
+3693	pg_operator	0	contains
+3694	pg_operator	0	is contained by
+3762	pg_operator	0	text search match
+3763	pg_operator	0	text search match
+2988	pg_operator	0	equal
+2989	pg_operator	0	not equal
+2990	pg_operator	0	less than
+2991	pg_operator	0	greater than
+2992	pg_operator	0	less than or equal
+2993	pg_operator	0	greater than or equal
+3882	pg_operator	0	equal
+3883	pg_operator	0	not equal
+3884	pg_operator	0	less than
+3885	pg_operator	0	less than or equal
+3886	pg_operator	0	greater than or equal
+3887	pg_operator	0	greater than
+3888	pg_operator	0	overlaps
+3889	pg_operator	0	contains
+3890	pg_operator	0	contains
+3891	pg_operator	0	is contained by
+3892	pg_operator	0	is contained by
+3893	pg_operator	0	is left of
+3894	pg_operator	0	is right of
+3895	pg_operator	0	overlaps or is left of
+3896	pg_operator	0	overlaps or is right of
+3897	pg_operator	0	is adjacent to
+3898	pg_operator	0	range union
+3899	pg_operator	0	range difference
+3900	pg_operator	0	range intersection
+5550	pg_operator	0	equal
+5551	pg_operator	0	not equal
+5552	pg_operator	0	less than
+5553	pg_operator	0	less than or equal
+5554	pg_operator	0	greater than
+5549	pg_operator	0	greater than or equal
+4372	pg_operator	0	hyper log log equal op
+4373	pg_operator	0	hyper log log not equal op
+4374	pg_operator	0	hyper log log union op
+4375	pg_operator	0	hyper log log add op
+4376	pg_operator	0	hyper log log add rev op
+4377	pg_operator	0	hyper log log cardinality op
+4378	pg_operator	0	hyper log log equal hashval op
+4379	pg_operator	0	hyper log log not equal hashval op
+403	pg_am	0	b-tree index access method
+405	pg_am	0	hash index access method
+783	pg_am	0	GiST index access method
+2742	pg_am	0	GIN index access method
+4000	pg_am	0	SP-GiST index access method
+4039	pg_am	0	psort index access method
+4239	pg_am	0	cstore btree index access method
+4444	pg_am	0	cstore GIN index access method
+12	pg_language	0	built-in functions
+13	pg_language	0	dynamically-loaded C functions
+14	pg_language	0	SQL-language functions
+15	pg_language	0	dynamically-loaded Java functions
+11	pg_namespace	0	system catalog schema
+99	pg_namespace	0	reserved schema for TOAST tables
+100	pg_namespace	0	reserved schema for DELTA tables
+3988	pg_namespace	0	pkg_service schema
+2200	pg_namespace	0	standard public schema
+4988	pg_namespace	0	dbe_perf schema
+4989	pg_namespace	0	snapshot schema
+3748	pg_ts_config	0	simple configuration
+3791	pg_ts_config	0	ngram configuration
+3792	pg_ts_config	0	zhparser configuration
+3793	pg_ts_config	0	pound configuration
+3765	pg_ts_dict	0	simple dictionary: just lower case and check for stopword
+3722	pg_ts_parser	0	default word parser
+3789	pg_ts_parser	0	ngram chinese word parser
+3790	pg_ts_parser	0	zhparser chinese word parser
+3801	pg_ts_parser	0	 pound split parser
+3727	pg_ts_template	0	simple dictionary: just lower case and check for stopword
+3730	pg_ts_template	0	synonym dictionary: replace word by its synonym
+3733	pg_ts_template	0	ispell dictionary
+3742	pg_ts_template	0	thesaurus dictionary: phrase by phrase substitution
+100	pg_collation	0	database's default collation
+950	pg_collation	0	standard C collation
+951	pg_collation	0	standard POSIX collation

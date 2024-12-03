@@ -1,0 +1,16 @@
+# test on extended statistics
+# test: multi column stats
+test: hw_es_multi_column_stats_prepare
+# hw_es_multi_column_stats_1_5
+test: hw_es_multi_column_stats_1 hw_es_multi_column_stats_1_1 hw_es_multi_column_stats_1_2 hw_es_multi_column_stats_1_3 hw_es_multi_column_stats_1_4 hw_es_multi_column_stats_1_6 hw_es_multi_column_stats_2_1 hw_es_multi_column_stats_2_2 hw_es_multi_column_stats_2_3 hw_es_multi_column_stats_3 hw_es_multi_column_stats_3_1 hw_es_multi_column_stats_3_2
+test: hw_es_multi_column_stats_end
+
+# test: checksum
+# checksum distribute_setop_1
+test: distribute_limit distribute_setop distribute_setop_2 
+#test: distribute_distinct distribute_prepare 
+#test: distribute_unsupported_features distribute_statistic distribute_statistic_1 distribute_statistic_2 
+#test: extendstat
+
+#dispatch from 22
+#test: hw_setop_writefile

@@ -1,0 +1,3 @@
+[submodule "sse/opensse-schemes"]
+	path = sse/opensse-schemes
+	url = git@github.com:hareOuO/opensse-schemes.git

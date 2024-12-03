@@ -1,0 +1,6 @@
+test: delete_limit
+test: hw_partition_hash_ddl
+test: hw_partition_list_ddl
+
+test: sqlbypass_partition
+test: sqlbypass_partition_prepare
