@@ -1,0 +1,302 @@
+-- clean before test
+\! gs_ktool -d all
+DELETE ALL
+
+\! rm -rf export_import_ksf && mkdir export_import_ksf
+-- genereate with set invalid len (support [1, 112])
+\! gs_ktool -g -l -1
+ERROR: failed to check user input, this input '-1' is expected to be an positive integer.
+\! gs_ktool -g -l 0
+ERROR: failed to check user input, the key len '0' should be in range [16, 112].
+\! gs_ktool -g -l 15
+ERROR: failed to check user input, the key len '15' should be in range [16, 112].
+\! gs_ktool -g -l 113
+ERROR: failed to check user input, the key len '113' should be in range [16, 112].
+\! gs_ktool -g -l 999999999
+ERROR: failed to check user input, the key len '999999999' should be in range [16, 112].
+\! gs_ktool -g -l .
+ERROR: failed to check user input, this input '.' is expected to be an positive integer.
+\! gs_ktool -g -l g
+ERROR: failed to check user input, this input 'g' is expected to be an positive integer.
+\! gs_ktool -g -l gs_ktool
+ERROR: failed to check user input, this input 'gs_ktool' is expected to be an positive integer.
+\! gs_ktool -g -l 32g
+ERROR: failed to check user input, this input '32g' is expected to be an positive integer.
+\! gs_ktool -g -l gs_ktool...
+ERROR: failed to check user input, this input 'gs_ktool...' is expected to be an positive integer.
+\! gs_ktool -g -l
+gs_ktool: option requires an argument -- 'l'
+HINT: try '-h' or '-?' for more infromation.
+\! gs_ktool -g 32
+HINT: try '-h' or '-?' for more infromation.
+\! gs_ktool -g -l -l 32
+ERROR: failed to check user input, this input '-l' is expected to be an positive integer.
+\! gs_ktool -g -d 
+gs_ktool: option requires an argument -- 'd'
+HINT: try '-h' or '-?' for more infromation.
+\! gs_ktool -g -s all
+ERROR: failed to parse user input, unrecognized option combination.
+HINT: try '-h' or '-?' for more infromation.
+\! gs_ktool -d all && gs_ktool -g && gs_ktool -g
+DELETE ALL
+
+GENERATE
+1
+GENERATE
+2
+-- delete nonexistent cmk
+\! gs_ktool -d 0
+ERROR: failed to check user input, the key id '0' should be in range [1, 4095].
+\! gs_ktool -d -1
+ERROR: failed to check user input, this input '-1' is expected to be an positive integer.
+\! gs_ktool -d 3
+ERROR: failed to delete cmk, which id is '3'.
+\! gs_ktool -d 100
+ERROR: failed to delete cmk, which id is '100'.
+\! gs_ktool -d 1g
+ERROR: failed to check user input, this input '1g' is expected to be an positive integer.
+\! gs_ktool -d gs_ktool
+ERROR: failed to check user input, this input 'gs_ktool' is expected to be an positive integer.
+\! gs_ktool -d ..
+ERROR: failed to check user input, this input '..' is expected to be an positive integer.
+\! gs_ktool -d 1.
+ERROR: failed to check user input, this input '1.' is expected to be an positive integer.
+\! gs_ktool -d -d
+ERROR: failed to check user input, this input '-d' is expected to be an positive integer.
+\! gs_ktool -d -g
+ERROR: failed to check user input, this input '-g' is expected to be an positive integer.
+\! gs_ktool -d 1 -g
+ERROR: failed to parse user input, unrecognized option combination.
+HINT: try '-h' or '-?' for more infromation.
+\! gs_ktool -d -s 1
+ERROR: failed to check user input, this input '-s' is expected to be an positive integer.
+\! gs_ktool -d all0
+ERROR: failed to check user input, this input 'all0' is expected to be an positive integer.
+\! gs_ktool -d al
+ERROR: failed to check user input, this input 'al' is expected to be an positive integer.
+\! gs_ktool -d
+gs_ktool: option requires an argument -- 'd'
+HINT: try '-h' or '-?' for more infromation.
+\! gs_ktool -d all && gs_ktool -d 1
+DELETE ALL
+ 1 2
+ERROR: failed to delete cmk, which id is '1'.
+\! gs_ktool -d 0
+ERROR: failed to check user input, the key id '0' should be in range [1, 4095].
+\! gs_ktool -d all && gs_ktool -g && gs_ktool -g
+DELETE ALL
+
+GENERATE
+1
+GENERATE
+2
+-- select nonexistent cmk
+\! gs_ktool -s
+gs_ktool: option requires an argument -- 's'
+HINT: try '-h' or '-?' for more infromation.
+\! gs_ktool -s -1
+ERROR: failed to check user input, this input '-1' is expected to be an positive integer.
+\! gs_ktool -s 0
+ERROR: failed to check user input, the key id '0' should be in range [1, 4095].
+\! gs_ktool -s 3
+SELECT
+no cmk found.
+\! gs_ktool -s 9999999
+ERROR: failed to check user input, the key id '9999999' should be in range [1, 4095].
+\! gs_ktool -s 1.
+ERROR: failed to check user input, this input '1.' is expected to be an positive integer.
+\! gs_ktool -s @
+ERROR: failed to check user input, this input '@' is expected to be an positive integer.
+\! gs_ktool -s gs_ktool
+ERROR: failed to check user input, this input 'gs_ktool' is expected to be an positive integer.
+\! gs_ktool -s all1
+ERROR: failed to check user input, this input 'all1' is expected to be an positive integer.
+\! gs_ktool -s all_
+ERROR: failed to check user input, this input 'all_' is expected to be an positive integer.
+\! gs_ktool -s -g
+ERROR: failed to check user input, this input '-g' is expected to be an positive integer.
+\! gs_ktool -s -s
+ERROR: failed to check user input, this input '-s' is expected to be an positive integer.
+\! gs_ktool -s 1 -s 1
+ERROR: failed to parse user input, too many options : '-s'.
+\! gs_ktool -s all -g
+ERROR: failed to parse user input, unrecognized option combination.
+HINT: try '-h' or '-?' for more infromation.
+\! rm -f ./export_import_ksf/export_ksf.dat &&  gs_ktool -d all && gs_ktool -g && gs_ktool -g
+DELETE ALL
+ 1 2
+GENERATE
+1
+GENERATE
+2
+-- exprot cmk err
+\! gs_ktool -e -f ./export_import_ksf/export_ksf_1.dat -p
+gs_ktool: option requires an argument -- 'p'
+HINT: try '-h' or '-?' for more infromation.
+\! gs_ktool -e -f ./export_import_ksf/export_ksf_2.dat -p shrot_1
+WARNING：it is safer to enter password interactively than use '-p'
+ERROR: failed to check user input, the password length should be in range [8, 256).
+\! gs_ktool -e -f ./export_import_ksf/export_ksf_3.dat -p only_two_type
+WARNING：it is safer to enter password interactively than use '-p'
+ERROR: failed to check user input, the password should contain 3 types of characters.
+\! gs_ktool -e -f ./export_import_ksf/export_ksf_4.dat -p only2type
+WARNING：it is safer to enter password interactively than use '-p'
+ERROR: failed to check user input, the password should contain 3 types of characters.
+\! gs_ktool -e -p loss_para_f_1
+WARNING：it is safer to enter password interactively than use '-p'
+SAFE EXPORT
+path configured in gs_ktool_conf.ini
+\! gs_ktool -e -f ./export_import_ksf/export_ksf_5.dat -p unexpected_para_1 -g
+ERROR: failed to parse user input, the number of parameters exceeds the upper limit.
+\! gs_ktool -e -f ./export_import_ksf/export_ksf_6.dat -p -p two_para_p_1
+ERROR: failed to parse user input, the number of parameters exceeds the upper limit.
+\! gs_ktool -e -f ./export_import_ksf/export_ksf_7.dat -p two_para_p_1 -p two_para_p_1
+ERROR: failed to parse user input, the number of parameters exceeds the upper limit.
+\! ls ./export_import_ksf/
+\! rm -f ./export_import_ksf/export_ksf.dat &&  gs_ktool -d all 
+DELETE ALL
+ 1 2
+\! gs_ktool -g && gs_ktool -e -f ./export_import_ksf/import_ksf.dat -p gauss_1234
+GENERATE
+1
+WARNING：it is safer to enter password interactively than use '-p'
+SAFE EXPORT
+./export_import_ksf/import_ksf.dat
+-- import cmk err
+\! gs_ktool -i -f ./export_import_ksf/import_ksf.dat -p
+gs_ktool: option requires an argument -- 'p'
+HINT: try '-h' or '-?' for more infromation.
+\! gs_ktool -i -f ./export_import_ksf/import_ksf.dat -p err_passwd_1234
+WARNING：it is safer to enter password interactively than use '-p'
+ERROR: failed to import cmk, please make sure the key store file './export_import_ksf/import_ksf.dat' is legal and the password is correct.
+\! gs_ktool -i -f ./export_import_ksf/import_ksf.dat -p gauss_1234_
+WARNING：it is safer to enter password interactively than use '-p'
+ERROR: failed to import cmk, please make sure the key store file './export_import_ksf/import_ksf.dat' is legal and the password is correct.
+\! gs_ktool -i -f ./export_import_ksf/import_ksf.dat -p gauss_12
+WARNING：it is safer to enter password interactively than use '-p'
+ERROR: failed to import cmk, please make sure the key store file './export_import_ksf/import_ksf.dat' is legal and the password is correct.
+\! gs_ktool -i -f ./export_import_ksf/import_ksf.dat -p short_1
+WARNING：it is safer to enter password interactively than use '-p'
+ERROR: failed to import cmk, please make sure the key store file './export_import_ksf/import_ksf.dat' is legal and the password is correct.
+\! gs_ktool -i -f -p gauss_1234
+HINT: try '-h' or '-?' for more infromation.
+\! gs_ktool -i -f ./export_import_ksf/import_ksf.dat -p gauss_1234 -g
+ERROR: failed to parse user input, the number of parameters exceeds the upper limit.
+\! gs_ktool -d all
+DELETE ALL
+ 1
+-- select rk err
+\! gs_ktool -s -R
+ERROR: failed to check user input, this input '-R' is expected to be an positive integer.
+\! gs_ktool -R -s 0
+ERROR: failed to parse user input, unrecognized root key management option combination.
+HINT: try '-h' or '-?' for more infromation.
+\! gs_ktool -R -s 1
+ERROR: failed to parse user input, unrecognized root key management option combination.
+HINT: try '-h' or '-?' for more infromation.
+\! gs_ktool -R -s -s
+ERROR: failed to parse user input, unrecognized root key management option combination.
+HINT: try '-h' or '-?' for more infromation.
+\! gs_ktool -R -g
+gs_ktool: invalid option -- 'g'
+HINT: try '-h' or '-?' for more infromation.
+-- update rk err
+\! gs_ktool -R -u 0
+ERROR: failed to parse user input, unrecognized root key management option combination.
+HINT: try '-h' or '-?' for more infromation.
+\! gs_ktool -R -u -u
+ERROR: failed to parse user input, unrecognized root key management option combination.
+HINT: try '-h' or '-?' for more infromation.
+\! gs_ktool -R -R -u
+ERROR: failed to parse user input, unrecognized root key management option combination.
+HINT: try '-h' or '-?' for more infromation.
+-- print help
+\! gs_ktool -h -g
+HELP
+Description: gs_ktool is a CMK(Client Master Key) & RK(Root Key) management tool.
+
+Usage:
+    gs_ktool [OPTION] [[CMK_ID] "all" [FILE] [FILE_PASSWD] ...]
+
+General options:
+    -v       Select gs_ktool version.                
+    -h/-?    Select help info.                       
+
+CMK management options:
+    -g       Generate a CMK, can use '-l' to set key length.
+    -l       Set the key length while generating CMK.
+    -d       Delete specified CMK or delete all.     
+    -s       Select specified CMK info or select all.
+    -e       Export all CMKs to ksf, can use '-f' to set export file, can use '-p' to set password.
+    -i       Import all CMKs from ksf, should use '-f' to specify import file, can use '-p' to specify password.
+    -f       Set or specify key store file while exporting or importing all keys.
+    -p       Set or specify the password of key store file while exporting or importing all keys.
+
+RK management options:
+    -R -s    Select RK info.                         
+    -R -u    Update RK.                              
+\! gs_ktool -h -h
+HELP
+Description: gs_ktool is a CMK(Client Master Key) & RK(Root Key) management tool.
+
+Usage:
+    gs_ktool [OPTION] [[CMK_ID] "all" [FILE] [FILE_PASSWD] ...]
+
+General options:
+    -v       Select gs_ktool version.                
+    -h/-?    Select help info.                       
+
+CMK management options:
+    -g       Generate a CMK, can use '-l' to set key length.
+    -l       Set the key length while generating CMK.
+    -d       Delete specified CMK or delete all.     
+    -s       Select specified CMK info or select all.
+    -e       Export all CMKs to ksf, can use '-f' to set export file, can use '-p' to set password.
+    -i       Import all CMKs from ksf, should use '-f' to specify import file, can use '-p' to specify password.
+    -f       Set or specify key store file while exporting or importing all keys.
+    -p       Set or specify the password of key store file while exporting or importing all keys.
+
+RK management options:
+    -R -s    Select RK info.                         
+    -R -u    Update RK.                              
+\! gs_ktool -h 0
+HELP
+Description: gs_ktool is a CMK(Client Master Key) & RK(Root Key) management tool.
+
+Usage:
+    gs_ktool [OPTION] [[CMK_ID] "all" [FILE] [FILE_PASSWD] ...]
+
+General options:
+    -v       Select gs_ktool version.                
+    -h/-?    Select help info.                       
+
+CMK management options:
+    -g       Generate a CMK, can use '-l' to set key length.
+    -l       Set the key length while generating CMK.
+    -d       Delete specified CMK or delete all.     
+    -s       Select specified CMK info or select all.
+    -e       Export all CMKs to ksf, can use '-f' to set export file, can use '-p' to set password.
+    -i       Import all CMKs from ksf, should use '-f' to specify import file, can use '-p' to specify password.
+    -f       Set or specify key store file while exporting or importing all keys.
+    -p       Set or specify the password of key store file while exporting or importing all keys.
+
+RK management options:
+    -R -s    Select RK info.                         
+    -R -u    Update RK.                              
+-- print version 
+\! gs_ktool -v -v
+VERSION
+gs_ktool V1.0.0 || KMC V3.0.0.SPC005
+\! gs_ktool -v 0
+VERSION
+gs_ktool V1.0.0 || KMC V3.0.0.SPC005
+\! gs_ktool -V
+gs_ktool: invalid option -- 'V'
+HINT: try '-h' or '-?' for more infromation.
+-- uninstall gs_ktool (cannot support to test this command)
+-- \! gs_ktool -u -u
+-- clean after test
+\! gs_ktool -d all
+DELETE ALL
+
+\! rm -rf export_import_ksf

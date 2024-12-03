@@ -1,0 +1,36 @@
+
+#test export
+# test: hw_export_unsupport
+# test: hw_export_invalid_options
+# test: hw_export_replication_tbl
+# test: hw_export_normal_tbl
+# test: hw_export_headline_tbl
+# test: hw_to_timestamp
+# test: readline
+# test: hw_change_passwd
+# test: hw_view_privilege
+
+#hw_export_replication_tbl hw_export_unsupport
+test: readline
+#test: hw_export_normal_tbl hw_export_invalid_options hw_change_passwd
+#test: hw_export_headline_tbl hw_to_timestamp hw_view_privilege
+test: hw_to_timestamp hw_view_privilege
+
+test: hw_identifier
+test: hw_hashint1 hw_smalldatetime_hash hw_rawtype_hash 
+test: hw_nvarchar2_hash cmpr_smallint cmpr_prefix_150left cmpr_uint32_oid
+test: oidjoins opr_sanity opr_sanity_1 opr_sanity_2 regex
+
+#test pmk
+test: pmk
+#test mppdb encrypt/decrypt function
+#test: hw_cipherfuncs
+#test: hw_cipher_multiple_keys
+# This test case is used to monitor CATALOG_VERSION_NO, GUC parameter information and gs_upgrade llt coverage.
+# If CATALOG_VERSION_NO is changed, please inform the OM tools team, the OM tools scripts need to be modified together.
+# If the GUC parameter is changed, please modify the Code/src/bin/gs_guc/cluster_guc.conf and Code/src/test/regress/output/recovery_2pc_tools.source files.
+
+#
+#
+# hanting first test dispart
+#test: recovery_2pc_tools

@@ -1,0 +1,61 @@
+--
+-- gs_dump
+--
+drop database if exists basedb;
+NOTICE:  database "basedb" does not exist, skipping
+create database basedb;
+\c basedb
+drop schema if exists dumptest;
+NOTICE:  schema "dumptest" does not exist, skipping
+create schema dumptest;
+-- test empty normal table
+CREATE TABLE dumptest.t1( a int , b int ) with ( orientation = column ) distribute by hash(a);
+ALTER TABLE dumptest.t1 ADD COLUMN c int default 5;
+ALTER TABLE dumptest.t1 ADD COLUMN d int NULL;
+ALTER TABLE dumptest.t1 DROP COLUMN c;
+-- test empty partition table
+CREATE TABLE dumptest.t2( a int , b int ) with ( orientation = column ) distribute by hash(a) partition by range(b)
+(
+    partition p1 values less than (3),
+    partition p2 values less than (6),
+    partition p3 values less than (maxvalue)
+);
+-- foriegn table
+CREATE FOREIGN TABLE dumptest."3`\\'{}Aمیں￥EЯ我אניM 。はЯأنا أكونORDERS_lo" 
+(O_ORDERKEY BIGINT)  SERVER gsmpp_server OPTIONS(location 'gsfs://10.185.179.181:9601/orders.tbl', format 'text', delimiter '|', encoding 'utf8', mode 'Normal' );
+-- error_table
+CREATE FOREIGN TABLE "|;&$<>`\\'{}()[]~*? !\n@#%^-_+=,.:zhā龘supplier_load"
+(
+    s_suppkey bigint,
+    s_name character(25)
+)
+SERVER gsmpp_server
+OPTIONS (
+    delimiter '|',
+    encoding 'utf8',
+    format 'text',
+    location 'gsfs://10.185.179.181:9601/supplier.tbl',
+    mode 'Normal'
+) WITH "error_table'";
+-- sequence
+CREATE SEQUENCE dumptest."seq$" START WITH 101 INCREMENT BY 1 NO MINVALUE NO MAXVALUE CACHE 1;
+-- create as like 
+CREATE TABLE dumptest.t3 (LIKE dumptest.t2 INCLUDING PARTITION);
+-- create common view
+CREATE VIEW dumptest.my_v1 AS SELECT * FROM dumptest.t1;
+-- create partition view
+CREATE VIEW dumptest.my_v2 AS SELECT * FROM dumptest.t2;
+-- create row level security policy
+CREATE TABLE rlsrel1(id int, name varchar(100)) with ( orientation = row ) distribute by hash(id);
+CREATE TABLE rlsrel2(id int, name varchar(100)) with ( orientation = column ) distribute by hash(id);
+CREATE ROW LEVEL SECURITY POLICY rlsrel1_rls1 ON rlsrel1 USING(id > 100);
+CREATE ROW LEVEL SECURITY POLICY rlsrel1_rls2 ON rlsrel1 USING(name = current_user);
+CREATE ROW LEVEL SECURITY POLICY rlsrel2_rls1 ON rlsrel2 USING(id > 100);
+ALTER TABLE rlsrel1 ENABLE ROW LEVEL SECURITY;
+ALTER TABLE rlsrel1 FORCE ROW LEVEL SECURITY;
+ALTER TABLE rlsrel2 ENABLE ROW LEVEL SECURITY;
+\! @abs_bindir@/gs_dump --help > @abs_bindir@/gs_dump.log 2>&1
+\! @abs_bindir@/gs_dump basedb -p @portstring@ --with-encryption=AES128 --with-key=abcdefghigklmnop --include-alter-table -n dumptest -s > @abs_bindir@/dump.sql 2>&1 ; echo $?
+0
+\c regression
+drop database if exists basedb;

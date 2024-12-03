@@ -1,0 +1,18 @@
+
+#test: hw_partition_index hw_partition_reindex hw_partition_unusable_index_1 hw_partition_unusable_index_3 hw_partition_unusable_index_2
+#test: hw_partition_insert hw_partition_insert_01 hw_partition_update0 hw_partition_update1 hw_partition_dml hw_partition_sql_adapt1
+#test: hw_partition_grant hw_partition_of_type hw_partition_sql_adapt0 
+#test: hw_partition_nodes hw_partition_size hw_partition_compare hw_partition_storage_parameters hw_partition_storage_parameters_index hw_partition_toast hw_partition_cross hw_partition_maxvalue hw_partition_sql_adapt2
+# FIXME: move me back to the parallel test when the refcnt issue is fixed
+# Below two teste are unstable, temporarily ignoring. This is same to distribute_dattistic, relallvisible, Dongwang will solve the problem.
+#test: hw_partition_vacuum_full 
+#test: hw_partition_vacuum 
+
+#the following part will running in schedule9
+#test: hw_expression_alias
+#test: hw_partition_lock
+#test: hw_partition_llt
+#test: hw_analyze_percent
+#test: hw_sql_llt_case
+
+test: hw_sql_llt sqlLLT
